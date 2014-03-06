@@ -17,6 +17,8 @@ public class Household {
      */
     private double lng;
 
+    private Address address;
+
     private List<HouseholdMember> members = new ArrayList<>();
 
 
@@ -54,5 +56,13 @@ public class Household {
 
     public void setMembers(List<HouseholdMember> members) {
         this.members = members;
+    }
+
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
     }
 }

@@ -40,13 +40,23 @@ public class ApiController {
     private Household getHousehold() {
         final Household household = new Household();
         household.setId(UUID.randomUUID().toString());
+        Address address = new Address();
+        address.setEmail("some@email.com");
+        address.setFirstName("Dang");
+        address.setLastName("Haeng");
+        address.setStreet("15, Huay Kaew");
+        address.setPhone("+66 3453 3742");
+        address.setPostCode("34535");
+        address.setCity("Not Chiang Mai");
+        address.setCountryCode("TH");
+        household.setAddress(address);
         household.setLat(getRandomDouble(14.8475699d, 19.5415012d));
         household.setLng(getRandomDouble(98.1163605d, 105.6423037d));
-        addMember(household, MemberType.HUMAN, getRandomInt(1, 6));
         addMember(household, MemberType.PET, getRandomInt(0, 4));
         addMember(household, MemberType.BIRD, getRandomInt(0, 20));
         addMember(household, MemberType.FARM, getRandomInt(0, 10));
         addMember(household, MemberType.EXOTIC, getRandomInt(0, 4));
+        addMember(household, MemberType.HUMAN, getRandomInt(1, 6));
         return household;
     }
 
@@ -95,8 +105,10 @@ public class ApiController {
 
     private Symptom getSymptom(SymptomType type, int count) {
         final Symptom symptom = new Symptom();
+        symptom.setDangerLevel(getRandomInt(0, 5));
         symptom.setCount(count);
         symptom.setType(type);
+        symptom.addResourceLink("http://opendream.org/data?id=" + getRandomInt(1, 1000000));
         return symptom;
     }
 }
