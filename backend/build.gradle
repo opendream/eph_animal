@@ -1,0 +1,46 @@
+buildscript {
+    repositories {
+        maven { url "http://repo.spring.io/libs-snapshot" }
+        mavenLocal()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.0.0.RC4")
+    }
+}
+
+allprojects {
+    apply plugin: 'java'
+    apply plugin: 'idea'
+    apply plugin: 'spring-boot'
+
+    sourceCompatibility = 1.7
+    targetCompatibility = 1.7
+
+    tasks.withType(JavaCompile) {
+        options.encoding = 'UTF-8'
+        options.deprecation = true
+    }
+
+    jar {
+        baseName = 'gs-rest-service'
+        version = '0.1.0'
+    }
+
+    repositories {
+        mavenCentral()
+        maven { url "http://repo.spring.io/libs-snapshot" }
+    }
+
+    dependencies {
+        compile("org.springframework.boot:spring-boot-starter-web")
+        compile("com.fasterxml.jackson.core:jackson-databind")
+        compile 'org.apache.commons:commons-lang3:3.2.1'
+        compile 'org.apache.commons:commons-math3:3.0'
+
+
+        testCompile("junit:junit")
+    }
+}
+task wrapper(type: org.gradle.api.tasks.wrapper.Wrapper) {
+    gradleVersion = '1.9'
+}

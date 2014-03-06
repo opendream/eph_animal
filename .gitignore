@@ -1,0 +1,10 @@
+/backend/.gradle/
+/backend/.idea/
+/backend/backend.iml
+/backend/build/
+/backend/gradle/
+/backend/gradlew
+/backend/gradlew.bat
+/backend/test.ipr
+/backend/test.iws
+/etc/.~lock.PODD.odp\#
