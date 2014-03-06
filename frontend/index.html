@@ -27,25 +27,46 @@
 
         }
         
-        .detail-box {
+        .box {
             position: absolute;
-            bottom: 50px;
-            right: 50px;
             background-color: #FFF;
             border: solid 2px #EEE;
             padding: 20px;
         }
-        .detail-box ul {
+        .box ul {
             margin: 0px;
             padding: 0px;
             list-style: none;
         }
+        
+        .detail-box {
+            bottom: 50px;
+            right: 50px;
+        }
+        
         .detail-color {
             margin-right: 15px;
             width: 15px;
             height: 15px;
             display: inline-block;
             border-radius: 50%;
+        }
+        .marker-content .icon-type {
+            display: block;
+            float: left;
+        }
+        .marker-content .type-name {
+            display: block;
+            float: left;
+            margin: 5px 0 0 10px;
+        }
+        .marker-content h3 {
+            float: left;
+            width: 100%;
+        }
+        .marker-content p {
+            clear: both;
+            width: 100%;
         }
         </style>
         <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
@@ -101,7 +122,7 @@
         
         var capitaliseFirstLetter = function (string)
         {
-            return string.toLowerCase().charAt(0).toUpperCase() + string.slice(1);
+            return string.charAt(0).toUpperCase() + string.toLowerCase().slice(1);
         }
         
         // defined color each type
@@ -147,11 +168,13 @@
                     markerCluster[type] = [];
                     markers[type] = [];
                 });
-                        
+                
+                var first_marker = false;
+                
                 $.each(data, function (i, location) {
                 
                     $.each(location['members'], function (j, member) {
-                                           
+                        
                         // Loop on the count                     
                                         
                         var latLng = calLatLng(location.lat, location.lng, location['members'].length, j);
@@ -159,10 +182,14 @@
                                                 
                         var marker = new google.maps.Marker({
                             'position': latLng,
-                            //'icon': 'image/'+member['type']+'.png'
-                            'icon': 'http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=•|'+ color.substring(1) +'|000000'
+                            'icon': 'image/'+member['type']+'.png'
+                            //'icon': 'http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=•|'+ color.substring(1) +'|000000'
                             
                         });
+                        
+                        if (!first_marker) {
+                            first_marker = marker;
+                        }
                         
                     
                         google.maps.event.addListener(marker, 'click', function() {
@@ -171,7 +198,8 @@
                             var item_contents = 
                         
                             '<div class="marker-content">'+ 
-                                '<h3>Type</h3>' + capitaliseFirstLetter(member['type']) +
+                                '<img class="icon-type" src="image/' + member['type'] + '.png" />' + 
+                                '<span class="type-name">' + capitaliseFirstLetter(member['type']) + '</span>' +
                                 '<h3 class="label">Address</h3>' +
                                 '<p><span class="label">Contact name</span> : <span class="field-content">' + location['address']['firstName'] + ' ' + location['address']['lastName'] + '</span></p>' +
                                 '<p><span class="label">Email</span> : <span class="field-content">' + location['address']['email'] + '</span></p>' +
@@ -187,7 +215,7 @@
                                 
                                 $.each(member['symptoms'], function (i, symptom) {
                                     item_contents += '<li>';
-                                    item_contents +=     '<p><span class="field-content symptom-name">' + symptom['type'] + '</span></p>';
+                                    item_contents +=     '<p><span class="field-content symptom-name">' + capitaliseFirstLetter(symptom['type'].replace('_', ' ')) + '</span></p>';
                                     item_contents +=     '<p><span class="label">Number</span> : <span class="field-content symptom-count">'+ symptom['count'] + '</span></p>';
                                     item_contents +=     '<p><span class="label">Danger level</span> : <span class="field-content symptom-danger-level">'+ symptom['dangerLevel'] + '</span></p>';
                                     item_contents +=     '<p><span class="label">Link</span> : <span class="field-content symptom-link"><a href="' + symptom['link']+'">'+ symptom['link'] + '</a></span></p>';
@@ -197,22 +225,19 @@
                                 
                                 item_contents += '</ul>';
                                 
-                            }
-                                
-                                '<h3 class="label">Symptoms</h3>';
-                                
+                            }                                
                                 
                                 
                             item_contents += '</div>';
                         
                             info_window.setContent(item_contents);
                             info_window.open(map, marker);
+                            
                         });
                     
                         markers[member['type']].push(marker);
             
-                        bounds.extend(latLng);
-                    
+                        bounds.extend(latLng);                    
                     
                     });
                 
@@ -252,8 +277,12 @@
                         [ Map here ]
                     </div>
                 </div>
-                <div class="detail-box">
+                <div class="box detail-box">
                     <ul class="detail-box-list">
+                    </ul>
+                </div>
+                <div class="box danger-box">
+                    <ul class="danger-box-list">
                     </ul>
                 </div>
             </div>
