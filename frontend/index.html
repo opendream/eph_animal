@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Epihack project for animal / house hold and back yard</title>
+        <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        #map-canvas {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+        </style>
+        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+        <script type="text/javascript" src="js/jquery-2.0.2.min.js"></script>
+        <script type="text/javascript" src="js/StyledMarker.js"></script>
+        <script type="text/javascript" src="js/markerclusterer.js"></script>
+        
+        
+        
+        <script type="text/javascript" src="js/data.js"></script>
+        
+        <script type="text/javascript">
+        
+        // Map  =============================================
+        
+        $ = jQuery;
+        
+        var colorToHex = function (c) {
+          var m = /rgba?\(\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)/.exec(c);
+          return m ? '#' + (1 << 24 | m[1] << 16 | m[2] << 8 | m[3]).toString(16).substr(1) : c;
+        }
+        
+        // style builder funtion
+        var buildStyle = function (radius, color) {
+            
+            var styleOption = {
+                height: radius,
+                textColor: '#ffffff',
+                textSize: 11,
+                url: 'http://localhost/webform/clusterer?radius=' + radius + '&color=' + color,
+                width: radius
+            }
+            
+        };
+        var buildStyleList = function (color) {
+            
+            return [
+                buildStyle(35, color),
+                buildStyle(40, color),
+                buildStyle(50, color),
+            ];
+        };
+        
+        // defined color each type
+        var colorAll = {
+            'HUMAN' : '42,174,185',
+            'PET'   : '226,85,158',
+            'BIRD'  : '200,180,50',
+            'FARM'  : '210,100,74',
+            'EXOTIC': '42,174,185',
+        }
+        
+        var types = Object.keys(colorAll)
+        
+        // create style
+        var stylesAll = {};
+        $.each(colorAll, function (type, color) {
+            stylesAll[type] = buildStyleList(color);
+        });
+        
+        var mapLoadded = function () {
+            var center = new google.maps.LatLng(13.768, 100.554);
+            
+            var options = {
+                'scrollwheel': false,
+                'zoom': 5,
+                'center': center,
+                'mapTypeId': google.maps.MapTypeId.ROADMAP
+            };
+            
+            var bounds = new google.maps.LatLngBounds;
+            var info_window = new google.maps.InfoWindow;
+
+            var map = new google.maps.Map($('#map-canvas').get(0), options);
+            
+            
+            // define empty variable for store matker and group by type
+            var markerCluster = {};
+            var markers = {};
+            
+            $.each(types, function (i, type) {
+                markerCluster[type] = [];
+                markers[type] = [];
+            });
+                        
+            $.each(data, function (i, location) {
+                
+                $.each(location['members'], function (i, member) {
+                    
+                    console.log(member);
+                                            
+                    for (var j=1; j < member.total; j++) {
+                                        
+                        var latLng = new google.maps.LatLng(location.lat, location.lng);
+                        var color = colorToHex('rgb(' + colorAll[member['type']] + ')');
+                        var styleIcon = new StyledIcon(StyledIconTypes.MARKER, {'color': color, 'text': '•'});
+                
+                        var marker = new StyledMarker({'styleIcon': styleIcon, 'position': latLng, 'data': location});
+                        markers[member['type']].push(marker);
+                
+                        bounds.extend(latLng);
+                    }
+                    
+                    
+                });
+                
+                
+            });
+            
+            $.each(types, function (i, type) {
+                markerCluster[type] = new MarkerClusterer(map, markers[type], {'styles': stylesAll[type]});
+            });
+            
+            //map.panTo(bounds.getCenter());
+            //map.fitBounds(bounds);
+        }
+        
+        
+        $(document).ready(function () {
+          mapLoadded();
+        });
+        </script>
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                
+            </div>
+            <div class="content">
+                <div id="map">
+                    <div id="map-canvas">
+                        [ Map here ]
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
