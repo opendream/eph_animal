@@ -7,6 +7,9 @@
             margin: 0;
             padding: 0;
         }
+        ul {
+            padding-left: 22px;
+        }
         #map-canvas {
             position: absolute;
             width: 100%;
@@ -14,7 +17,7 @@
         }
         .marker-content {
             min-height: 300px;
-            width: 300px;
+            width: 280px;
         }
         .gm-style .gm-style-iw .marker-content span.label {
             font-weight: bold;
@@ -32,11 +35,15 @@
             background-color: #FFF;
             border: solid 2px #EEE;
             padding: 20px;
+            width: 90px;
         }
         .box ul {
             margin: 0px;
             padding: 0px;
             list-style: none;
+        }
+        .box ul li {
+            height: 35px;
         }
         
         .detail-box {
@@ -44,12 +51,29 @@
             right: 50px;
         }
         
-        .detail-color {
+        .danger-box {
+            bottom: 50px;
+            right: 200px;
+            width: 100px !important;
+        }
+        
+        .detail-color, .detail-icon {
             margin-right: 15px;
-            width: 15px;
-            height: 15px;
-            display: inline-block;
-            border-radius: 50%;
+            width: 26px;
+            height: 26px;
+            display: block;
+            float: left;
+            box-sizing: border-box;
+            border-radius: 50%;   
+            
+        }
+        .detail-color {
+            border: solid 1px #CCC;
+        }
+
+        .detail-text {
+            float: left;
+            margin-top: 4px;
         }
         .marker-content .icon-type {
             display: block;
@@ -63,10 +87,13 @@
         .marker-content h3 {
             float: left;
             width: 100%;
+            border-top: solid 1px #EEE;
+            padding-top: 8px;
         }
         .marker-content p {
             clear: both;
             width: 100%;
+            margin: 5px 0;
         }
         </style>
         <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
@@ -96,7 +123,8 @@
                 height: radius,
                 textColor: '#ffffff',
                 textSize: 11,
-                url: 'http://localhost/openhelp/webform/clusterer?radius=' + radius + '&color=' + color,
+                //url: 'http://localhost/openhelp/webform/clusterer?radius=' + radius + '&color=' + color,
+                url: 'image/' + radius + '/' + color + '-GROUP-' + radius + '.png',
                 width: radius
             };
             
@@ -120,18 +148,35 @@
             return new google.maps.LatLng(lat+dLat, lng+dLng);
         }
         
+        var truncate = function (string, length) {
+            if (string.length <= length) {
+                return string;
+            }
+            
+            return string.substring(0, Math.floor((length/2)-1)) + '..' + string.substring(string.length -Math.ceil((length/2)+1));
+        }
+        
         var capitaliseFirstLetter = function (string)
         {
             return string.charAt(0).toUpperCase() + string.toLowerCase().slice(1);
         }
         
         // defined color each type
+        /*
         var colorAll = {
             'PET'   : '226,85,158',
             'BIRD'  : '200,180,50',
             'FARM'  : '210,100,74',
             'EXOTIC': '79,167,104',
             'HUMAN' : '42,174,185',
+        }
+        */
+        var colorAll = {
+            'PET'   : 'PET',
+            'BIRD'  : 'BIRD',
+            'FARM'  : 'FARM',
+            'EXOTIC': 'EXOTIC',
+            'HUMAN' : 'HUMAN',
         }
                 
         var types = Object.keys(colorAll)
@@ -146,7 +191,7 @@
             var center = new google.maps.LatLng(13.768, 100.554);
             
             var options = {
-                'scrollwheel': false,
+                //'scrollwheel': false,
                 'zoom': 5,
                 'center': center,
                 'mapTypeId': google.maps.MapTypeId.ROADMAP
@@ -179,10 +224,19 @@
                                         
                         var latLng = calLatLng(location.lat, location.lng, location['members'].length, j);
                         var color = colorToHex('rgb(' + colorAll[member['type']] + ')');
-                                                
+                        
+                        var level = 0;
+                        $.each(member['symptoms'], function (i, symptom) {
+                            level += symptom['dangerLevel'];
+                        }); 
+                        if (member['symptoms'].length) {
+                            level = Math.ceil(level/member['symptoms'].length);
+                        }
+                            
                         var marker = new google.maps.Marker({
                             'position': latLng,
-                            'icon': 'image/'+member['type']+'.png'
+                            'map': map,
+                            'icon': 'image/' + member['type'] + '-' + level +'.png'
                             //'icon': 'http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=•|'+ color.substring(1) +'|000000'
                             
                         });
@@ -199,7 +253,7 @@
                         
                             '<div class="marker-content">'+ 
                                 '<img class="icon-type" src="image/' + member['type'] + '.png" />' + 
-                                '<span class="type-name">' + capitaliseFirstLetter(member['type']) + '</span>' +
+                                '<span class="type-name">' + member['count'] + ' ' + capitaliseFirstLetter(member['type']) + 's</span>' +
                                 '<h3 class="label">Address</h3>' +
                                 '<p><span class="label">Contact name</span> : <span class="field-content">' + location['address']['firstName'] + ' ' + location['address']['lastName'] + '</span></p>' +
                                 '<p><span class="label">Email</span> : <span class="field-content">' + location['address']['email'] + '</span></p>' +
@@ -218,7 +272,7 @@
                                     item_contents +=     '<p><span class="field-content symptom-name">' + capitaliseFirstLetter(symptom['type'].replace('_', ' ')) + '</span></p>';
                                     item_contents +=     '<p><span class="label">Number</span> : <span class="field-content symptom-count">'+ symptom['count'] + '</span></p>';
                                     item_contents +=     '<p><span class="label">Danger level</span> : <span class="field-content symptom-danger-level">'+ symptom['dangerLevel'] + '</span></p>';
-                                    item_contents +=     '<p><span class="label">Link</span> : <span class="field-content symptom-link"><a href="' + symptom['link']+'">'+ symptom['link'] + '</a></span></p>';
+                                    item_contents +=     '<p><span class="label">Link</span> : <span class="field-content symptom-link"><a href="' + symptom['resourceLinks']+'">'+ truncate(symptom['resourceLinks'][0], 24) + '</a></span></p>';
                                     item_contents += '</li>';
                                     
                                 });
@@ -245,7 +299,7 @@
                 });
             
                 $.each(types, function (i, type) {
-                    markerCluster[type] = new MarkerClusterer(map, markers[type], {'styles': stylesAll[type]});
+                    //markerCluster[type] = new MarkerClusterer(map, markers[type], {'styles': stylesAll[type]});
                 });
             
                 map.panTo(bounds.getCenter());
@@ -257,9 +311,15 @@
         $(document).ready(function () {
           mapLoadded();
           
+          var dangerColorMap = ['#FFFFFF', '#FDCF8C', '#F6A01B', '#E9601F', '#CE113F'];
+          
+          for (var k=0; k<=4; k++) {
+              $('.danger-box-list').append($('<li><span class="detail-color" style="background-color:' + dangerColorMap[k] +';"></span><span class="detail-text">Level ' + k + '</span></li>'));
+          }
+              
+          
           $.each(colorAll, function (type, color) {
-              $('.detail-box-list').append($('<li><span class="detail-color" style="background-color:' + colorToHex('rgb(' + color + ')') +';"></span><span class="detail-text">' + capitaliseFirstLetter(type) + '</span></li>'));
-
+              $('.detail-box-list').append($('<li><span class="detail-icon" style="background:' + 'url(image/' + type + '.png)' +';"></span><span class="detail-text">' + capitaliseFirstLetter(type) + '</span></li>'));
           });
           
         });
