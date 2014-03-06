@@ -12,6 +12,41 @@
             width: 100%;
             height: 100%;
         }
+        .marker-content {
+            min-height: 300px;
+            width: 300px;
+        }
+        .gm-style .gm-style-iw .marker-content span.label {
+            font-weight: bold;
+            width: 90px;
+            display: inline-block;
+            text-align: right;
+            margin-right: 5px;
+        }
+        .gm-style .gm-style-iw .marker-content span.field-content {
+
+        }
+        
+        .detail-box {
+            position: absolute;
+            bottom: 50px;
+            right: 50px;
+            background-color: #FFF;
+            border: solid 2px #EEE;
+            padding: 20px;
+        }
+        .detail-box ul {
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+        }
+        .detail-color {
+            margin-right: 15px;
+            width: 15px;
+            height: 15px;
+            display: inline-block;
+            border-radius: 50%;
+        }
         </style>
         <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
         <script type="text/javascript" src="js/jquery-2.0.2.min.js"></script>
@@ -36,17 +71,16 @@
         // style builder funtion
         var buildStyle = function (radius, color) {
             
-            var styleOption = {
+             return {
                 height: radius,
                 textColor: '#ffffff',
                 textSize: 11,
-                url: 'http://localhost/webform/clusterer?radius=' + radius + '&color=' + color,
+                url: 'http://localhost/openhelp/webform/clusterer?radius=' + radius + '&color=' + color,
                 width: radius
-            }
+            };
             
         };
         var buildStyleList = function (color) {
-            
             return [
                 buildStyle(35, color),
                 buildStyle(40, color),
@@ -54,19 +88,35 @@
             ];
         };
         
+        var calLatLng = function (lat, lng, count, j) {
+            
+            var radius = 0.00005;
+            
+            var angle = 2*Math.PI* (j/count);
+            dLat = radius*Math.cos(angle);
+            dLng = radius*Math.sin(angle);
+            
+            return new google.maps.LatLng(lat+dLat, lng+dLng);
+        }
+        
+        var capitaliseFirstLetter = function (string)
+        {
+            return string.toLowerCase().charAt(0).toUpperCase() + string.slice(1);
+        }
+        
         // defined color each type
         var colorAll = {
-            'HUMAN' : '42,174,185',
             'PET'   : '226,85,158',
             'BIRD'  : '200,180,50',
             'FARM'  : '210,100,74',
-            'EXOTIC': '42,174,185',
+            'EXOTIC': '79,167,104',
+            'HUMAN' : '42,174,185',
         }
-        
+                
         var types = Object.keys(colorAll)
         
         // create style
-        var stylesAll = {};
+        stylesAll = {};
         $.each(colorAll, function (type, color) {
             stylesAll[type] = buildStyleList(color);
         });
@@ -86,51 +136,87 @@
 
             var map = new google.maps.Map($('#map-canvas').get(0), options);
             
+            $.getScript('js/StyledMarker.js', function () {
             
-            // define empty variable for store matker and group by type
-            var markerCluster = {};
-            var markers = {};
             
-            $.each(types, function (i, type) {
-                markerCluster[type] = [];
-                markers[type] = [];
-            });
-                        
-            $.each(data, function (i, location) {
-                
-                $.each(location['members'], function (i, member) {
-                    
-                    console.log(member);
-                                            
-                    for (var j=1; j < member.total; j++) {
-                                        
-                        var latLng = new google.maps.LatLng(location.lat, location.lng);
-                        var color = colorToHex('rgb(' + colorAll[member['type']] + ')');
-                        var styleIcon = new StyledIcon(StyledIconTypes.MARKER, {'color': color, 'text': '•'});
-                
-                        var marker = new StyledMarker({'styleIcon': styleIcon, 'position': latLng, 'data': location});
-                        markers[member['type']].push(marker);
-                
-                        bounds.extend(latLng);
-                    }
-                    
-                    
+                // define empty variable for store matker and group by type
+                markerCluster = {};
+                markers = {};
+            
+                $.each(types, function (i, type) {
+                    markerCluster[type] = [];
+                    markers[type] = [];
                 });
+                        
+                $.each(data, function (i, location) {
+                
+                    $.each(location['members'], function (i, member) {
+                                           
+                        // Loop on the count                     
+                        for (var j=0; j < member['count']; j++) {
+                                        
+                            var latLng = calLatLng(location.lat, location.lng, member.count, j);
+                            var color = colorToHex('rgb(' + colorAll[member['type']] + ')');
+                                                    
+                            var marker = new google.maps.Marker({
+                                'position': latLng,
+                                'icon': 'image/'+member['type']+'.png'
+                                
+                                //'icon': 'http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=•|'+ color.substring(1) +'|000000'
+                            });
+                            
+                        
+                            google.maps.event.addListener(marker, 'click', function() {
+                                info_window.close();
+                            
+                                var item_contents = 
+                            
+                                '<div class="marker-content">'+ 
+                                    '<h3>Type</h3>' + capitaliseFirstLetter(member['type']) +
+                                    '<h3 class="label">Address</h3>' +
+                                    '<p><span class="label">Contact name</span> : <span class="field-content">' + location['address']['firstName'] + ' ' + location['address']['lastName'] + '</span></p>' +
+                                    '<p><span class="label">Email</span> : <span class="field-content">' + location['address']['email'] + '</span></p>' +
+                                    '<p><span class="label">Street</span> : <span class="field-content">' + location['address']['street'] + '</span></p>' +
+                                    '<p><span class="label">Post code</span> : <span class="field-content">' + location['address']['postCode'] + '</span></p>' +
+                                    '<p><span class="label">City</span> : <span class="field-content">' + location['address']['city'] + '</span></p>' +
+                                    '<p><span class="label">Phone</span> : <span class="field-content">' + location['address']['phone'] + '</span></p>' +
+                                
+                                    
+                                '</div>';
+                            
+                                info_window.setContent(item_contents);
+                                info_window.open(map, marker);
+                            });
+                        
+                            markers[member['type']].push(marker);
+                
+                            bounds.extend(latLng);
+                        }
+                    
+                    
+                    });
                 
                 
-            });
+                });
             
-            $.each(types, function (i, type) {
-                markerCluster[type] = new MarkerClusterer(map, markers[type], {'styles': stylesAll[type]});
-            });
+                $.each(types, function (i, type) {
+                    markerCluster[type] = new MarkerClusterer(map, markers[type], {'styles': stylesAll[type]});
+                });
             
-            //map.panTo(bounds.getCenter());
-            //map.fitBounds(bounds);
+                map.panTo(bounds.getCenter());
+                map.fitBounds(bounds);
+            });
         }
         
         
         $(document).ready(function () {
           mapLoadded();
+          
+          $.each(colorAll, function (type, color) {
+              $('.detail-box-list').append($('<li><span class="detail-color" style="background-color:' + colorToHex('rgb(' + color + ')') +';"></span><span class="detail-text">' + capitaliseFirstLetter(type) + '</span></li>'));
+
+          });
+          
         });
         </script>
 
@@ -145,6 +231,10 @@
                     <div id="map-canvas">
                         [ Map here ]
                     </div>
+                </div>
+                <div class="detail-box">
+                    <ul class="detail-box-list">
+                    </ul>
                 </div>
             </div>
         </div>

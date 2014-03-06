@@ -1,451 +1,216 @@
-[{
-  "id": "85a0a61f-fff0-4db0-a0b1-4d4eb8a060e2",
-  "lat": 15.718787960420123,
-  "lng": 104.28452682753495,
+data = [{
+  "id": "cfd3d7a7-1b09-4245-b3fe-7d24054ef100",
+  "lat": 15.695003719675093,
+  "lng": 103.19289045055949,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
   "members": [{
-    "type": "HUMAN",
-    "count": 3,
-    "symptoms": [{
-      "type": "RESPIRATORY_TRACT",
-      "count": 1
-    }, {
-      "type": "DIGESTIVE_TRACT",
-      "count": 1
-    }]
-  }, {
     "type": "PET",
     "count": 1,
     "symptoms": []
-  }, {
-    "type": "BIRD",
-    "count": 15,
-    "symptoms": [{
-      "type": "DIGESTIVE_TRACT",
-      "count": 3
-    }, {
-      "type": "MUSCLE_PAIN",
-      "count": 10
-    }]
-  }, {
-    "type": "FARM",
-    "count": 7,
-    "symptoms": [{
-      "type": "SKIN_PROBLEM",
-      "count": 1
-    }]
-  }, {
-    "type": "EXOTIC",
-    "count": 1,
-    "symptoms": []
-  }]
-}, {
-  "id": "64fdd5a1-4b3c-475e-a86a-186c863b3190",
-  "lat": 15.025640330876822,
-  "lng": 100.25273062357596,
-  "members": [{
-    "type": "HUMAN",
-    "count": 2,
-    "symptoms": [{
-      "type": "NERVOUS_SIGNALS",
-      "count": 1
-    }]
-  }, {
-    "type": "PET",
-    "count": 2,
-    "symptoms": []
-  }, {
-    "type": "BIRD",
-    "count": 8,
-    "symptoms": [{
-      "type": "DIGESTIVE_TRACT",
-      "count": 7
-    }]
-  }]
-}, {
-  "id": "19e1112c-4bd8-4f5a-a149-2426e8aa41ee",
-  "lat": 15.722270789439472,
-  "lng": 100.28159126614611,
-  "members": [{
-    "type": "HUMAN",
-    "count": 5,
-    "symptoms": [{
-      "type": "RESPIRATORY_TRACT",
-      "count": 4
-    }]
-  }, {
-    "type": "FARM",
-    "count": 5,
-    "symptoms": [{
-      "type": "NERVOUS_SIGNALS",
-      "count": 4
-    }]
-  }, {
-    "type": "EXOTIC",
-    "count": 1,
-    "symptoms": []
-  }]
-}, {
-  "id": "0747a56d-ec41-4751-98af-761300cc56ca",
-  "lat": 17.549180705232835,
-  "lng": 102.7435403546004,
-  "members": [{
-    "type": "HUMAN",
-    "count": 5,
-    "symptoms": [{
-      "type": "SKIN_PROBLEM",
-      "count": 2
-    }, {
-      "type": "RESPIRATORY_TRACT",
-      "count": 2
-    }]
-  }, {
-    "type": "PET",
-    "count": 3,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 2
-    }]
-  }, {
-    "type": "BIRD",
-    "count": 8,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 3
-    }, {
-      "type": "NERVOUS_SIGNALS",
-      "count": 4
-    }]
-  }, {
-    "type": "FARM",
-    "count": 7,
-    "symptoms": []
-  }]
-}, {
-  "id": "dfdd7898-2ad2-43dc-9c29-2a4a45e0d5dd",
-  "lat": 16.213630246478246,
-  "lng": 99.9761217701669,
-  "members": [{
-    "type": "HUMAN",
-    "count": 2,
-    "symptoms": []
-  }, {
-    "type": "PET",
-    "count": 3,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 2
-    }]
-  }, {
-    "type": "BIRD",
-    "count": 10,
-    "symptoms": [{
-      "type": "SKIN_PROBLEM",
-      "count": 1
-    }]
-  }, {
-    "type": "FARM",
-    "count": 1,
-    "symptoms": []
-  }, {
-    "type": "EXOTIC",
-    "count": 1,
-    "symptoms": []
-  }]
-}, {
-  "id": "22709755-b1fc-48d7-8c78-9dc65461d8ad",
-  "lat": 19.03534603418912,
-  "lng": 99.99076609849217,
-  "members": [{
-    "type": "HUMAN",
-    "count": 4,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 2
-    }, {
-      "type": "DIGESTIVE_TRACT",
-      "count": 1
-    }]
-  }, {
-    "type": "PET",
-    "count": 1,
-    "symptoms": []
-  }, {
-    "type": "BIRD",
-    "count": 6,
-    "symptoms": [{
-      "type": "RESPIRATORY_TRACT",
-      "count": 4
-    }, {
-      "type": "DIGESTIVE_TRACT",
-      "count": 1
-    }]
-  }, {
-    "type": "FARM",
-    "count": 2,
-    "symptoms": [{
-      "type": "MUSCLE_PAIN",
-      "count": 1
-    }]
-  }, {
-    "type": "EXOTIC",
-    "count": 1,
-    "symptoms": []
-  }]
-}, {
-  "id": "13bac572-b360-4a4e-a17b-f06364bb699b",
-  "lat": 18.676259518034882,
-  "lng": 103.73303269049609,
-  "members": [{
-    "type": "HUMAN",
-    "count": 3,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 1
-    }]
   }, {
     "type": "BIRD",
     "count": 18,
+    "symptoms": []
+  }, {
+    "type": "FARM",
+    "count": 1,
+    "symptoms": []
+  }, {
+    "type": "HUMAN",
+    "count": 5,
     "symptoms": [{
       "type": "SKIN_PROBLEM",
-      "count": 2
+      "count": 1,
+      "dangerLevel": 3,
+      "resourceLinks": ["http://opendream.org/data?id=36432"]
     }, {
-      "type": "DIGESTIVE_TRACT",
-      "count": 5
+      "type": "MUSCLE_PAIN",
+      "count": 3,
+      "dangerLevel": 4,
+      "resourceLinks": ["http://opendream.org/data?id=517328"]
+    }]
+  }]
+}, {
+  "id": "487ef0ff-4ed2-4662-9b37-9a59699b0937",
+  "lat": 16.10340981607569,
+  "lng": 103.19557385926844,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
+    "type": "BIRD",
+    "count": 5,
+    "symptoms": [{
+      "type": "HIGH_TEMPERATURE",
+      "count": 1,
+      "dangerLevel": 0,
+      "resourceLinks": ["http://opendream.org/data?id=954792"]
+    }, {
+      "type": "NERVOUS_SIGNALS",
+      "count": 3,
+      "dangerLevel": 2,
+      "resourceLinks": ["http://opendream.org/data?id=677255"]
     }]
   }, {
     "type": "FARM",
-    "count": 8,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 3
-    }, {
-      "type": "NERVOUS_SIGNALS",
-      "count": 3
-    }, {
-      "type": "RESPIRATORY_TRACT",
-      "count": 1
-    }]
+    "count": 2,
+    "symptoms": []
   }, {
     "type": "EXOTIC",
     "count": 2,
     "symptoms": [{
       "type": "HIGH_TEMPERATURE",
-      "count": 1
-    }]
-  }]
-}, {
-  "id": "1d476d1c-e2e9-47aa-b8fb-538b62efddfc",
-  "lat": 17.14565506167038,
-  "lng": 104.78272403662507,
-  "members": [{
-    "type": "HUMAN",
-    "count": 1,
-    "symptoms": []
-  }, {
-    "type": "PET",
-    "count": 3,
-    "symptoms": []
-  }, {
-    "type": "BIRD",
-    "count": 17,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 1
-    }, {
-      "type": "RESPIRATORY_TRACT",
-      "count": 14
-    }, {
-      "type": "DIGESTIVE_TRACT",
-      "count": 1
+      "count": 1,
+      "dangerLevel": 0,
+      "resourceLinks": ["http://opendream.org/data?id=209061"]
     }]
   }, {
-    "type": "FARM",
-    "count": 3,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 1
-    }]
-  }, {
-    "type": "EXOTIC",
-    "count": 1,
-    "symptoms": []
-  }]
-}, {
-  "id": "62daae2f-e95c-43d4-8ab5-ffcb4a3bb4b5",
-  "lat": 16.331000400594036,
-  "lng": 103.63766472759077,
-  "members": [{
-    "type": "HUMAN",
-    "count": 3,
-    "symptoms": []
-  }, {
-    "type": "BIRD",
-    "count": 7,
-    "symptoms": [{
-      "type": "RESPIRATORY_TRACT",
-      "count": 6
-    }]
-  }, {
-    "type": "FARM",
-    "count": 6,
-    "symptoms": [{
-      "type": "NERVOUS_SIGNALS",
-      "count": 1
-    }, {
-      "type": "MUSCLE_PAIN",
-      "count": 3
-    }]
-  }, {
-    "type": "EXOTIC",
-    "count": 1,
-    "symptoms": []
-  }]
-}, {
-  "id": "a012dc46-168f-456d-b5de-c60b8e07caef",
-  "lat": 16.853771308064328,
-  "lng": 103.50636330661659,
-  "members": [{
-    "type": "HUMAN",
-    "count": 1,
-    "symptoms": []
-  }, {
-    "type": "PET",
-    "count": 3,
-    "symptoms": [{
-      "type": "MUSCLE_PAIN",
-      "count": 2
-    }]
-  }, {
-    "type": "BIRD",
-    "count": 10,
-    "symptoms": [{
-      "type": "RESPIRATORY_TRACT",
-      "count": 7
-    }]
-  }, {
-    "type": "FARM",
-    "count": 7,
-    "symptoms": [{
-      "type": "RESPIRATORY_TRACT",
-      "count": 3
-    }]
-  }, {
-    "type": "EXOTIC",
-    "count": 3,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 1
-    }]
-  }]
-}, {
-  "id": "41ba68ac-13ec-4878-a832-052e197d63ce",
-  "lat": 18.73866990269525,
-  "lng": 104.97611785717987,
-  "members": [{
     "type": "HUMAN",
     "count": 4,
     "symptoms": [{
-      "type": "SKIN_PROBLEM",
-      "count": 3
-    }]
-  }, {
-    "type": "PET",
-    "count": 2,
-    "symptoms": [{
       "type": "HIGH_TEMPERATURE",
-      "count": 1
-    }]
-  }, {
-    "type": "BIRD",
-    "count": 3,
-    "symptoms": []
-  }, {
-    "type": "EXOTIC",
-    "count": 2,
-    "symptoms": [{
+      "count": 1,
+      "dangerLevel": 4,
+      "resourceLinks": ["http://opendream.org/data?id=63753"]
+    }, {
       "type": "NERVOUS_SIGNALS",
-      "count": 1
-    }]
-  }]
-}, {
-  "id": "9f5a8d02-1608-46a3-a98a-907fe8ebf5c5",
-  "lat": 18.481471971504284,
-  "lng": 100.89434717792346,
-  "members": [{
-    "type": "HUMAN",
-    "count": 3,
-    "symptoms": [{
-      "type": "RESPIRATORY_TRACT",
-      "count": 1
-    }]
-  }, {
-    "type": "PET",
-    "count": 2,
-    "symptoms": []
-  }, {
-    "type": "BIRD",
-    "count": 5,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 1
+      "count": 1,
+      "dangerLevel": 2,
+      "resourceLinks": ["http://opendream.org/data?id=816513"]
     }, {
       "type": "MUSCLE_PAIN",
-      "count": 3
-    }]
-  }, {
-    "type": "FARM",
-    "count": 6,
-    "symptoms": [{
-      "type": "SKIN_PROBLEM",
-      "count": 2
-    }]
-  }, {
-    "type": "EXOTIC",
-    "count": 2,
-    "symptoms": [{
-      "type": "NERVOUS_SIGNALS",
-      "count": 1
+      "count": 1,
+      "dangerLevel": 4,
+      "resourceLinks": ["http://opendream.org/data?id=395078"]
     }]
   }]
 }, {
-  "id": "3d64f1f4-a45c-425a-baf1-897bad87e3ea",
-  "lat": 17.586094244555007,
-  "lng": 102.59361005897121,
+  "id": "001eb84e-8dca-40e3-b8e3-20130177f6ba",
+  "lat": 15.445683916732492,
+  "lng": 100.76151616233157,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
   "members": [{
-    "type": "HUMAN",
+    "type": "PET",
     "count": 3,
     "symptoms": []
   }, {
     "type": "BIRD",
-    "count": 19,
+    "count": 4,
+    "symptoms": []
+  }, {
+    "type": "EXOTIC",
+    "count": 2,
+    "symptoms": [{
+      "type": "SKIN_PROBLEM",
+      "count": 1,
+      "dangerLevel": 1,
+      "resourceLinks": ["http://opendream.org/data?id=923507"]
+    }]
+  }, {
+    "type": "HUMAN",
+    "count": 4,
+    "symptoms": [{
+      "type": "RESPIRATORY_TRACT",
+      "count": 1,
+      "dangerLevel": 2,
+      "resourceLinks": ["http://opendream.org/data?id=970739"]
+    }, {
+      "type": "DIGESTIVE_TRACT",
+      "count": 2,
+      "dangerLevel": 2,
+      "resourceLinks": ["http://opendream.org/data?id=844222"]
+    }]
+  }]
+}, {
+  "id": "4836c67a-7fb7-47d9-873b-c5c2073d7811",
+  "lat": 17.331201354886574,
+  "lng": 103.00095134343314,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
+    "type": "PET",
+    "count": 1,
+    "symptoms": []
+  }, {
+    "type": "BIRD",
+    "count": 14,
     "symptoms": [{
       "type": "DIGESTIVE_TRACT",
-      "count": 3
+      "count": 5,
+      "dangerLevel": 3,
+      "resourceLinks": ["http://opendream.org/data?id=871574"]
     }]
   }, {
     "type": "FARM",
     "count": 8,
     "symptoms": [{
       "type": "SKIN_PROBLEM",
-      "count": 5
+      "count": 6,
+      "dangerLevel": 2,
+      "resourceLinks": ["http://opendream.org/data?id=647012"]
+    }, {
+      "type": "DIGESTIVE_TRACT",
+      "count": 1,
+      "dangerLevel": 3,
+      "resourceLinks": ["http://opendream.org/data?id=876216"]
     }]
   }, {
     "type": "EXOTIC",
     "count": 3,
     "symptoms": []
+  }, {
+    "type": "HUMAN",
+    "count": 4,
+    "symptoms": []
   }]
 }, {
-  "id": "91a2eaba-7cae-43b7-994e-fc5f0a5a0721",
-  "lat": 15.599174584065782,
-  "lng": 104.42871121661639,
+  "id": "7b464795-fc75-4ffb-8367-fcda6df8bc5d",
+  "lat": 15.227658487668444,
+  "lng": 101.98829644467321,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
   "members": [{
-    "type": "HUMAN",
-    "count": 5,
-    "symptoms": [{
-      "type": "NERVOUS_SIGNALS",
-      "count": 3
-    }]
-  }, {
     "type": "PET",
     "count": 2,
     "symptoms": []
@@ -453,45 +218,922 @@
     "type": "BIRD",
     "count": 13,
     "symptoms": [{
+      "type": "DIGESTIVE_TRACT",
+      "count": 3,
+      "dangerLevel": 3,
+      "resourceLinks": ["http://opendream.org/data?id=77119"]
+    }]
+  }, {
+    "type": "FARM",
+    "count": 5,
+    "symptoms": [{
       "type": "HIGH_TEMPERATURE",
-      "count": 4
+      "count": 3,
+      "dangerLevel": 3,
+      "resourceLinks": ["http://opendream.org/data?id=647278"]
     }, {
-      "type": "MUSCLE_PAIN",
-      "count": 5
+      "type": "NERVOUS_SIGNALS",
+      "count": 1,
+      "dangerLevel": 4,
+      "resourceLinks": ["http://opendream.org/data?id=766628"]
+    }]
+  }, {
+    "type": "EXOTIC",
+    "count": 2,
+    "symptoms": [{
+      "type": "NERVOUS_SIGNALS",
+      "count": 1,
+      "dangerLevel": 4,
+      "resourceLinks": ["http://opendream.org/data?id=874011"]
+    }]
+  }, {
+    "type": "HUMAN",
+    "count": 2,
+    "symptoms": []
+  }]
+}, {
+  "id": "71cf7c79-9905-4071-b115-dba0a77e8809",
+  "lat": 17.251074170832236,
+  "lng": 102.38725400030407,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
+    "type": "PET",
+    "count": 2,
+    "symptoms": [{
+      "type": "HIGH_TEMPERATURE",
+      "count": 1,
+      "dangerLevel": 2,
+      "resourceLinks": ["http://opendream.org/data?id=779984"]
+    }]
+  }, {
+    "type": "BIRD",
+    "count": 18,
+    "symptoms": [{
+      "type": "SKIN_PROBLEM",
+      "count": 3,
+      "dangerLevel": 2,
+      "resourceLinks": ["http://opendream.org/data?id=369030"]
+    }, {
+      "type": "DIGESTIVE_TRACT",
+      "count": 3,
+      "dangerLevel": 3,
+      "resourceLinks": ["http://opendream.org/data?id=206558"]
+    }]
+  }, {
+    "type": "EXOTIC",
+    "count": 3,
+    "symptoms": [{
+      "type": "NERVOUS_SIGNALS",
+      "count": 1,
+      "dangerLevel": 1,
+      "resourceLinks": ["http://opendream.org/data?id=949821"]
+    }, {
+      "type": "SKIN_PROBLEM",
+      "count": 1,
+      "dangerLevel": 4,
+      "resourceLinks": ["http://opendream.org/data?id=797804"]
+    }]
+  }, {
+    "type": "HUMAN",
+    "count": 4,
+    "symptoms": []
+  }]
+}, {
+  "id": "9baf5091-3ae5-4c3d-b973-fffe1f52491f",
+  "lat": 17.394854326338002,
+  "lng": 99.55037533840819,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
+    "type": "PET",
+    "count": 2,
+    "symptoms": [{
+      "type": "RESPIRATORY_TRACT",
+      "count": 1,
+      "dangerLevel": 4,
+      "resourceLinks": ["http://opendream.org/data?id=981993"]
+    }]
+  }, {
+    "type": "BIRD",
+    "count": 18,
+    "symptoms": [{
+      "type": "NERVOUS_SIGNALS",
+      "count": 17,
+      "dangerLevel": 1,
+      "resourceLinks": ["http://opendream.org/data?id=637727"]
     }]
   }, {
     "type": "FARM",
     "count": 7,
     "symptoms": [{
+      "type": "RESPIRATORY_TRACT",
+      "count": 6,
+      "dangerLevel": 4,
+      "resourceLinks": ["http://opendream.org/data?id=200944"]
+    }]
+  }, {
+    "type": "EXOTIC",
+    "count": 3,
+    "symptoms": [{
       "type": "NERVOUS_SIGNALS",
-      "count": 4
+      "count": 1,
+      "dangerLevel": 4,
+      "resourceLinks": ["http://opendream.org/data?id=46770"]
     }, {
       "type": "RESPIRATORY_TRACT",
-      "count": 1
+      "count": 1,
+      "dangerLevel": 1,
+      "resourceLinks": ["http://opendream.org/data?id=659998"]
+    }]
+  }, {
+    "type": "HUMAN",
+    "count": 3,
+    "symptoms": [{
+      "type": "NERVOUS_SIGNALS",
+      "count": 2,
+      "dangerLevel": 0,
+      "resourceLinks": ["http://opendream.org/data?id=485718"]
+    }]
+  }]
+}, {
+  "id": "63ecd942-b498-4b69-a09f-1e86e4b16474",
+  "lat": 16.019363228743757,
+  "lng": 104.69158281268443,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
+    "type": "PET",
+    "count": 1,
+    "symptoms": []
+  }, {
+    "type": "BIRD",
+    "count": 2,
+    "symptoms": []
+  }, {
+    "type": "EXOTIC",
+    "count": 3,
+    "symptoms": [{
+      "type": "HIGH_TEMPERATURE",
+      "count": 1,
+      "dangerLevel": 3,
+      "resourceLinks": ["http://opendream.org/data?id=796405"]
+    }, {
+      "type": "NERVOUS_SIGNALS",
+      "count": 1,
+      "dangerLevel": 3,
+      "resourceLinks": ["http://opendream.org/data?id=988212"]
+    }]
+  }, {
+    "type": "HUMAN",
+    "count": 5,
+    "symptoms": []
+  }]
+}, {
+  "id": "0b62149b-dae0-4027-b74a-ea3a34127800",
+  "lat": 15.600711740136274,
+  "lng": 99.68546459512216,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
+    "type": "PET",
+    "count": 2,
+    "symptoms": []
+  }, {
+    "type": "BIRD",
+    "count": 4,
+    "symptoms": []
+  }, {
+    "type": "FARM",
+    "count": 6,
+    "symptoms": []
+  }, {
+    "type": "EXOTIC",
+    "count": 1,
+    "symptoms": []
+  }, {
+    "type": "HUMAN",
+    "count": 1,
+    "symptoms": []
+  }]
+}, {
+  "id": "b636bcd1-2b0c-4414-acae-2e9524a9342e",
+  "lat": 17.52801563136414,
+  "lng": 102.34809544168887,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
+    "type": "BIRD",
+    "count": 7,
+    "symptoms": [{
+      "type": "NERVOUS_SIGNALS",
+      "count": 2,
+      "dangerLevel": 4,
+      "resourceLinks": ["http://opendream.org/data?id=463821"]
     }, {
       "type": "DIGESTIVE_TRACT",
-      "count": 1
+      "count": 1,
+      "dangerLevel": 2,
+      "resourceLinks": ["http://opendream.org/data?id=170482"]
+    }]
+  }, {
+    "type": "FARM",
+    "count": 6,
+    "symptoms": [{
+      "type": "HIGH_TEMPERATURE",
+      "count": 1,
+      "dangerLevel": 3,
+      "resourceLinks": ["http://opendream.org/data?id=385155"]
+    }, {
+      "type": "SKIN_PROBLEM",
+      "count": 1,
+      "dangerLevel": 0,
+      "resourceLinks": ["http://opendream.org/data?id=689975"]
+    }]
+  }, {
+    "type": "EXOTIC",
+    "count": 2,
+    "symptoms": []
+  }, {
+    "type": "HUMAN",
+    "count": 4,
+    "symptoms": [{
+      "type": "HIGH_TEMPERATURE",
+      "count": 2,
+      "dangerLevel": 0,
+      "resourceLinks": ["http://opendream.org/data?id=197649"]
+    }]
+  }]
+}, {
+  "id": "866039b5-6392-40de-8ded-754182af10d3",
+  "lat": 15.671158333075928,
+  "lng": 99.39213667748436,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
+    "type": "PET",
+    "count": 2,
+    "symptoms": [{
+      "type": "RESPIRATORY_TRACT",
+      "count": 1,
+      "dangerLevel": 0,
+      "resourceLinks": ["http://opendream.org/data?id=143575"]
+    }]
+  }, {
+    "type": "BIRD",
+    "count": 3,
+    "symptoms": [{
+      "type": "HIGH_TEMPERATURE",
+      "count": 2,
+      "dangerLevel": 0,
+      "resourceLinks": ["http://opendream.org/data?id=117467"]
+    }]
+  }, {
+    "type": "FARM",
+    "count": 4,
+    "symptoms": []
+  }, {
+    "type": "HUMAN",
+    "count": 2,
+    "symptoms": [{
+      "type": "HIGH_TEMPERATURE",
+      "count": 1,
+      "dangerLevel": 2,
+      "resourceLinks": ["http://opendream.org/data?id=282381"]
+    }]
+  }]
+}, {
+  "id": "646ecdfc-5636-448a-aecf-15ecfc6096f8",
+  "lat": 16.16673238554115,
+  "lng": 105.07786285393111,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
+    "type": "PET",
+    "count": 1,
+    "symptoms": []
+  }, {
+    "type": "BIRD",
+    "count": 11,
+    "symptoms": [{
+      "type": "HIGH_TEMPERATURE",
+      "count": 5,
+      "dangerLevel": 3,
+      "resourceLinks": ["http://opendream.org/data?id=834238"]
+    }, {
+      "type": "NERVOUS_SIGNALS",
+      "count": 1,
+      "dangerLevel": 3,
+      "resourceLinks": ["http://opendream.org/data?id=940345"]
+    }, {
+      "type": "SKIN_PROBLEM",
+      "count": 1,
+      "dangerLevel": 3,
+      "resourceLinks": ["http://opendream.org/data?id=495150"]
+    }]
+  }, {
+    "type": "FARM",
+    "count": 9,
+    "symptoms": [{
+      "type": "SKIN_PROBLEM",
+      "count": 1,
+      "dangerLevel": 1,
+      "resourceLinks": ["http://opendream.org/data?id=836826"]
+    }]
+  }, {
+    "type": "EXOTIC",
+    "count": 2,
+    "symptoms": [{
+      "type": "HIGH_TEMPERATURE",
+      "count": 1,
+      "dangerLevel": 4,
+      "resourceLinks": ["http://opendream.org/data?id=928849"]
+    }]
+  }, {
+    "type": "HUMAN",
+    "count": 2,
+    "symptoms": []
+  }]
+}, {
+  "id": "4835cbd0-95c7-4490-b500-1b321c46accb",
+  "lat": 15.913164380546839,
+  "lng": 103.4038546946408,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
+    "type": "PET",
+    "count": 2,
+    "symptoms": []
+  }, {
+    "type": "BIRD",
+    "count": 19,
+    "symptoms": [{
+      "type": "DIGESTIVE_TRACT",
+      "count": 17,
+      "dangerLevel": 0,
+      "resourceLinks": ["http://opendream.org/data?id=981184"]
+    }]
+  }, {
+    "type": "FARM",
+    "count": 2,
+    "symptoms": [{
+      "type": "HIGH_TEMPERATURE",
+      "count": 1,
+      "dangerLevel": 1,
+      "resourceLinks": ["http://opendream.org/data?id=54800"]
+    }]
+  }, {
+    "type": "HUMAN",
+    "count": 5,
+    "symptoms": [{
+      "type": "HIGH_TEMPERATURE",
+      "count": 4,
+      "dangerLevel": 1,
+      "resourceLinks": ["http://opendream.org/data?id=265532"]
+    }]
+  }]
+}, {
+  "id": "8ff4692f-9461-4a0f-b055-c65e51868db1",
+  "lat": 15.682484003777903,
+  "lng": 101.29709457189735,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
+    "type": "PET",
+    "count": 3,
+    "symptoms": []
+  }, {
+    "type": "BIRD",
+    "count": 5,
+    "symptoms": [{
+      "type": "SKIN_PROBLEM",
+      "count": 4,
+      "dangerLevel": 3,
+      "resourceLinks": ["http://opendream.org/data?id=279596"]
+    }]
+  }, {
+    "type": "FARM",
+    "count": 9,
+    "symptoms": []
+  }, {
+    "type": "EXOTIC",
+    "count": 2,
+    "symptoms": [{
+      "type": "HIGH_TEMPERATURE",
+      "count": 1,
+      "dangerLevel": 1,
+      "resourceLinks": ["http://opendream.org/data?id=275622"]
+    }]
+  }, {
+    "type": "HUMAN",
+    "count": 2,
+    "symptoms": []
+  }]
+}, {
+  "id": "0e062e3f-2644-461a-bf4b-5fc1fd835ba9",
+  "lat": 17.45166461619697,
+  "lng": 102.35508261374162,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
+    "type": "PET",
+    "count": 3,
+    "symptoms": [{
+      "type": "MUSCLE_PAIN",
+      "count": 2,
+      "dangerLevel": 0,
+      "resourceLinks": ["http://opendream.org/data?id=120611"]
+    }]
+  }, {
+    "type": "HUMAN",
+    "count": 5,
+    "symptoms": []
+  }]
+}, {
+  "id": "51816eaf-f6ba-44e1-bfb7-978f0e2ce1c4",
+  "lat": 16.290688531641113,
+  "lng": 99.78343798814294,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
+    "type": "PET",
+    "count": 3,
+    "symptoms": [{
+      "type": "RESPIRATORY_TRACT",
+      "count": 2,
+      "dangerLevel": 4,
+      "resourceLinks": ["http://opendream.org/data?id=656327"]
+    }]
+  }, {
+    "type": "BIRD",
+    "count": 2,
+    "symptoms": [{
+      "type": "HIGH_TEMPERATURE",
+      "count": 1,
+      "dangerLevel": 1,
+      "resourceLinks": ["http://opendream.org/data?id=576941"]
+    }]
+  }, {
+    "type": "FARM",
+    "count": 2,
+    "symptoms": [{
+      "type": "HIGH_TEMPERATURE",
+      "count": 1,
+      "dangerLevel": 0,
+      "resourceLinks": ["http://opendream.org/data?id=976451"]
     }]
   }, {
     "type": "EXOTIC",
     "count": 1,
     "symptoms": []
+  }, {
+    "type": "HUMAN",
+    "count": 5,
+    "symptoms": [{
+      "type": "HIGH_TEMPERATURE",
+      "count": 2,
+      "dangerLevel": 3,
+      "resourceLinks": ["http://opendream.org/data?id=393100"]
+    }, {
+      "type": "NERVOUS_SIGNALS",
+      "count": 2,
+      "dangerLevel": 3,
+      "resourceLinks": ["http://opendream.org/data?id=581836"]
+    }]
   }]
 }, {
-  "id": "3369ea62-66c7-40ca-8ab5-acdb2ec2bf23",
-  "lat": 17.59789010623414,
-  "lng": 99.71317897728731,
+  "id": "3750cb4e-ad61-4394-8d4c-bbffb0f5cd86",
+  "lat": 15.838199397719956,
+  "lng": 101.79053116318693,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
   "members": [{
+    "type": "PET",
+    "count": 1,
+    "symptoms": []
+  }, {
+    "type": "BIRD",
+    "count": 6,
+    "symptoms": []
+  }, {
+    "type": "FARM",
+    "count": 3,
+    "symptoms": []
+  }, {
+    "type": "EXOTIC",
+    "count": 1,
+    "symptoms": []
+  }, {
+    "type": "HUMAN",
+    "count": 5,
+    "symptoms": [{
+      "type": "HIGH_TEMPERATURE",
+      "count": 2,
+      "dangerLevel": 0,
+      "resourceLinks": ["http://opendream.org/data?id=645695"]
+    }, {
+      "type": "DIGESTIVE_TRACT",
+      "count": 2,
+      "dangerLevel": 3,
+      "resourceLinks": ["http://opendream.org/data?id=611638"]
+    }]
+  }]
+}, {
+  "id": "506a735f-c0fa-450f-a3fe-c5d4e9d8a1a7",
+  "lat": 16.535698130456783,
+  "lng": 98.85045876551706,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
+    "type": "PET",
+    "count": 2,
+    "symptoms": [{
+      "type": "RESPIRATORY_TRACT",
+      "count": 1,
+      "dangerLevel": 3,
+      "resourceLinks": ["http://opendream.org/data?id=374738"]
+    }]
+  }, {
+    "type": "BIRD",
+    "count": 7,
+    "symptoms": [{
+      "type": "HIGH_TEMPERATURE",
+      "count": 3,
+      "dangerLevel": 2,
+      "resourceLinks": ["http://opendream.org/data?id=794557"]
+    }, {
+      "type": "RESPIRATORY_TRACT",
+      "count": 3,
+      "dangerLevel": 1,
+      "resourceLinks": ["http://opendream.org/data?id=241615"]
+    }]
+  }, {
+    "type": "FARM",
+    "count": 7,
+    "symptoms": [{
+      "type": "HIGH_TEMPERATURE",
+      "count": 5,
+      "dangerLevel": 0,
+      "resourceLinks": ["http://opendream.org/data?id=154796"]
+    }]
+  }, {
+    "type": "EXOTIC",
+    "count": 3,
+    "symptoms": []
+  }, {
+    "type": "HUMAN",
+    "count": 2,
+    "symptoms": [{
+      "type": "DIGESTIVE_TRACT",
+      "count": 1,
+      "dangerLevel": 0,
+      "resourceLinks": ["http://opendream.org/data?id=500285"]
+    }]
+  }]
+}, {
+  "id": "3c7c98e2-9422-4bf0-9514-ae5e5cfaf10e",
+  "lat": 19.41804873552707,
+  "lng": 101.09562009701186,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
+    "type": "BIRD",
+    "count": 11,
+    "symptoms": []
+  }, {
+    "type": "FARM",
+    "count": 6,
+    "symptoms": [{
+      "type": "SKIN_PROBLEM",
+      "count": 3,
+      "dangerLevel": 3,
+      "resourceLinks": ["http://opendream.org/data?id=774247"]
+    }, {
+      "type": "DIGESTIVE_TRACT",
+      "count": 2,
+      "dangerLevel": 0,
+      "resourceLinks": ["http://opendream.org/data?id=82740"]
+    }]
+  }, {
+    "type": "EXOTIC",
+    "count": 1,
+    "symptoms": []
+  }, {
+    "type": "HUMAN",
+    "count": 3,
+    "symptoms": [{
+      "type": "NERVOUS_SIGNALS",
+      "count": 2,
+      "dangerLevel": 0,
+      "resourceLinks": ["http://opendream.org/data?id=789983"]
+    }]
+  }]
+}, {
+  "id": "24cdd62b-7e56-4481-be05-1c8683e76710",
+  "lat": 17.758999510356198,
+  "lng": 102.87235894029673,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
+    "type": "BIRD",
+    "count": 5,
+    "symptoms": [{
+      "type": "SKIN_PROBLEM",
+      "count": 3,
+      "dangerLevel": 0,
+      "resourceLinks": ["http://opendream.org/data?id=347105"]
+    }, {
+      "type": "RESPIRATORY_TRACT",
+      "count": 1,
+      "dangerLevel": 1,
+      "resourceLinks": ["http://opendream.org/data?id=363994"]
+    }]
+  }, {
+    "type": "FARM",
+    "count": 9,
+    "symptoms": [{
+      "type": "DIGESTIVE_TRACT",
+      "count": 8,
+      "dangerLevel": 2,
+      "resourceLinks": ["http://opendream.org/data?id=937264"]
+    }]
+  }, {
+    "type": "HUMAN",
+    "count": 5,
+    "symptoms": [{
+      "type": "SKIN_PROBLEM",
+      "count": 4,
+      "dangerLevel": 2,
+      "resourceLinks": ["http://opendream.org/data?id=807767"]
+    }]
+  }]
+}, {
+  "id": "1aa18fc9-3451-468b-bd74-c913ea2731cb",
+  "lat": 18.819889964005654,
+  "lng": 103.33119396447535,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
+    "type": "PET",
+    "count": 2,
+    "symptoms": [{
+      "type": "SKIN_PROBLEM",
+      "count": 1,
+      "dangerLevel": 2,
+      "resourceLinks": ["http://opendream.org/data?id=196263"]
+    }]
+  }, {
+    "type": "BIRD",
+    "count": 17,
+    "symptoms": [{
+      "type": "SKIN_PROBLEM",
+      "count": 8,
+      "dangerLevel": 3,
+      "resourceLinks": ["http://opendream.org/data?id=597136"]
+    }]
+  }, {
+    "type": "FARM",
+    "count": 5,
+    "symptoms": [{
+      "type": "RESPIRATORY_TRACT",
+      "count": 2,
+      "dangerLevel": 2,
+      "resourceLinks": ["http://opendream.org/data?id=570081"]
+    }]
+  }, {
+    "type": "EXOTIC",
+    "count": 1,
+    "symptoms": []
+  }, {
+    "type": "HUMAN",
+    "count": 2,
+    "symptoms": []
+  }]
+}, {
+  "id": "97a6fad7-035f-46fa-9008-cd225c4460e0",
+  "lat": 15.632473298255855,
+  "lng": 104.28863766660554,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
+    "type": "BIRD",
+    "count": 7,
+    "symptoms": []
+  }, {
+    "type": "FARM",
+    "count": 4,
+    "symptoms": [{
+      "type": "HIGH_TEMPERATURE",
+      "count": 3,
+      "dangerLevel": 2,
+      "resourceLinks": ["http://opendream.org/data?id=355473"]
+    }]
+  }, {
+    "type": "EXOTIC",
+    "count": 2,
+    "symptoms": [{
+      "type": "SKIN_PROBLEM",
+      "count": 1,
+      "dangerLevel": 2,
+      "resourceLinks": ["http://opendream.org/data?id=184507"]
+    }]
+  }, {
+    "type": "HUMAN",
+    "count": 4,
+    "symptoms": []
+  }]
+}, {
+  "id": "d6610a4b-e63a-4b9b-b8a8-a98952be1893",
+  "lat": 17.042378642500505,
+  "lng": 101.00210640046902,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
+    "type": "PET",
+    "count": 1,
+    "symptoms": []
+  }, {
+    "type": "BIRD",
+    "count": 7,
+    "symptoms": [{
+      "type": "MUSCLE_PAIN",
+      "count": 5,
+      "dangerLevel": 0,
+      "resourceLinks": ["http://opendream.org/data?id=131387"]
+    }]
+  }, {
+    "type": "FARM",
+    "count": 1,
+    "symptoms": []
+  }, {
     "type": "HUMAN",
     "count": 4,
     "symptoms": [{
-      "type": "RESPIRATORY_TRACT",
-      "count": 1
-    }, {
-      "type": "DIGESTIVE_TRACT",
-      "count": 1
+      "type": "NERVOUS_SIGNALS",
+      "count": 1,
+      "dangerLevel": 3,
+      "resourceLinks": ["http://opendream.org/data?id=290743"]
     }]
-  }, {
+  }]
+}, {
+  "id": "57ce8970-91d3-483e-9a7b-9370e49cb4e7",
+  "lat": 18.134368138646703,
+  "lng": 99.94235284933241,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
     "type": "PET",
     "count": 1,
     "symptoms": []
@@ -500,132 +1142,1497 @@
     "count": 16,
     "symptoms": [{
       "type": "SKIN_PROBLEM",
-      "count": 14
+      "count": 14,
+      "dangerLevel": 2,
+      "resourceLinks": ["http://opendream.org/data?id=977488"]
+    }, {
+      "type": "DIGESTIVE_TRACT",
+      "count": 1,
+      "dangerLevel": 0,
+      "resourceLinks": ["http://opendream.org/data?id=892323"]
     }]
   }, {
     "type": "FARM",
     "count": 3,
-    "symptoms": [{
-      "type": "SKIN_PROBLEM",
-      "count": 1
-    }, {
-      "type": "MUSCLE_PAIN",
-      "count": 1
-    }]
+    "symptoms": []
   }, {
     "type": "EXOTIC",
-    "count": 2,
+    "count": 3,
+    "symptoms": []
+  }, {
+    "type": "HUMAN",
+    "count": 5,
     "symptoms": []
   }]
 }, {
-  "id": "3f0efcb0-0935-4fa0-ab67-fe8f9a736b9d",
-  "lat": 15.83754904933061,
-  "lng": 103.00563421267418,
+  "id": "84fcdaf3-2348-49bd-9405-24f4fc162a70",
+  "lat": 15.793753364800468,
+  "lng": 99.23771974545028,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
   "members": [{
-    "type": "HUMAN",
-    "count": 2,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 1
-    }]
-  }, {
     "type": "PET",
     "count": 1,
     "symptoms": []
   }, {
     "type": "BIRD",
     "count": 1,
+    "symptoms": []
+  }, {
+    "type": "FARM",
+    "count": 6,
+    "symptoms": [{
+      "type": "SKIN_PROBLEM",
+      "count": 3,
+      "dangerLevel": 1,
+      "resourceLinks": ["http://opendream.org/data?id=934354"]
+    }]
+  }, {
+    "type": "EXOTIC",
+    "count": 2,
+    "symptoms": [{
+      "type": "HIGH_TEMPERATURE",
+      "count": 1,
+      "dangerLevel": 2,
+      "resourceLinks": ["http://opendream.org/data?id=62887"]
+    }]
+  }, {
+    "type": "HUMAN",
+    "count": 4,
+    "symptoms": []
+  }]
+}, {
+  "id": "22cbb5d3-423d-4517-90ba-7dd239b3ac57",
+  "lat": 17.551049327883874,
+  "lng": 100.89785967817052,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
+    "type": "BIRD",
+    "count": 1,
+    "symptoms": []
+  }, {
+    "type": "FARM",
+    "count": 6,
+    "symptoms": []
+  }, {
+    "type": "EXOTIC",
+    "count": 2,
+    "symptoms": [{
+      "type": "NERVOUS_SIGNALS",
+      "count": 1,
+      "dangerLevel": 3,
+      "resourceLinks": ["http://opendream.org/data?id=983603"]
+    }]
+  }, {
+    "type": "HUMAN",
+    "count": 4,
+    "symptoms": []
+  }]
+}, {
+  "id": "965ff3a9-590d-496c-8d6c-7b357e512be0",
+  "lat": 16.673864560717647,
+  "lng": 105.41493130043195,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
+    "type": "PET",
+    "count": 1,
+    "symptoms": []
+  }, {
+    "type": "BIRD",
+    "count": 1,
+    "symptoms": []
+  }, {
+    "type": "FARM",
+    "count": 5,
+    "symptoms": [{
+      "type": "HIGH_TEMPERATURE",
+      "count": 2,
+      "dangerLevel": 0,
+      "resourceLinks": ["http://opendream.org/data?id=922699"]
+    }]
+  }, {
+    "type": "EXOTIC",
+    "count": 2,
+    "symptoms": [{
+      "type": "NERVOUS_SIGNALS",
+      "count": 1,
+      "dangerLevel": 1,
+      "resourceLinks": ["http://opendream.org/data?id=44409"]
+    }]
+  }, {
+    "type": "HUMAN",
+    "count": 4,
+    "symptoms": [{
+      "type": "HIGH_TEMPERATURE",
+      "count": 2,
+      "dangerLevel": 2,
+      "resourceLinks": ["http://opendream.org/data?id=117860"]
+    }, {
+      "type": "NERVOUS_SIGNALS",
+      "count": 1,
+      "dangerLevel": 1,
+      "resourceLinks": ["http://opendream.org/data?id=358922"]
+    }]
+  }]
+}, {
+  "id": "b24a0275-88b4-45b8-9472-ae209f692cce",
+  "lat": 18.330930062630635,
+  "lng": 101.24235798238898,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
+    "type": "PET",
+    "count": 3,
+    "symptoms": [{
+      "type": "NERVOUS_SIGNALS",
+      "count": 1,
+      "dangerLevel": 3,
+      "resourceLinks": ["http://opendream.org/data?id=785708"]
+    }]
+  }, {
+    "type": "BIRD",
+    "count": 5,
+    "symptoms": [{
+      "type": "HIGH_TEMPERATURE",
+      "count": 4,
+      "dangerLevel": 2,
+      "resourceLinks": ["http://opendream.org/data?id=608575"]
+    }]
+  }, {
+    "type": "FARM",
+    "count": 5,
+    "symptoms": [{
+      "type": "HIGH_TEMPERATURE",
+      "count": 3,
+      "dangerLevel": 0,
+      "resourceLinks": ["http://opendream.org/data?id=552933"]
+    }]
+  }, {
+    "type": "EXOTIC",
+    "count": 1,
+    "symptoms": []
+  }, {
+    "type": "HUMAN",
+    "count": 5,
+    "symptoms": [{
+      "type": "RESPIRATORY_TRACT",
+      "count": 3,
+      "dangerLevel": 3,
+      "resourceLinks": ["http://opendream.org/data?id=773603"]
+    }]
+  }]
+}, {
+  "id": "5ed45a33-6fd0-4d3c-bba0-7e4933e01026",
+  "lat": 17.59006467884022,
+  "lng": 99.06641241471861,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
+    "type": "PET",
+    "count": 2,
+    "symptoms": [{
+      "type": "SKIN_PROBLEM",
+      "count": 1,
+      "dangerLevel": 2,
+      "resourceLinks": ["http://opendream.org/data?id=981043"]
+    }]
+  }, {
+    "type": "BIRD",
+    "count": 3,
+    "symptoms": [{
+      "type": "DIGESTIVE_TRACT",
+      "count": 1,
+      "dangerLevel": 3,
+      "resourceLinks": ["http://opendream.org/data?id=84375"]
+    }]
+  }, {
+    "type": "FARM",
+    "count": 2,
+    "symptoms": []
+  }, {
+    "type": "EXOTIC",
+    "count": 1,
+    "symptoms": []
+  }, {
+    "type": "HUMAN",
+    "count": 5,
+    "symptoms": [{
+      "type": "HIGH_TEMPERATURE",
+      "count": 3,
+      "dangerLevel": 3,
+      "resourceLinks": ["http://opendream.org/data?id=917786"]
+    }]
+  }]
+}, {
+  "id": "20500d29-f450-4d90-b24b-f1d2c1d022cc",
+  "lat": 16.64328761890407,
+  "lng": 101.2894541047347,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
+    "type": "BIRD",
+    "count": 11,
+    "symptoms": [{
+      "type": "HIGH_TEMPERATURE",
+      "count": 7,
+      "dangerLevel": 2,
+      "resourceLinks": ["http://opendream.org/data?id=743439"]
+    }]
+  }, {
+    "type": "FARM",
+    "count": 7,
+    "symptoms": []
+  }, {
+    "type": "HUMAN",
+    "count": 3,
+    "symptoms": []
+  }]
+}, {
+  "id": "aaf8767b-dc67-42a6-9f40-a6da8de44f25",
+  "lat": 17.910689385167704,
+  "lng": 100.21062708287873,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
+    "type": "PET",
+    "count": 3,
+    "symptoms": []
+  }, {
+    "type": "BIRD",
+    "count": 3,
     "symptoms": []
   }, {
     "type": "FARM",
     "count": 4,
+    "symptoms": [{
+      "type": "HIGH_TEMPERATURE",
+      "count": 1,
+      "dangerLevel": 1,
+      "resourceLinks": ["http://opendream.org/data?id=112448"]
+    }, {
+      "type": "DIGESTIVE_TRACT",
+      "count": 2,
+      "dangerLevel": 3,
+      "resourceLinks": ["http://opendream.org/data?id=751826"]
+    }]
+  }, {
+    "type": "EXOTIC",
+    "count": 3,
+    "symptoms": []
+  }, {
+    "type": "HUMAN",
+    "count": 4,
+    "symptoms": []
+  }]
+}, {
+  "id": "c2b8f152-255c-47eb-8eb3-3e50425bc34a",
+  "lat": 19.17412236810579,
+  "lng": 103.62770651744864,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
+    "type": "PET",
+    "count": 3,
+    "symptoms": []
+  }, {
+    "type": "BIRD",
+    "count": 15,
+    "symptoms": [{
+      "type": "NERVOUS_SIGNALS",
+      "count": 5,
+      "dangerLevel": 3,
+      "resourceLinks": ["http://opendream.org/data?id=806817"]
+    }, {
+      "type": "SKIN_PROBLEM",
+      "count": 9,
+      "dangerLevel": 3,
+      "resourceLinks": ["http://opendream.org/data?id=230720"]
+    }]
+  }, {
+    "type": "EXOTIC",
+    "count": 3,
+    "symptoms": [{
+      "type": "HIGH_TEMPERATURE",
+      "count": 1,
+      "dangerLevel": 2,
+      "resourceLinks": ["http://opendream.org/data?id=890860"]
+    }]
+  }, {
+    "type": "HUMAN",
+    "count": 3,
+    "symptoms": [{
+      "type": "NERVOUS_SIGNALS",
+      "count": 1,
+      "dangerLevel": 4,
+      "resourceLinks": ["http://opendream.org/data?id=269868"]
+    }]
+  }]
+}, {
+  "id": "9d5e86c8-58b6-4088-94a8-f3438bd8db7a",
+  "lat": 17.124825599751034,
+  "lng": 102.69914795951753,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
+    "type": "PET",
+    "count": 2,
+    "symptoms": []
+  }, {
+    "type": "BIRD",
+    "count": 13,
+    "symptoms": [{
+      "type": "HIGH_TEMPERATURE",
+      "count": 9,
+      "dangerLevel": 1,
+      "resourceLinks": ["http://opendream.org/data?id=629306"]
+    }]
+  }, {
+    "type": "EXOTIC",
+    "count": 1,
+    "symptoms": []
+  }, {
+    "type": "HUMAN",
+    "count": 5,
+    "symptoms": []
+  }]
+}, {
+  "id": "2d99e20d-a3bf-44aa-b9b4-9744a45a1980",
+  "lat": 15.422493396520156,
+  "lng": 105.22844505443172,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
+    "type": "PET",
+    "count": 3,
+    "symptoms": []
+  }, {
+    "type": "BIRD",
+    "count": 7,
+    "symptoms": [{
+      "type": "HIGH_TEMPERATURE",
+      "count": 4,
+      "dangerLevel": 2,
+      "resourceLinks": ["http://opendream.org/data?id=690141"]
+    }]
+  }, {
+    "type": "FARM",
+    "count": 7,
+    "symptoms": [{
+      "type": "SKIN_PROBLEM",
+      "count": 3,
+      "dangerLevel": 2,
+      "resourceLinks": ["http://opendream.org/data?id=988301"]
+    }, {
+      "type": "DIGESTIVE_TRACT",
+      "count": 2,
+      "dangerLevel": 4,
+      "resourceLinks": ["http://opendream.org/data?id=106652"]
+    }]
+  }, {
+    "type": "EXOTIC",
+    "count": 2,
+    "symptoms": [{
+      "type": "NERVOUS_SIGNALS",
+      "count": 1,
+      "dangerLevel": 4,
+      "resourceLinks": ["http://opendream.org/data?id=270925"]
+    }]
+  }, {
+    "type": "HUMAN",
+    "count": 2,
+    "symptoms": []
+  }]
+}, {
+  "id": "9fc22181-3243-4687-864a-96f7883b9c05",
+  "lat": 15.91848304895279,
+  "lng": 103.43922974564549,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
+    "type": "PET",
+    "count": 2,
+    "symptoms": [{
+      "type": "HIGH_TEMPERATURE",
+      "count": 1,
+      "dangerLevel": 4,
+      "resourceLinks": ["http://opendream.org/data?id=857726"]
+    }]
+  }, {
+    "type": "BIRD",
+    "count": 6,
+    "symptoms": [{
+      "type": "RESPIRATORY_TRACT",
+      "count": 4,
+      "dangerLevel": 1,
+      "resourceLinks": ["http://opendream.org/data?id=412549"]
+    }]
+  }, {
+    "type": "FARM",
+    "count": 1,
+    "symptoms": []
+  }, {
+    "type": "EXOTIC",
+    "count": 1,
+    "symptoms": []
+  }, {
+    "type": "HUMAN",
+    "count": 4,
+    "symptoms": [{
+      "type": "MUSCLE_PAIN",
+      "count": 3,
+      "dangerLevel": 0,
+      "resourceLinks": ["http://opendream.org/data?id=375946"]
+    }]
+  }]
+}, {
+  "id": "9679fcb9-cbf9-4d69-9787-bb995c1d0858",
+  "lat": 16.889967449122945,
+  "lng": 102.27823063168896,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
+    "type": "PET",
+    "count": 1,
+    "symptoms": []
+  }, {
+    "type": "BIRD",
+    "count": 4,
+    "symptoms": []
+  }, {
+    "type": "FARM",
+    "count": 2,
+    "symptoms": []
+  }, {
+    "type": "EXOTIC",
+    "count": 2,
+    "symptoms": [{
+      "type": "HIGH_TEMPERATURE",
+      "count": 1,
+      "dangerLevel": 1,
+      "resourceLinks": ["http://opendream.org/data?id=690563"]
+    }]
+  }, {
+    "type": "HUMAN",
+    "count": 1,
+    "symptoms": []
+  }]
+}, {
+  "id": "e8b3b53a-dec5-443e-a9a2-a33fe5a2aa64",
+  "lat": 15.66563206504936,
+  "lng": 100.74200808507996,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
+    "type": "PET",
+    "count": 1,
+    "symptoms": []
+  }, {
+    "type": "BIRD",
+    "count": 15,
+    "symptoms": [{
+      "type": "NERVOUS_SIGNALS",
+      "count": 5,
+      "dangerLevel": 3,
+      "resourceLinks": ["http://opendream.org/data?id=786474"]
+    }, {
+      "type": "RESPIRATORY_TRACT",
+      "count": 3,
+      "dangerLevel": 0,
+      "resourceLinks": ["http://opendream.org/data?id=838982"]
+    }]
+  }, {
+    "type": "FARM",
+    "count": 7,
+    "symptoms": [{
+      "type": "DIGESTIVE_TRACT",
+      "count": 2,
+      "dangerLevel": 3,
+      "resourceLinks": ["http://opendream.org/data?id=149687"]
+    }]
+  }, {
+    "type": "EXOTIC",
+    "count": 1,
+    "symptoms": []
+  }, {
+    "type": "HUMAN",
+    "count": 2,
+    "symptoms": [{
+      "type": "SKIN_PROBLEM",
+      "count": 1,
+      "dangerLevel": 2,
+      "resourceLinks": ["http://opendream.org/data?id=965111"]
+    }]
+  }]
+}, {
+  "id": "13a33732-d17f-4f9b-8b6b-9fcfd755f9bd",
+  "lat": 14.91429857486433,
+  "lng": 104.90650055391743,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
+    "type": "PET",
+    "count": 1,
+    "symptoms": []
+  }, {
+    "type": "BIRD",
+    "count": 2,
+    "symptoms": []
+  }, {
+    "type": "FARM",
+    "count": 6,
+    "symptoms": [{
+      "type": "NERVOUS_SIGNALS",
+      "count": 3,
+      "dangerLevel": 3,
+      "resourceLinks": ["http://opendream.org/data?id=552140"]
+    }]
+  }, {
+    "type": "HUMAN",
+    "count": 1,
+    "symptoms": []
+  }]
+}, {
+  "id": "b30d77fe-0253-433f-aabe-b4192025f058",
+  "lat": 17.293679069270922,
+  "lng": 100.0332714247019,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
+    "type": "BIRD",
+    "count": 7,
+    "symptoms": [{
+      "type": "HIGH_TEMPERATURE",
+      "count": 3,
+      "dangerLevel": 0,
+      "resourceLinks": ["http://opendream.org/data?id=726591"]
+    }]
+  }, {
+    "type": "FARM",
+    "count": 2,
     "symptoms": []
   }, {
     "type": "EXOTIC",
     "count": 3,
     "symptoms": [{
-      "type": "RESPIRATORY_TRACT",
-      "count": 1
+      "type": "HIGH_TEMPERATURE",
+      "count": 1,
+      "dangerLevel": 4,
+      "resourceLinks": ["http://opendream.org/data?id=303893"]
+    }]
+  }, {
+    "type": "HUMAN",
+    "count": 4,
+    "symptoms": [{
+      "type": "NERVOUS_SIGNALS",
+      "count": 3,
+      "dangerLevel": 1,
+      "resourceLinks": ["http://opendream.org/data?id=701666"]
     }]
   }]
 }, {
-  "id": "da81bd47-72eb-4a08-bf3e-e5da8cb8000f",
-  "lat": 19.165725424662927,
-  "lng": 99.4185937761213,
+  "id": "799defdf-099e-477c-85cd-ba1f0ecf31fc",
+  "lat": 19.374436131481627,
+  "lng": 99.97756584434828,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
   "members": [{
-    "type": "HUMAN",
+    "type": "BIRD",
     "count": 3,
     "symptoms": [{
       "type": "HIGH_TEMPERATURE",
-      "count": 1
-    }, {
-      "type": "NERVOUS_SIGNALS",
-      "count": 1
+      "count": 2,
+      "dangerLevel": 4,
+      "resourceLinks": ["http://opendream.org/data?id=617496"]
     }]
   }, {
-    "type": "PET",
+    "type": "FARM",
+    "count": 8,
+    "symptoms": [{
+      "type": "SKIN_PROBLEM",
+      "count": 4,
+      "dangerLevel": 3,
+      "resourceLinks": ["http://opendream.org/data?id=828359"]
+    }, {
+      "type": "MUSCLE_PAIN",
+      "count": 3,
+      "dangerLevel": 2,
+      "resourceLinks": ["http://opendream.org/data?id=221637"]
+    }]
+  }, {
+    "type": "EXOTIC",
+    "count": 3,
+    "symptoms": []
+  }, {
+    "type": "HUMAN",
     "count": 1,
+    "symptoms": []
+  }]
+}, {
+  "id": "6f27d74f-7618-4795-8683-4d2a48cd971e",
+  "lat": 18.385519384069017,
+  "lng": 104.69641229260382,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
+    "type": "PET",
+    "count": 2,
     "symptoms": []
   }, {
     "type": "BIRD",
     "count": 8,
     "symptoms": [{
       "type": "HIGH_TEMPERATURE",
-      "count": 1
-    }, {
-      "type": "SKIN_PROBLEM",
-      "count": 3
+      "count": 4,
+      "dangerLevel": 1,
+      "resourceLinks": ["http://opendream.org/data?id=35241"]
     }]
   }, {
     "type": "FARM",
     "count": 2,
     "symptoms": [{
-      "type": "SKIN_PROBLEM",
-      "count": 1
+      "type": "HIGH_TEMPERATURE",
+      "count": 1,
+      "dangerLevel": 4,
+      "resourceLinks": ["http://opendream.org/data?id=686224"]
     }]
+  }, {
+    "type": "EXOTIC",
+    "count": 1,
+    "symptoms": []
+  }, {
+    "type": "HUMAN",
+    "count": 1,
+    "symptoms": []
+  }]
+}, {
+  "id": "2281755c-84f9-411a-9e4a-8319771dadbd",
+  "lat": 18.975475403522253,
+  "lng": 99.66942209239787,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
+    "type": "PET",
+    "count": 1,
+    "symptoms": []
+  }, {
+    "type": "BIRD",
+    "count": 4,
+    "symptoms": [{
+      "type": "RESPIRATORY_TRACT",
+      "count": 3,
+      "dangerLevel": 4,
+      "resourceLinks": ["http://opendream.org/data?id=383844"]
+    }]
+  }, {
+    "type": "FARM",
+    "count": 3,
+    "symptoms": [{
+      "type": "NERVOUS_SIGNALS",
+      "count": 1,
+      "dangerLevel": 3,
+      "resourceLinks": ["http://opendream.org/data?id=435973"]
+    }]
+  }, {
+    "type": "EXOTIC",
+    "count": 1,
+    "symptoms": []
+  }, {
+    "type": "HUMAN",
+    "count": 3,
+    "symptoms": [{
+      "type": "HIGH_TEMPERATURE",
+      "count": 2,
+      "dangerLevel": 2,
+      "resourceLinks": ["http://opendream.org/data?id=825473"]
+    }]
+  }]
+}, {
+  "id": "77b11957-b726-43b2-acad-59e398d5f379",
+  "lat": 16.663785280272904,
+  "lng": 102.7299502312195,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
+    "type": "PET",
+    "count": 1,
+    "symptoms": []
+  }, {
+    "type": "BIRD",
+    "count": 13,
+    "symptoms": [{
+      "type": "HIGH_TEMPERATURE",
+      "count": 9,
+      "dangerLevel": 2,
+      "resourceLinks": ["http://opendream.org/data?id=683165"]
+    }]
+  }, {
+    "type": "FARM",
+    "count": 2,
+    "symptoms": []
   }, {
     "type": "EXOTIC",
     "count": 3,
     "symptoms": [{
+      "type": "HIGH_TEMPERATURE",
+      "count": 1,
+      "dangerLevel": 2,
+      "resourceLinks": ["http://opendream.org/data?id=29238"]
+    }]
+  }, {
+    "type": "HUMAN",
+    "count": 4,
+    "symptoms": [{
       "type": "NERVOUS_SIGNALS",
-      "count": 1
+      "count": 3,
+      "dangerLevel": 2,
+      "resourceLinks": ["http://opendream.org/data?id=503503"]
     }]
   }]
 }, {
-  "id": "d9c45968-ea0d-4354-9f99-49796874c315",
-  "lat": 16.11762239184973,
-  "lng": 101.4309719889023,
+  "id": "9482195a-fcf0-451a-bf23-f4e5d30731af",
+  "lat": 17.247676899442983,
+  "lng": 102.9568125902555,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
   "members": [{
+    "type": "BIRD",
+    "count": 19,
+    "symptoms": [{
+      "type": "NERVOUS_SIGNALS",
+      "count": 6,
+      "dangerLevel": 4,
+      "resourceLinks": ["http://opendream.org/data?id=792898"]
+    }, {
+      "type": "DIGESTIVE_TRACT",
+      "count": 3,
+      "dangerLevel": 4,
+      "resourceLinks": ["http://opendream.org/data?id=314736"]
+    }]
+  }, {
+    "type": "FARM",
+    "count": 8,
+    "symptoms": [{
+      "type": "NERVOUS_SIGNALS",
+      "count": 1,
+      "dangerLevel": 1,
+      "resourceLinks": ["http://opendream.org/data?id=639347"]
+    }, {
+      "type": "SKIN_PROBLEM",
+      "count": 3,
+      "dangerLevel": 2,
+      "resourceLinks": ["http://opendream.org/data?id=98947"]
+    }]
+  }, {
     "type": "HUMAN",
     "count": 3,
     "symptoms": [{
+      "type": "HIGH_TEMPERATURE",
+      "count": 1,
+      "dangerLevel": 1,
+      "resourceLinks": ["http://opendream.org/data?id=232497"]
+    }, {
+      "type": "SKIN_PROBLEM",
+      "count": 1,
+      "dangerLevel": 4,
+      "resourceLinks": ["http://opendream.org/data?id=955564"]
+    }]
+  }]
+}, {
+  "id": "51875c3d-3990-48c9-b3eb-5fd6ac86a19f",
+  "lat": 14.962719524560857,
+  "lng": 103.14818837334535,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
+    "type": "BIRD",
+    "count": 5,
+    "symptoms": [{
+      "type": "HIGH_TEMPERATURE",
+      "count": 2,
+      "dangerLevel": 4,
+      "resourceLinks": ["http://opendream.org/data?id=655485"]
+    }]
+  }, {
+    "type": "FARM",
+    "count": 6,
+    "symptoms": [{
+      "type": "HIGH_TEMPERATURE",
+      "count": 1,
+      "dangerLevel": 0,
+      "resourceLinks": ["http://opendream.org/data?id=38428"]
+    }, {
       "type": "NERVOUS_SIGNALS",
-      "count": 1
+      "count": 1,
+      "dangerLevel": 0,
+      "resourceLinks": ["http://opendream.org/data?id=912352"]
+    }, {
+      "type": "SKIN_PROBLEM",
+      "count": 1,
+      "dangerLevel": 3,
+      "resourceLinks": ["http://opendream.org/data?id=872180"]
+    }]
+  }, {
+    "type": "HUMAN",
+    "count": 5,
+    "symptoms": [{
+      "type": "SKIN_PROBLEM",
+      "count": 1,
+      "dangerLevel": 1,
+      "resourceLinks": ["http://opendream.org/data?id=861141"]
+    }, {
+      "type": "RESPIRATORY_TRACT",
+      "count": 1,
+      "dangerLevel": 3,
+      "resourceLinks": ["http://opendream.org/data?id=250063"]
+    }, {
+      "type": "MUSCLE_PAIN",
+      "count": 2,
+      "dangerLevel": 4,
+      "resourceLinks": ["http://opendream.org/data?id=492276"]
+    }]
+  }]
+}, {
+  "id": "c670b38f-2ed1-4e49-a9d9-c65f5a024d37",
+  "lat": 17.517175637269983,
+  "lng": 103.60790844242119,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
+    "type": "PET",
+    "count": 2,
+    "symptoms": []
+  }, {
+    "type": "BIRD",
+    "count": 13,
+    "symptoms": [{
+      "type": "HIGH_TEMPERATURE",
+      "count": 6,
+      "dangerLevel": 1,
+      "resourceLinks": ["http://opendream.org/data?id=770356"]
+    }]
+  }, {
+    "type": "FARM",
+    "count": 1,
+    "symptoms": []
+  }, {
+    "type": "EXOTIC",
+    "count": 1,
+    "symptoms": []
+  }, {
+    "type": "HUMAN",
+    "count": 5,
+    "symptoms": []
+  }]
+}, {
+  "id": "76b77f9f-56fd-447e-8c16-6949b5ddb058",
+  "lat": 17.103026375728515,
+  "lng": 103.61774058936956,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
+    "type": "BIRD",
+    "count": 2,
+    "symptoms": [{
+      "type": "NERVOUS_SIGNALS",
+      "count": 1,
+      "dangerLevel": 2,
+      "resourceLinks": ["http://opendream.org/data?id=434189"]
+    }]
+  }, {
+    "type": "FARM",
+    "count": 1,
+    "symptoms": []
+  }, {
+    "type": "HUMAN",
+    "count": 2,
+    "symptoms": [{
+      "type": "SKIN_PROBLEM",
+      "count": 1,
+      "dangerLevel": 3,
+      "resourceLinks": ["http://opendream.org/data?id=895783"]
+    }]
+  }]
+}, {
+  "id": "8ff41a04-6f76-4aaf-bac9-616014665d3e",
+  "lat": 16.21568303783054,
+  "lng": 99.64397508511419,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
+    "type": "PET",
+    "count": 2,
+    "symptoms": []
+  }, {
+    "type": "BIRD",
+    "count": 19,
+    "symptoms": [{
+      "type": "HIGH_TEMPERATURE",
+      "count": 6,
+      "dangerLevel": 4,
+      "resourceLinks": ["http://opendream.org/data?id=905821"]
+    }, {
+      "type": "RESPIRATORY_TRACT",
+      "count": 6,
+      "dangerLevel": 0,
+      "resourceLinks": ["http://opendream.org/data?id=424010"]
+    }]
+  }, {
+    "type": "FARM",
+    "count": 6,
+    "symptoms": [{
+      "type": "HIGH_TEMPERATURE",
+      "count": 1,
+      "dangerLevel": 4,
+      "resourceLinks": ["http://opendream.org/data?id=813171"]
+    }, {
+      "type": "NERVOUS_SIGNALS",
+      "count": 2,
+      "dangerLevel": 1,
+      "resourceLinks": ["http://opendream.org/data?id=7318"]
+    }, {
+      "type": "RESPIRATORY_TRACT",
+      "count": 2,
+      "dangerLevel": 2,
+      "resourceLinks": ["http://opendream.org/data?id=854682"]
+    }]
+  }, {
+    "type": "EXOTIC",
+    "count": 2,
+    "symptoms": [{
+      "type": "SKIN_PROBLEM",
+      "count": 1,
+      "dangerLevel": 1,
+      "resourceLinks": ["http://opendream.org/data?id=262479"]
+    }]
+  }, {
+    "type": "HUMAN",
+    "count": 5,
+    "symptoms": [{
+      "type": "NERVOUS_SIGNALS",
+      "count": 3,
+      "dangerLevel": 3,
+      "resourceLinks": ["http://opendream.org/data?id=148263"]
+    }]
+  }]
+}, {
+  "id": "6fa2be16-cc0e-43e7-bddf-7bb449416899",
+  "lat": 16.965514111742504,
+  "lng": 103.91691684913044,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
+    "type": "PET",
+    "count": 1,
+    "symptoms": []
+  }, {
+    "type": "BIRD",
+    "count": 4,
+    "symptoms": []
+  }, {
+    "type": "FARM",
+    "count": 9,
+    "symptoms": [{
+      "type": "HIGH_TEMPERATURE",
+      "count": 6,
+      "dangerLevel": 1,
+      "resourceLinks": ["http://opendream.org/data?id=871932"]
+    }, {
+      "type": "DIGESTIVE_TRACT",
+      "count": 2,
+      "dangerLevel": 0,
+      "resourceLinks": ["http://opendream.org/data?id=813724"]
+    }]
+  }, {
+    "type": "HUMAN",
+    "count": 1,
+    "symptoms": []
+  }]
+}, {
+  "id": "247a191a-be1d-4ca3-91d0-a475caecfaa1",
+  "lat": 15.590558681047515,
+  "lng": 102.27050457322485,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
+    "type": "PET",
+    "count": 2,
+    "symptoms": [{
+      "type": "SKIN_PROBLEM",
+      "count": 1,
+      "dangerLevel": 1,
+      "resourceLinks": ["http://opendream.org/data?id=819101"]
+    }]
+  }, {
+    "type": "BIRD",
+    "count": 2,
+    "symptoms": [{
+      "type": "HIGH_TEMPERATURE",
+      "count": 1,
+      "dangerLevel": 2,
+      "resourceLinks": ["http://opendream.org/data?id=401340"]
+    }]
+  }, {
+    "type": "FARM",
+    "count": 4,
+    "symptoms": [{
+      "type": "NERVOUS_SIGNALS",
+      "count": 1,
+      "dangerLevel": 3,
+      "resourceLinks": ["http://opendream.org/data?id=223029"]
+    }, {
+      "type": "SKIN_PROBLEM",
+      "count": 2,
+      "dangerLevel": 1,
+      "resourceLinks": ["http://opendream.org/data?id=732488"]
+    }]
+  }, {
+    "type": "EXOTIC",
+    "count": 1,
+    "symptoms": []
+  }, {
+    "type": "HUMAN",
+    "count": 4,
+    "symptoms": [{
+      "type": "HIGH_TEMPERATURE",
+      "count": 2,
+      "dangerLevel": 3,
+      "resourceLinks": ["http://opendream.org/data?id=134569"]
+    }, {
+      "type": "MUSCLE_PAIN",
+      "count": 1,
+      "dangerLevel": 4,
+      "resourceLinks": ["http://opendream.org/data?id=335751"]
+    }]
+  }]
+}, {
+  "id": "f4ac9719-f6eb-4b4d-a648-879a3785892d",
+  "lat": 17.035860009362015,
+  "lng": 98.27841097529196,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
+    "type": "PET",
+    "count": 1,
+    "symptoms": []
+  }, {
+    "type": "BIRD",
+    "count": 4,
+    "symptoms": [{
+      "type": "HIGH_TEMPERATURE",
+      "count": 3,
+      "dangerLevel": 0,
+      "resourceLinks": ["http://opendream.org/data?id=987724"]
+    }]
+  }, {
+    "type": "FARM",
+    "count": 1,
+    "symptoms": []
+  }, {
+    "type": "EXOTIC",
+    "count": 2,
+    "symptoms": [{
+      "type": "DIGESTIVE_TRACT",
+      "count": 1,
+      "dangerLevel": 1,
+      "resourceLinks": ["http://opendream.org/data?id=810422"]
+    }]
+  }, {
+    "type": "HUMAN",
+    "count": 5,
+    "symptoms": [{
+      "type": "HIGH_TEMPERATURE",
+      "count": 4,
+      "dangerLevel": 4,
+      "resourceLinks": ["http://opendream.org/data?id=998143"]
+    }]
+  }]
+}, {
+  "id": "0559e33e-cc20-4f1e-97ec-c7962a8c3d8b",
+  "lat": 15.658279850482991,
+  "lng": 104.01788669924078,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
+    "type": "BIRD",
+    "count": 14,
+    "symptoms": [{
+      "type": "NERVOUS_SIGNALS",
+      "count": 6,
+      "dangerLevel": 4,
+      "resourceLinks": ["http://opendream.org/data?id=789306"]
+    }, {
+      "type": "RESPIRATORY_TRACT",
+      "count": 4,
+      "dangerLevel": 0,
+      "resourceLinks": ["http://opendream.org/data?id=61056"]
+    }, {
+      "type": "DIGESTIVE_TRACT",
+      "count": 1,
+      "dangerLevel": 1,
+      "resourceLinks": ["http://opendream.org/data?id=998952"]
     }]
   }, {
     "type": "FARM",
     "count": 8,
     "symptoms": [{
       "type": "RESPIRATORY_TRACT",
-      "count": 7
+      "count": 6,
+      "dangerLevel": 2,
+      "resourceLinks": ["http://opendream.org/data?id=615316"]
     }]
   }, {
     "type": "EXOTIC",
+    "count": 1,
+    "symptoms": []
+  }, {
+    "type": "HUMAN",
+    "count": 2,
+    "symptoms": [{
+      "type": "HIGH_TEMPERATURE",
+      "count": 1,
+      "dangerLevel": 3,
+      "resourceLinks": ["http://opendream.org/data?id=473528"]
+    }]
+  }]
+}, {
+  "id": "7c4870b2-4d9a-48b9-9bc4-42e1a3813ed6",
+  "lat": 15.594262638125453,
+  "lng": 104.6618873515071,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
+    "type": "FARM",
+    "count": 9,
+    "symptoms": [{
+      "type": "HIGH_TEMPERATURE",
+      "count": 6,
+      "dangerLevel": 3,
+      "resourceLinks": ["http://opendream.org/data?id=476191"]
+    }, {
+      "type": "NERVOUS_SIGNALS",
+      "count": 1,
+      "dangerLevel": 1,
+      "resourceLinks": ["http://opendream.org/data?id=968593"]
+    }, {
+      "type": "SKIN_PROBLEM",
+      "count": 1,
+      "dangerLevel": 0,
+      "resourceLinks": ["http://opendream.org/data?id=174786"]
+    }]
+  }, {
+    "type": "EXOTIC",
+    "count": 1,
+    "symptoms": []
+  }, {
+    "type": "HUMAN",
+    "count": 2,
+    "symptoms": [{
+      "type": "HIGH_TEMPERATURE",
+      "count": 1,
+      "dangerLevel": 0,
+      "resourceLinks": ["http://opendream.org/data?id=818985"]
+    }]
+  }]
+}, {
+  "id": "793e4d79-f88f-4e84-afbb-15ede2025adc",
+  "lat": 15.693148727512881,
+  "lng": 101.98052692641357,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
+    "type": "PET",
+    "count": 3,
+    "symptoms": [{
+      "type": "HIGH_TEMPERATURE",
+      "count": 2,
+      "dangerLevel": 4,
+      "resourceLinks": ["http://opendream.org/data?id=501166"]
+    }]
+  }, {
+    "type": "BIRD",
+    "count": 15,
+    "symptoms": [{
+      "type": "SKIN_PROBLEM",
+      "count": 6,
+      "dangerLevel": 3,
+      "resourceLinks": ["http://opendream.org/data?id=409129"]
+    }, {
+      "type": "RESPIRATORY_TRACT",
+      "count": 4,
+      "dangerLevel": 0,
+      "resourceLinks": ["http://opendream.org/data?id=151008"]
+    }]
+  }, {
+    "type": "FARM",
+    "count": 8,
+    "symptoms": [{
+      "type": "RESPIRATORY_TRACT",
+      "count": 3,
+      "dangerLevel": 0,
+      "resourceLinks": ["http://opendream.org/data?id=640810"]
+    }]
+  }, {
+    "type": "HUMAN",
     "count": 2,
     "symptoms": []
   }]
 }, {
-  "id": "7807a6c4-5468-40aa-97d8-864ba3195753",
-  "lat": 18.833732491547927,
-  "lng": 103.32163415091578,
+  "id": "ed7b6209-1d98-4508-a67b-9e34ff84b66b",
+  "lat": 16.136465589337714,
+  "lng": 98.36103579163326,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
   "members": [{
-    "type": "HUMAN",
-    "count": 2,
-    "symptoms": [{
-      "type": "NERVOUS_SIGNALS",
-      "count": 1
-    }]
-  }, {
     "type": "PET",
     "count": 3,
     "symptoms": []
@@ -633,1295 +2640,464 @@
     "type": "BIRD",
     "count": 16,
     "symptoms": [{
-      "type": "NERVOUS_SIGNALS",
-      "count": 5
-    }, {
-      "type": "SKIN_PROBLEM",
-      "count": 7
+      "type": "HIGH_TEMPERATURE",
+      "count": 11,
+      "dangerLevel": 3,
+      "resourceLinks": ["http://opendream.org/data?id=201807"]
     }, {
       "type": "RESPIRATORY_TRACT",
-      "count": 3
+      "count": 1,
+      "dangerLevel": 1,
+      "resourceLinks": ["http://opendream.org/data?id=47818"]
     }]
   }, {
     "type": "FARM",
-    "count": 5,
-    "symptoms": []
-  }, {
-    "type": "EXOTIC",
-    "count": 3,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 1
-    }, {
-      "type": "SKIN_PROBLEM",
-      "count": 1
-    }]
-  }]
-}, {
-  "id": "5bbc4ccb-9e51-4fae-8d29-0893dbff405c",
-  "lat": 15.050147338842395,
-  "lng": 103.59288900282483,
-  "members": [{
-    "type": "HUMAN",
-    "count": 5,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 2
-    }, {
-      "type": "DIGESTIVE_TRACT",
-      "count": 1
-    }]
-  }, {
-    "type": "PET",
-    "count": 1,
-    "symptoms": []
-  }, {
-    "type": "BIRD",
-    "count": 11,
-    "symptoms": []
-  }, {
-    "type": "FARM",
-    "count": 2,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 1
-    }]
-  }, {
-    "type": "EXOTIC",
-    "count": 1,
-    "symptoms": []
-  }]
-}, {
-  "id": "8aa7e27c-a838-4a9b-8247-e2261b52d2f4",
-  "lat": 16.74812169925943,
-  "lng": 105.16134924820338,
-  "members": [{
-    "type": "HUMAN",
-    "count": 3,
+    "count": 4,
     "symptoms": [{
       "type": "MUSCLE_PAIN",
-      "count": 1
-    }]
-  }, {
-    "type": "BIRD",
-    "count": 1,
-    "symptoms": []
-  }, {
-    "type": "FARM",
-    "count": 7,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 1
-    }]
-  }, {
-    "type": "EXOTIC",
-    "count": 3,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 2
-    }]
-  }]
-}, {
-  "id": "3f2a993a-289a-4a93-9a9e-6009e044883b",
-  "lat": 16.154293583938916,
-  "lng": 99.61452959501052,
-  "members": [{
-    "type": "HUMAN",
-    "count": 3,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 1
-    }]
-  }, {
-    "type": "PET",
-    "count": 3,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 2
-    }]
-  }, {
-    "type": "BIRD",
-    "count": 13,
-    "symptoms": []
-  }, {
-    "type": "FARM",
-    "count": 1,
-    "symptoms": []
-  }, {
-    "type": "EXOTIC",
-    "count": 2,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 1
-    }]
-  }]
-}, {
-  "id": "b2cc8840-195b-4e15-8703-ac7e85ea3dea",
-  "lat": 17.046494871516547,
-  "lng": 100.76242423973342,
-  "members": [{
-    "type": "HUMAN",
-    "count": 2,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 1
-    }]
-  }, {
-    "type": "PET",
-    "count": 1,
-    "symptoms": []
-  }, {
-    "type": "FARM",
-    "count": 7,
-    "symptoms": [{
-      "type": "RESPIRATORY_TRACT",
-      "count": 4
-    }]
-  }]
-}, {
-  "id": "1d74b0e5-4d3f-4de0-bd4e-a5b1bca76e8f",
-  "lat": 19.22351969451222,
-  "lng": 100.08909470066462,
-  "members": [{
-    "type": "HUMAN",
-    "count": 3,
-    "symptoms": []
-  }, {
-    "type": "PET",
-    "count": 1,
-    "symptoms": []
-  }, {
-    "type": "BIRD",
-    "count": 11,
-    "symptoms": []
-  }, {
-    "type": "EXOTIC",
-    "count": 1,
-    "symptoms": []
-  }]
-}, {
-  "id": "3362341a-c7df-41e1-bcfb-d9e11ea349a2",
-  "lat": 16.662453726637292,
-  "lng": 104.81456725904705,
-  "members": [{
-    "type": "HUMAN",
-    "count": 3,
-    "symptoms": []
-  }, {
-    "type": "PET",
-    "count": 1,
-    "symptoms": []
-  }, {
-    "type": "BIRD",
-    "count": 6,
-    "symptoms": []
-  }, {
-    "type": "FARM",
-    "count": 5,
-    "symptoms": [{
-      "type": "DIGESTIVE_TRACT",
-      "count": 1
-    }]
-  }]
-}, {
-  "id": "6cfc7c27-509f-4312-b7cc-b71c57c08e7a",
-  "lat": 16.051776243787007,
-  "lng": 104.5888574543901,
-  "members": [{
-    "type": "HUMAN",
-    "count": 4,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 1
-    }]
-  }, {
-    "type": "BIRD",
-    "count": 13,
-    "symptoms": [{
-      "type": "NERVOUS_SIGNALS",
-      "count": 1
-    }, {
-      "type": "SKIN_PROBLEM",
-      "count": 11
-    }]
-  }, {
-    "type": "FARM",
-    "count": 6,
-    "symptoms": []
-  }, {
-    "type": "EXOTIC",
-    "count": 3,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 2
-    }]
-  }]
-}, {
-  "id": "670dc4eb-7c04-405b-8be0-04276735bc78",
-  "lat": 18.493777926216357,
-  "lng": 104.6857919568223,
-  "members": [{
-    "type": "HUMAN",
-    "count": 4,
-    "symptoms": []
-  }, {
-    "type": "PET",
-    "count": 3,
-    "symptoms": []
-  }, {
-    "type": "BIRD",
-    "count": 6,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 2
-    }, {
-      "type": "NERVOUS_SIGNALS",
-      "count": 1
-    }]
-  }, {
-    "type": "FARM",
-    "count": 1,
-    "symptoms": []
-  }, {
-    "type": "EXOTIC",
-    "count": 3,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 2
-    }]
-  }]
-}, {
-  "id": "affaec6d-09b4-4ae4-9e39-7100dd096a0f",
-  "lat": 16.40891291719688,
-  "lng": 100.74814492038034,
-  "members": [{
-    "type": "HUMAN",
-    "count": 3,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 1
-    }, {
-      "type": "NERVOUS_SIGNALS",
-      "count": 1
-    }]
-  }, {
-    "type": "PET",
-    "count": 1,
-    "symptoms": []
-  }, {
-    "type": "BIRD",
-    "count": 5,
-    "symptoms": [{
-      "type": "RESPIRATORY_TRACT",
-      "count": 2
-    }]
-  }, {
-    "type": "FARM",
-    "count": 9,
-    "symptoms": []
-  }, {
-    "type": "EXOTIC",
-    "count": 2,
-    "symptoms": []
-  }]
-}, {
-  "id": "794e7351-c749-47eb-bcca-ee054fdbedb6",
-  "lat": 16.02642822462563,
-  "lng": 100.06534984277249,
-  "members": [{
-    "type": "HUMAN",
-    "count": 5,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 3
-    }]
-  }, {
-    "type": "PET",
-    "count": 1,
-    "symptoms": []
-  }, {
-    "type": "BIRD",
-    "count": 7,
-    "symptoms": []
-  }, {
-    "type": "EXOTIC",
-    "count": 3,
-    "symptoms": [{
-      "type": "SKIN_PROBLEM",
-      "count": 1
-    }]
-  }]
-}, {
-  "id": "0ed114f9-53c9-4d88-8f3b-b5bf283d38c1",
-  "lat": 17.054636228923766,
-  "lng": 105.62343548737259,
-  "members": [{
-    "type": "HUMAN",
-    "count": 1,
-    "symptoms": []
-  }, {
-    "type": "PET",
-    "count": 1,
-    "symptoms": []
-  }, {
-    "type": "BIRD",
-    "count": 18,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 6
-    }, {
-      "type": "SKIN_PROBLEM",
-      "count": 3
-    }, {
-      "type": "RESPIRATORY_TRACT",
-      "count": 4
-    }]
-  }, {
-    "type": "FARM",
-    "count": 5,
-    "symptoms": []
-  }]
-}, {
-  "id": "e7acc0a5-cc64-405d-9880-06cd5fd28bae",
-  "lat": 16.565443430678776,
-  "lng": 100.80132599609416,
-  "members": [{
-    "type": "HUMAN",
-    "count": 4,
-    "symptoms": [{
-      "type": "DIGESTIVE_TRACT",
-      "count": 3
-    }]
-  }, {
-    "type": "BIRD",
-    "count": 9,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 2
-    }]
-  }, {
-    "type": "FARM",
-    "count": 2,
-    "symptoms": []
-  }]
-}, {
-  "id": "8de9c06c-0965-42a9-b9d1-2c38501b2ad1",
-  "lat": 14.937561553207575,
-  "lng": 102.95762166422936,
-  "members": [{
-    "type": "HUMAN",
-    "count": 1,
-    "symptoms": []
-  }, {
-    "type": "PET",
-    "count": 3,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 1
-    }, {
-      "type": "NERVOUS_SIGNALS",
-      "count": 1
-    }]
-  }, {
-    "type": "BIRD",
-    "count": 2,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 1
-    }]
-  }, {
-    "type": "FARM",
-    "count": 5,
-    "symptoms": [{
-      "type": "SKIN_PROBLEM",
-      "count": 1
-    }, {
-      "type": "RESPIRATORY_TRACT",
-      "count": 1
-    }]
-  }, {
-    "type": "EXOTIC",
-    "count": 3,
-    "symptoms": [{
-      "type": "RESPIRATORY_TRACT",
-      "count": 2
-    }]
-  }]
-}, {
-  "id": "f5724e98-7843-42c3-9c8c-16e0db321c8c",
-  "lat": 15.17092004969575,
-  "lng": 103.39867232229065,
-  "members": [{
-    "type": "HUMAN",
-    "count": 5,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 3
-    }]
-  }, {
-    "type": "PET",
-    "count": 2,
-    "symptoms": []
-  }, {
-    "type": "BIRD",
-    "count": 5,
-    "symptoms": []
-  }, {
-    "type": "FARM",
-    "count": 2,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 1
+      "count": 1,
+      "dangerLevel": 0,
+      "resourceLinks": ["http://opendream.org/data?id=521312"]
     }]
   }, {
     "type": "EXOTIC",
     "count": 2,
-    "symptoms": [{
-      "type": "RESPIRATORY_TRACT",
-      "count": 1
-    }]
-  }]
-}, {
-  "id": "cb045eab-1266-4ed7-861a-6bed4c2b253d",
-  "lat": 15.275673239547027,
-  "lng": 100.47097154462105,
-  "members": [{
+    "symptoms": []
+  }, {
     "type": "HUMAN",
     "count": 4,
     "symptoms": [{
       "type": "NERVOUS_SIGNALS",
-      "count": 2
-    }]
-  }, {
-    "type": "BIRD",
-    "count": 17,
-    "symptoms": []
-  }, {
-    "type": "FARM",
-    "count": 9,
-    "symptoms": [{
-      "type": "RESPIRATORY_TRACT",
-      "count": 7
-    }]
-  }, {
-    "type": "EXOTIC",
-    "count": 3,
-    "symptoms": [{
-      "type": "SKIN_PROBLEM",
-      "count": 1
+      "count": 3,
+      "dangerLevel": 2,
+      "resourceLinks": ["http://opendream.org/data?id=332634"]
     }]
   }]
 }, {
-  "id": "43de8ec5-c2f4-4f2e-8d3e-84a925cc13ec",
-  "lat": 19.010390641334567,
-  "lng": 104.46754383779047,
+  "id": "990e1c3b-3250-4998-ae8d-beab941633a5",
+  "lat": 17.844606449498343,
+  "lng": 101.54330006487055,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
   "members": [{
-    "type": "HUMAN",
-    "count": 5,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 3
-    }]
-  }, {
-    "type": "PET",
-    "count": 3,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 2
-    }]
-  }, {
-    "type": "BIRD",
-    "count": 3,
-    "symptoms": []
-  }, {
-    "type": "FARM",
-    "count": 9,
-    "symptoms": []
-  }]
-}, {
-  "id": "b88257a9-4c93-4b7e-bc4b-eb43870ceb69",
-  "lat": 15.62300383736107,
-  "lng": 99.2620508152636,
-  "members": [{
-    "type": "HUMAN",
-    "count": 3,
-    "symptoms": []
-  }, {
-    "type": "PET",
-    "count": 1,
-    "symptoms": []
-  }, {
-    "type": "BIRD",
-    "count": 18,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 9
-    }, {
-      "type": "NERVOUS_SIGNALS",
-      "count": 5
-    }, {
-      "type": "RESPIRATORY_TRACT",
-      "count": 2
-    }]
-  }, {
-    "type": "FARM",
-    "count": 3,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 2
-    }]
-  }, {
-    "type": "EXOTIC",
-    "count": 3,
-    "symptoms": [{
-      "type": "SKIN_PROBLEM",
-      "count": 2
-    }]
-  }]
-}, {
-  "id": "452c7d8d-497a-423b-8627-ecfee804da71",
-  "lat": 18.31404351025702,
-  "lng": 105.63663117312336,
-  "members": [{
-    "type": "HUMAN",
-    "count": 1,
-    "symptoms": []
-  }, {
-    "type": "PET",
-    "count": 3,
-    "symptoms": [{
-      "type": "RESPIRATORY_TRACT",
-      "count": 2
-    }]
-  }, {
-    "type": "BIRD",
-    "count": 7,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 5
-    }]
-  }, {
-    "type": "FARM",
-    "count": 7,
-    "symptoms": [{
-      "type": "SKIN_PROBLEM",
-      "count": 3
-    }, {
-      "type": "DIGESTIVE_TRACT",
-      "count": 2
-    }]
-  }, {
-    "type": "EXOTIC",
-    "count": 2,
-    "symptoms": []
-  }]
-}, {
-  "id": "4d4ac9d5-f897-4f83-802a-c56dded0e1f4",
-  "lat": 18.454763516983732,
-  "lng": 101.71314664043292,
-  "members": [{
-    "type": "HUMAN",
-    "count": 3,
-    "symptoms": []
-  }, {
-    "type": "PET",
-    "count": 3,
-    "symptoms": [{
-      "type": "SKIN_PROBLEM",
-      "count": 1
-    }, {
-      "type": "RESPIRATORY_TRACT",
-      "count": 1
-    }]
-  }, {
-    "type": "BIRD",
-    "count": 5,
-    "symptoms": [{
-      "type": "NERVOUS_SIGNALS",
-      "count": 2
-    }]
-  }, {
-    "type": "FARM",
-    "count": 1,
-    "symptoms": []
-  }, {
-    "type": "EXOTIC",
-    "count": 1,
-    "symptoms": []
-  }]
-}, {
-  "id": "63a7737c-540c-4b8f-977e-09c8bfe0a8ba",
-  "lat": 16.51490505867674,
-  "lng": 102.74514643289548,
-  "members": [{
-    "type": "HUMAN",
-    "count": 4,
-    "symptoms": []
-  }, {
     "type": "PET",
     "count": 2,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 1
-    }]
+    "symptoms": []
   }, {
     "type": "BIRD",
-    "count": 12,
-    "symptoms": [{
-      "type": "NERVOUS_SIGNALS",
-      "count": 1
-    }, {
-      "type": "SKIN_PROBLEM",
-      "count": 1
-    }, {
-      "type": "RESPIRATORY_TRACT",
-      "count": 1
-    }, {
-      "type": "DIGESTIVE_TRACT",
-      "count": 3
-    }]
-  }, {
-    "type": "FARM",
-    "count": 7,
-    "symptoms": [{
-      "type": "NERVOUS_SIGNALS",
-      "count": 5
-    }, {
-      "type": "RESPIRATORY_TRACT",
-      "count": 1
-    }]
-  }, {
-    "type": "EXOTIC",
-    "count": 3,
+    "count": 15,
     "symptoms": [{
       "type": "HIGH_TEMPERATURE",
-      "count": 1
+      "count": 9,
+      "dangerLevel": 2,
+      "resourceLinks": ["http://opendream.org/data?id=48046"]
     }, {
-      "type": "DIGESTIVE_TRACT",
-      "count": 1
-    }]
-  }]
-}, {
-  "id": "bb02aa6f-9c9a-4186-aaf0-8d8370bfce3d",
-  "lat": 16.06565828376486,
-  "lng": 98.50223756870012,
-  "members": [{
-    "type": "HUMAN",
-    "count": 3,
-    "symptoms": [{
       "type": "RESPIRATORY_TRACT",
-      "count": 1
-    }, {
-      "type": "DIGESTIVE_TRACT",
-      "count": 1
-    }]
-  }, {
-    "type": "PET",
-    "count": 2,
-    "symptoms": [{
-      "type": "NERVOUS_SIGNALS",
-      "count": 1
-    }]
-  }, {
-    "type": "BIRD",
-    "count": 8,
-    "symptoms": [{
-      "type": "NERVOUS_SIGNALS",
-      "count": 5
+      "count": 1,
+      "dangerLevel": 0,
+      "resourceLinks": ["http://opendream.org/data?id=417192"]
     }, {
       "type": "MUSCLE_PAIN",
-      "count": 2
+      "count": 4,
+      "dangerLevel": 2,
+      "resourceLinks": ["http://opendream.org/data?id=555819"]
     }]
   }, {
     "type": "FARM",
-    "count": 7,
+    "count": 5,
     "symptoms": [{
-      "type": "SKIN_PROBLEM",
-      "count": 1
+      "type": "HIGH_TEMPERATURE",
+      "count": 3,
+      "dangerLevel": 1,
+      "resourceLinks": ["http://opendream.org/data?id=749752"]
     }]
   }, {
     "type": "EXOTIC",
-    "count": 2,
+    "count": 1,
     "symptoms": []
-  }]
-}, {
-  "id": "690692f2-9632-4db2-89c6-c87812010c17",
-  "lat": 16.48378435525303,
-  "lng": 105.42489250429634,
-  "members": [{
+  }, {
     "type": "HUMAN",
     "count": 5,
     "symptoms": []
-  }, {
+  }]
+}, {
+  "id": "cd7836ce-bab4-491a-9982-478a08667f7a",
+  "lat": 19.418896731945136,
+  "lng": 101.56231729936093,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
     "type": "PET",
     "count": 1,
     "symptoms": []
   }, {
     "type": "BIRD",
-    "count": 3,
-    "symptoms": []
-  }, {
-    "type": "FARM",
-    "count": 5,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 2
-    }]
-  }]
-}, {
-  "id": "d920d701-cb6d-4cd6-b8b5-b6ecd7dde5a6",
-  "lat": 18.503416967163496,
-  "lng": 102.93834621327933,
-  "members": [{
-    "type": "HUMAN",
-    "count": 5,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 2
-    }]
-  }, {
-    "type": "PET",
-    "count": 2,
-    "symptoms": []
-  }, {
-    "type": "BIRD",
-    "count": 12,
-    "symptoms": [{
-      "type": "DIGESTIVE_TRACT",
-      "count": 11
-    }]
-  }, {
-    "type": "FARM",
-    "count": 5,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 3
-    }]
-  }, {
-    "type": "EXOTIC",
-    "count": 2,
-    "symptoms": [{
-      "type": "MUSCLE_PAIN",
-      "count": 1
-    }]
-  }]
-}, {
-  "id": "ad3152a6-64a0-4989-8666-b2eefe81416a",
-  "lat": 15.389795905678149,
-  "lng": 101.36340338652283,
-  "members": [{
-    "type": "HUMAN",
-    "count": 1,
-    "symptoms": []
-  }, {
-    "type": "PET",
-    "count": 2,
-    "symptoms": []
-  }, {
-    "type": "BIRD",
-    "count": 2,
-    "symptoms": []
-  }, {
-    "type": "FARM",
-    "count": 7,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 1
-    }, {
-      "type": "RESPIRATORY_TRACT",
-      "count": 2
-    }]
-  }, {
-    "type": "EXOTIC",
-    "count": 2,
-    "symptoms": []
-  }]
-}, {
-  "id": "08a08d31-c66a-451d-bf28-6c22b41e117c",
-  "lat": 18.317343445595956,
-  "lng": 99.39783081943492,
-  "members": [{
-    "type": "HUMAN",
-    "count": 5,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 4
-    }]
-  }, {
-    "type": "PET",
-    "count": 3,
-    "symptoms": [{
-      "type": "DIGESTIVE_TRACT",
-      "count": 1
-    }]
-  }, {
-    "type": "BIRD",
-    "count": 10,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 3
-    }]
-  }, {
-    "type": "EXOTIC",
-    "count": 2,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 1
-    }]
-  }]
-}, {
-  "id": "28dd6321-ee0d-4064-b9cd-29e3faa10b64",
-  "lat": 17.315954077920352,
-  "lng": 100.45704376711919,
-  "members": [{
-    "type": "HUMAN",
-    "count": 5,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 3
-    }, {
-      "type": "SKIN_PROBLEM",
-      "count": 1
-    }]
-  }, {
-    "type": "PET",
-    "count": 3,
-    "symptoms": [{
-      "type": "NERVOUS_SIGNALS",
-      "count": 2
-    }]
-  }, {
-    "type": "BIRD",
-    "count": 18,
-    "symptoms": [{
-      "type": "SKIN_PROBLEM",
-      "count": 10
-    }]
-  }, {
-    "type": "FARM",
     "count": 4,
     "symptoms": [{
-      "type": "SKIN_PROBLEM",
-      "count": 3
+      "type": "DIGESTIVE_TRACT",
+      "count": 2,
+      "dangerLevel": 3,
+      "resourceLinks": ["http://opendream.org/data?id=464928"]
     }]
   }, {
-    "type": "EXOTIC",
-    "count": 3,
+    "type": "FARM",
+    "count": 6,
     "symptoms": [{
       "type": "HIGH_TEMPERATURE",
-      "count": 2
+      "count": 4,
+      "dangerLevel": 1,
+      "resourceLinks": ["http://opendream.org/data?id=727285"]
     }]
+  }, {
+    "type": "HUMAN",
+    "count": 5,
+    "symptoms": []
   }]
 }, {
-  "id": "c40a1a83-b97e-4e36-85a3-f714f82db41d",
-  "lat": 16.175389849480016,
-  "lng": 102.58781438913087,
+  "id": "831d20bb-740f-408f-87c5-3ba1e87f045d",
+  "lat": 18.08381632526794,
+  "lng": 102.72367067951683,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
   "members": [{
-    "type": "HUMAN",
+    "type": "PET",
     "count": 1,
     "symptoms": []
   }, {
-    "type": "PET",
-    "count": 2,
-    "symptoms": [{
-      "type": "NERVOUS_SIGNALS",
-      "count": 1
-    }]
-  }, {
     "type": "BIRD",
+    "count": 7,
+    "symptoms": []
+  }, {
+    "type": "FARM",
+    "count": 2,
+    "symptoms": []
+  }, {
+    "type": "HUMAN",
     "count": 5,
     "symptoms": [{
-      "type": "SKIN_PROBLEM",
-      "count": 4
+      "type": "RESPIRATORY_TRACT",
+      "count": 1,
+      "dangerLevel": 3,
+      "resourceLinks": ["http://opendream.org/data?id=331082"]
+    }, {
+      "type": "MUSCLE_PAIN",
+      "count": 1,
+      "dangerLevel": 1,
+      "resourceLinks": ["http://opendream.org/data?id=547482"]
     }]
-  }, {
-    "type": "FARM",
-    "count": 6,
-    "symptoms": [{
-      "type": "SKIN_PROBLEM",
-      "count": 5
-    }]
-  }, {
-    "type": "EXOTIC",
-    "count": 3,
-    "symptoms": []
   }]
 }, {
-  "id": "18040cd5-f904-4894-bdfe-7670d9927164",
-  "lat": 16.646597271600864,
-  "lng": 100.82646845725831,
+  "id": "0627646c-2d34-48f8-a8fd-12e1f9f2933b",
+  "lat": 17.666904734883246,
+  "lng": 105.09092142157431,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
   "members": [{
-    "type": "HUMAN",
-    "count": 3,
-    "symptoms": []
-  }, {
     "type": "PET",
-    "count": 2,
-    "symptoms": []
-  }, {
-    "type": "BIRD",
-    "count": 6,
-    "symptoms": []
-  }, {
-    "type": "FARM",
-    "count": 2,
-    "symptoms": []
-  }]
-}, {
-  "id": "0a720574-d38e-4a43-9cf4-a7c86d44cdbd",
-  "lat": 15.489748392905994,
-  "lng": 101.91192521279173,
-  "members": [{
-    "type": "HUMAN",
-    "count": 2,
+    "count": 3,
     "symptoms": [{
       "type": "HIGH_TEMPERATURE",
-      "count": 1
-    }]
-  }, {
-    "type": "PET",
-    "count": 2,
-    "symptoms": [{
-      "type": "SKIN_PROBLEM",
-      "count": 1
+      "count": 2,
+      "dangerLevel": 3,
+      "resourceLinks": ["http://opendream.org/data?id=945986"]
     }]
   }, {
     "type": "BIRD",
     "count": 17,
     "symptoms": [{
       "type": "NERVOUS_SIGNALS",
-      "count": 7
-    }, {
-      "type": "RESPIRATORY_TRACT",
-      "count": 6
+      "count": 7,
+      "dangerLevel": 2,
+      "resourceLinks": ["http://opendream.org/data?id=317499"]
     }]
   }, {
     "type": "FARM",
-    "count": 1,
-    "symptoms": []
-  }, {
-    "type": "EXOTIC",
-    "count": 1,
-    "symptoms": []
-  }]
-}, {
-  "id": "88767717-8448-4d23-b26e-f20539f768c3",
-  "lat": 16.300948790219348,
-  "lng": 105.28782691673364,
-  "members": [{
-    "type": "HUMAN",
-    "count": 5,
-    "symptoms": []
-  }, {
-    "type": "PET",
-    "count": 1,
-    "symptoms": []
-  }, {
-    "type": "BIRD",
-    "count": 10,
-    "symptoms": []
-  }, {
-    "type": "FARM",
-    "count": 7,
-    "symptoms": [{
-      "type": "NERVOUS_SIGNALS",
-      "count": 2
-    }, {
-      "type": "SKIN_PROBLEM",
-      "count": 3
-    }]
-  }, {
-    "type": "EXOTIC",
-    "count": 2,
-    "symptoms": []
-  }]
-}, {
-  "id": "fda001f7-623b-4674-b982-699fadf04a56",
-  "lat": 18.415059868853067,
-  "lng": 103.42060885240642,
-  "members": [{
-    "type": "HUMAN",
-    "count": 3,
-    "symptoms": [{
-      "type": "RESPIRATORY_TRACT",
-      "count": 2
-    }]
-  }, {
-    "type": "PET",
-    "count": 1,
-    "symptoms": []
-  }, {
-    "type": "BIRD",
-    "count": 1,
-    "symptoms": []
-  }, {
-    "type": "FARM",
-    "count": 2,
-    "symptoms": []
-  }, {
-    "type": "EXOTIC",
-    "count": 1,
-    "symptoms": []
-  }]
-}, {
-  "id": "7cbeed46-c51f-4ce2-8af9-b1478b0d6978",
-  "lat": 17.64562309723061,
-  "lng": 103.71735387525717,
-  "members": [{
-    "type": "HUMAN",
-    "count": 4,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 3
-    }]
-  }, {
-    "type": "PET",
-    "count": 2,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 1
-    }]
-  }, {
-    "type": "BIRD",
-    "count": 1,
-    "symptoms": []
-  }, {
-    "type": "EXOTIC",
-    "count": 2,
-    "symptoms": []
-  }]
-}, {
-  "id": "a14a855e-8fe5-4c03-a730-497049fe9d94",
-  "lat": 15.11287878199624,
-  "lng": 100.58258547001097,
-  "members": [{
-    "type": "HUMAN",
-    "count": 3,
-    "symptoms": [{
-      "type": "SKIN_PROBLEM",
-      "count": 1
-    }, {
-      "type": "DIGESTIVE_TRACT",
-      "count": 1
-    }]
-  }, {
-    "type": "PET",
-    "count": 1,
-    "symptoms": []
-  }, {
-    "type": "BIRD",
-    "count": 13,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 3
-    }]
-  }, {
-    "type": "FARM",
-    "count": 7,
-    "symptoms": [{
-      "type": "RESPIRATORY_TRACT",
-      "count": 2
-    }, {
-      "type": "DIGESTIVE_TRACT",
-      "count": 4
-    }]
-  }, {
-    "type": "EXOTIC",
-    "count": 1,
-    "symptoms": []
-  }]
-}, {
-  "id": "e991e374-a24a-4940-85b6-5a6f6dca739e",
-  "lat": 15.449661063468367,
-  "lng": 99.77741738167155,
-  "members": [{
-    "type": "HUMAN",
-    "count": 5,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 2
-    }]
-  }, {
-    "type": "PET",
-    "count": 3,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 1
-    }]
-  }, {
-    "type": "BIRD",
     "count": 8,
+    "symptoms": [{
+      "type": "RESPIRATORY_TRACT",
+      "count": 4,
+      "dangerLevel": 0,
+      "resourceLinks": ["http://opendream.org/data?id=23322"]
+    }, {
+      "type": "DIGESTIVE_TRACT",
+      "count": 1,
+      "dangerLevel": 2,
+      "resourceLinks": ["http://opendream.org/data?id=843927"]
+    }, {
+      "type": "MUSCLE_PAIN",
+      "count": 1,
+      "dangerLevel": 1,
+      "resourceLinks": ["http://opendream.org/data?id=983030"]
+    }]
+  }, {
+    "type": "EXOTIC",
+    "count": 3,
+    "symptoms": [{
+      "type": "NERVOUS_SIGNALS",
+      "count": 1,
+      "dangerLevel": 3,
+      "resourceLinks": ["http://opendream.org/data?id=480680"]
+    }, {
+      "type": "MUSCLE_PAIN",
+      "count": 1,
+      "dangerLevel": 0,
+      "resourceLinks": ["http://opendream.org/data?id=716461"]
+    }]
+  }, {
+    "type": "HUMAN",
+    "count": 4,
+    "symptoms": [{
+      "type": "DIGESTIVE_TRACT",
+      "count": 2,
+      "dangerLevel": 4,
+      "resourceLinks": ["http://opendream.org/data?id=690758"]
+    }, {
+      "type": "MUSCLE_PAIN",
+      "count": 1,
+      "dangerLevel": 4,
+      "resourceLinks": ["http://opendream.org/data?id=663227"]
+    }]
+  }]
+}, {
+  "id": "cb6f5e86-034c-4750-91e8-adb16f642012",
+  "lat": 16.32329909642461,
+  "lng": 100.61312489980186,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
+    "type": "PET",
+    "count": 3,
     "symptoms": []
   }, {
-    "type": "FARM",
+    "type": "BIRD",
     "count": 9,
     "symptoms": [{
       "type": "HIGH_TEMPERATURE",
-      "count": 3
-    }, {
-      "type": "SKIN_PROBLEM",
-      "count": 1
-    }, {
-      "type": "DIGESTIVE_TRACT",
-      "count": 4
-    }]
-  }, {
-    "type": "EXOTIC",
-    "count": 3,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 1
+      "count": 3,
+      "dangerLevel": 0,
+      "resourceLinks": ["http://opendream.org/data?id=102624"]
     }, {
       "type": "RESPIRATORY_TRACT",
-      "count": 1
-    }]
-  }]
-}, {
-  "id": "b5784a40-7d7f-43af-8bef-5f62064f8812",
-  "lat": 18.214223221372762,
-  "lng": 99.50724031443066,
-  "members": [{
-    "type": "HUMAN",
-    "count": 1,
-    "symptoms": []
-  }, {
-    "type": "PET",
-    "count": 3,
-    "symptoms": [{
-      "type": "RESPIRATORY_TRACT",
-      "count": 1
-    }, {
-      "type": "DIGESTIVE_TRACT",
-      "count": 1
-    }]
-  }, {
-    "type": "BIRD",
-    "count": 13,
-    "symptoms": [{
-      "type": "NERVOUS_SIGNALS",
-      "count": 1
-    }, {
-      "type": "SKIN_PROBLEM",
-      "count": 10
+      "count": 1,
+      "dangerLevel": 3,
+      "resourceLinks": ["http://opendream.org/data?id=778618"]
     }]
   }, {
     "type": "FARM",
-    "count": 2,
+    "count": 3,
     "symptoms": []
   }, {
     "type": "EXOTIC",
     "count": 1,
     "symptoms": []
-  }]
-}, {
-  "id": "b85252e5-e2b1-4bf1-b7d3-6418734eb263",
-  "lat": 16.572403216154175,
-  "lng": 105.06996170787757,
-  "members": [{
+  }, {
     "type": "HUMAN",
     "count": 4,
     "symptoms": [{
       "type": "HIGH_TEMPERATURE",
-      "count": 2
+      "count": 1,
+      "dangerLevel": 4,
+      "resourceLinks": ["http://opendream.org/data?id=900802"]
     }, {
-      "type": "SKIN_PROBLEM",
-      "count": 1
-    }]
-  }, {
-    "type": "PET",
-    "count": 3,
-    "symptoms": [{
       "type": "RESPIRATORY_TRACT",
-      "count": 1
-    }]
-  }, {
-    "type": "BIRD",
-    "count": 7,
-    "symptoms": []
-  }, {
-    "type": "FARM",
-    "count": 1,
-    "symptoms": []
-  }, {
-    "type": "EXOTIC",
-    "count": 1,
-    "symptoms": []
-  }]
-}, {
-  "id": "91450979-644e-4312-998e-2ea1144cfdb2",
-  "lat": 15.856347352960475,
-  "lng": 103.70522718870525,
-  "members": [{
-    "type": "HUMAN",
-    "count": 1,
-    "symptoms": []
-  }, {
-    "type": "PET",
-    "count": 3,
-    "symptoms": [{
-      "type": "NERVOUS_SIGNALS",
-      "count": 2
-    }]
-  }, {
-    "type": "BIRD",
-    "count": 13,
-    "symptoms": [{
-      "type": "SKIN_PROBLEM",
-      "count": 7
+      "count": 1,
+      "dangerLevel": 2,
+      "resourceLinks": ["http://opendream.org/data?id=73316"]
     }, {
       "type": "DIGESTIVE_TRACT",
-      "count": 1
-    }]
-  }, {
-    "type": "FARM",
-    "count": 9,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 2
-    }, {
-      "type": "SKIN_PROBLEM",
-      "count": 4
-    }]
-  }, {
-    "type": "EXOTIC",
-    "count": 2,
-    "symptoms": [{
-      "type": "NERVOUS_SIGNALS",
-      "count": 1
+      "count": 1,
+      "dangerLevel": 3,
+      "resourceLinks": ["http://opendream.org/data?id=128342"]
     }]
   }]
 }, {
-  "id": "518f9c80-48b3-4ffe-a37c-991c9ca98dba",
-  "lat": 17.738923202806514,
-  "lng": 103.81691307804911,
+  "id": "19d52b11-1ef6-4b79-a32f-beb82b07383a",
+  "lat": 16.834832276794554,
+  "lng": 98.76709514414438,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
   "members": [{
-    "type": "HUMAN",
+    "type": "PET",
     "count": 3,
     "symptoms": [{
-      "type": "NERVOUS_SIGNALS",
-      "count": 2
+      "type": "HIGH_TEMPERATURE",
+      "count": 2,
+      "dangerLevel": 1,
+      "resourceLinks": ["http://opendream.org/data?id=859987"]
     }]
   }, {
     "type": "BIRD",
-    "count": 18,
+    "count": 19,
     "symptoms": [{
-      "type": "SKIN_PROBLEM",
-      "count": 8
+      "type": "HIGH_TEMPERATURE",
+      "count": 18,
+      "dangerLevel": 4,
+      "resourceLinks": ["http://opendream.org/data?id=31132"]
+    }]
+  }, {
+    "type": "FARM",
+    "count": 4,
+    "symptoms": [{
+      "type": "HIGH_TEMPERATURE",
+      "count": 2,
+      "dangerLevel": 4,
+      "resourceLinks": ["http://opendream.org/data?id=873277"]
     }]
   }, {
     "type": "EXOTIC",
-    "count": 2,
+    "count": 3,
+    "symptoms": []
+  }, {
+    "type": "HUMAN",
+    "count": 5,
     "symptoms": []
   }]
 }, {
-  "id": "26558672-502b-4896-ba68-d09bcef54937",
-  "lat": 16.507421494094864,
-  "lng": 98.20192300182995,
+  "id": "c9b471bc-2e51-426e-a061-e5ef519fccfb",
+  "lat": 19.13506161741186,
+  "lng": 102.74674672300145,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
   "members": [{
+    "type": "PET",
+    "count": 2,
+    "symptoms": [{
+      "type": "HIGH_TEMPERATURE",
+      "count": 1,
+      "dangerLevel": 1,
+      "resourceLinks": ["http://opendream.org/data?id=520068"]
+    }]
+  }, {
+    "type": "BIRD",
+    "count": 6,
+    "symptoms": [{
+      "type": "DIGESTIVE_TRACT",
+      "count": 2,
+      "dangerLevel": 4,
+      "resourceLinks": ["http://opendream.org/data?id=448720"]
+    }]
+  }, {
+    "type": "FARM",
+    "count": 6,
+    "symptoms": [{
+      "type": "RESPIRATORY_TRACT",
+      "count": 4,
+      "dangerLevel": 2,
+      "resourceLinks": ["http://opendream.org/data?id=470958"]
+    }]
+  }, {
+    "type": "HUMAN",
+    "count": 5,
+    "symptoms": [{
+      "type": "RESPIRATORY_TRACT",
+      "count": 4,
+      "dangerLevel": 1,
+      "resourceLinks": ["http://opendream.org/data?id=800569"]
+    }]
+  }]
+}, {
+  "id": "ed63a99c-48b3-4dd4-8f2e-7965c65566d9",
+  "lat": 18.65040695291066,
+  "lng": 99.13062730212077,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
+    "type": "BIRD",
+    "count": 3,
+    "symptoms": []
+  }, {
+    "type": "FARM",
+    "count": 2,
+    "symptoms": [{
+      "type": "NERVOUS_SIGNALS",
+      "count": 1,
+      "dangerLevel": 0,
+      "resourceLinks": ["http://opendream.org/data?id=251934"]
+    }]
+  }, {
     "type": "HUMAN",
     "count": 1,
     "symptoms": []
-  }, {
+  }]
+}, {
+  "id": "7f761cd3-daf6-46a3-93f4-518c334ab408",
+  "lat": 17.903018333190477,
+  "lng": 100.70258478157234,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
     "type": "PET",
     "count": 1,
     "symptoms": []
@@ -1929,957 +3105,301 @@
     "type": "BIRD",
     "count": 14,
     "symptoms": [{
-      "type": "MUSCLE_PAIN",
-      "count": 1
-    }]
-  }]
-}, {
-  "id": "785780e4-e25b-4370-abb3-6bb0615cfeca",
-  "lat": 18.589820768748933,
-  "lng": 101.31056688497496,
-  "members": [{
-    "type": "HUMAN",
-    "count": 3,
-    "symptoms": [{
       "type": "SKIN_PROBLEM",
-      "count": 1
-    }, {
-      "type": "RESPIRATORY_TRACT",
-      "count": 1
+      "count": 13,
+      "dangerLevel": 1,
+      "resourceLinks": ["http://opendream.org/data?id=121653"]
     }]
   }, {
+    "type": "FARM",
+    "count": 3,
+    "symptoms": []
+  }, {
+    "type": "EXOTIC",
+    "count": 1,
+    "symptoms": []
+  }, {
+    "type": "HUMAN",
+    "count": 3,
+    "symptoms": []
+  }]
+}, {
+  "id": "6b9df86b-a902-45de-a2d9-f8901697896c",
+  "lat": 19.40775866970109,
+  "lng": 100.64196776489845,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
     "type": "BIRD",
     "count": 4,
-    "symptoms": [{
-      "type": "NERVOUS_SIGNALS",
-      "count": 2
-    }]
-  }, {
-    "type": "FARM",
-    "count": 2,
-    "symptoms": [{
-      "type": "SKIN_PROBLEM",
-      "count": 1
-    }]
-  }, {
-    "type": "EXOTIC",
-    "count": 3,
-    "symptoms": [{
-      "type": "NERVOUS_SIGNALS",
-      "count": 2
-    }]
-  }]
-}, {
-  "id": "a21f3014-4e6f-4b40-85d3-f387778dc938",
-  "lat": 19.253349349315968,
-  "lng": 101.4809297520897,
-  "members": [{
-    "type": "HUMAN",
-    "count": 3,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 1
-    }, {
-      "type": "NERVOUS_SIGNALS",
-      "count": 1
-    }]
-  }, {
-    "type": "PET",
-    "count": 3,
-    "symptoms": []
-  }, {
-    "type": "BIRD",
-    "count": 17,
-    "symptoms": [{
-      "type": "NERVOUS_SIGNALS",
-      "count": 16
-    }]
-  }, {
-    "type": "FARM",
-    "count": 5,
-    "symptoms": [{
-      "type": "SKIN_PROBLEM",
-      "count": 4
-    }]
-  }, {
-    "type": "EXOTIC",
-    "count": 2,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 1
-    }]
-  }]
-}, {
-  "id": "a63d1e37-cf73-47f5-a412-ea5fae8e5f8a",
-  "lat": 18.817265992055017,
-  "lng": 102.20714091779138,
-  "members": [{
-    "type": "HUMAN",
-    "count": 3,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 1
-    }]
-  }, {
-    "type": "PET",
-    "count": 3,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 2
-    }]
-  }, {
-    "type": "BIRD",
-    "count": 5,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 1
-    }, {
-      "type": "SKIN_PROBLEM",
-      "count": 2
-    }]
-  }, {
-    "type": "EXOTIC",
-    "count": 3,
-    "symptoms": []
-  }]
-}, {
-  "id": "206b62ca-8129-46d6-8f81-b8802eb9cb7a",
-  "lat": 18.63029250509682,
-  "lng": 100.9822520245459,
-  "members": [{
-    "type": "HUMAN",
-    "count": 5,
-    "symptoms": []
-  }, {
-    "type": "PET",
-    "count": 2,
-    "symptoms": []
-  }, {
-    "type": "BIRD",
-    "count": 4,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 1
-    }]
-  }, {
-    "type": "FARM",
-    "count": 3,
-    "symptoms": []
-  }, {
-    "type": "EXOTIC",
-    "count": 1,
-    "symptoms": []
-  }]
-}, {
-  "id": "051ce5d2-e4d1-4c60-a053-21461d73b39f",
-  "lat": 19.29088474452996,
-  "lng": 105.40174762242135,
-  "members": [{
-    "type": "HUMAN",
-    "count": 1,
-    "symptoms": []
-  }, {
-    "type": "PET",
-    "count": 1,
-    "symptoms": []
-  }, {
-    "type": "BIRD",
-    "count": 6,
-    "symptoms": []
-  }, {
-    "type": "FARM",
-    "count": 7,
-    "symptoms": []
-  }]
-}, {
-  "id": "08bca077-9385-4c24-8ba7-4edeee00accd",
-  "lat": 17.835371596474143,
-  "lng": 104.68189166964295,
-  "members": [{
-    "type": "HUMAN",
-    "count": 3,
-    "symptoms": [{
-      "type": "RESPIRATORY_TRACT",
-      "count": 1
-    }]
-  }, {
-    "type": "PET",
-    "count": 2,
-    "symptoms": [{
-      "type": "RESPIRATORY_TRACT",
-      "count": 1
-    }]
-  }, {
-    "type": "BIRD",
-    "count": 10,
-    "symptoms": [{
-      "type": "DIGESTIVE_TRACT",
-      "count": 2
-    }, {
-      "type": "MUSCLE_PAIN",
-      "count": 6
-    }]
-  }, {
-    "type": "FARM",
-    "count": 6,
-    "symptoms": [{
-      "type": "NERVOUS_SIGNALS",
-      "count": 3
-    }]
-  }, {
-    "type": "EXOTIC",
-    "count": 3,
-    "symptoms": []
-  }]
-}, {
-  "id": "e6b5fe09-3dbf-422a-8abb-685cc58b2fa8",
-  "lat": 14.990904650266563,
-  "lng": 104.58495268274604,
-  "members": [{
-    "type": "HUMAN",
-    "count": 1,
-    "symptoms": []
-  }, {
-    "type": "PET",
-    "count": 1,
-    "symptoms": []
-  }, {
-    "type": "BIRD",
-    "count": 13,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 12
-    }]
-  }, {
-    "type": "FARM",
-    "count": 8,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 5
-    }]
-  }, {
-    "type": "EXOTIC",
-    "count": 2,
-    "symptoms": []
-  }]
-}, {
-  "id": "63d88ff9-80e6-45c0-9eff-ac51015a34d5",
-  "lat": 15.668559298196637,
-  "lng": 98.56250673898924,
-  "members": [{
-    "type": "HUMAN",
-    "count": 4,
-    "symptoms": [{
-      "type": "SKIN_PROBLEM",
-      "count": 3
-    }]
-  }, {
-    "type": "PET",
-    "count": 1,
-    "symptoms": []
-  }, {
-    "type": "FARM",
-    "count": 7,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 2
-    }, {
-      "type": "SKIN_PROBLEM",
-      "count": 1
-    }, {
-      "type": "RESPIRATORY_TRACT",
-      "count": 3
-    }]
-  }, {
-    "type": "EXOTIC",
-    "count": 3,
-    "symptoms": [{
-      "type": "SKIN_PROBLEM",
-      "count": 1
-    }, {
-      "type": "DIGESTIVE_TRACT",
-      "count": 1
-    }]
-  }]
-}, {
-  "id": "1bd10a58-d02d-45a2-aa9c-ac5f4cbbc90f",
-  "lat": 16.800181679925288,
-  "lng": 99.41738529822125,
-  "members": [{
-    "type": "HUMAN",
-    "count": 2,
-    "symptoms": []
-  }, {
-    "type": "BIRD",
-    "count": 5,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 3
-    }]
-  }, {
-    "type": "FARM",
-    "count": 3,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 1
-    }]
-  }, {
-    "type": "EXOTIC",
-    "count": 2,
-    "symptoms": []
-  }]
-}, {
-  "id": "d8803b99-c354-43a4-9369-c681dbece62a",
-  "lat": 15.61948843017256,
-  "lng": 100.11464352819347,
-  "members": [{
-    "type": "HUMAN",
-    "count": 4,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 3
-    }]
-  }, {
-    "type": "PET",
-    "count": 2,
-    "symptoms": [{
-      "type": "NERVOUS_SIGNALS",
-      "count": 1
-    }]
-  }, {
-    "type": "BIRD",
-    "count": 7,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 3
-    }]
-  }, {
-    "type": "FARM",
-    "count": 5,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 4
-    }]
-  }, {
-    "type": "EXOTIC",
-    "count": 3,
-    "symptoms": [{
-      "type": "DIGESTIVE_TRACT",
-      "count": 2
-    }]
-  }]
-}, {
-  "id": "0141401c-cbb7-4203-a6f0-3a8b3acef172",
-  "lat": 18.011405703032292,
-  "lng": 101.3283216211769,
-  "members": [{
-    "type": "HUMAN",
-    "count": 1,
-    "symptoms": []
-  }, {
-    "type": "BIRD",
-    "count": 5,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 3
-    }]
-  }, {
-    "type": "FARM",
-    "count": 2,
-    "symptoms": []
-  }]
-}, {
-  "id": "cdd58615-320c-449b-b0c0-92066102dca7",
-  "lat": 17.59726276026997,
-  "lng": 101.54958971442994,
-  "members": [{
-    "type": "HUMAN",
-    "count": 3,
-    "symptoms": [{
-      "type": "NERVOUS_SIGNALS",
-      "count": 2
-    }]
-  }, {
-    "type": "BIRD",
-    "count": 9,
-    "symptoms": [{
-      "type": "NERVOUS_SIGNALS",
-      "count": 8
-    }]
-  }, {
-    "type": "FARM",
-    "count": 3,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 1
-    }]
-  }, {
-    "type": "EXOTIC",
-    "count": 1,
-    "symptoms": []
-  }]
-}, {
-  "id": "2722cae9-584e-4f2a-baef-d8defbf42afb",
-  "lat": 19.073820396097116,
-  "lng": 102.75948023848228,
-  "members": [{
-    "type": "HUMAN",
-    "count": 5,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 2
-    }]
-  }, {
-    "type": "BIRD",
-    "count": 13,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 6
-    }]
-  }, {
-    "type": "FARM",
-    "count": 9,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 7
-    }]
-  }, {
-    "type": "EXOTIC",
-    "count": 2,
-    "symptoms": [{
-      "type": "NERVOUS_SIGNALS",
-      "count": 1
-    }]
-  }]
-}, {
-  "id": "c97cfec9-570f-45bc-9d0f-91f32ecc4daa",
-  "lat": 17.022900664403082,
-  "lng": 103.03927015895353,
-  "members": [{
-    "type": "HUMAN",
-    "count": 1,
-    "symptoms": []
-  }, {
-    "type": "PET",
-    "count": 3,
-    "symptoms": [{
-      "type": "SKIN_PROBLEM",
-      "count": 1
-    }]
-  }, {
-    "type": "BIRD",
-    "count": 10,
-    "symptoms": [{
-      "type": "RESPIRATORY_TRACT",
-      "count": 9
-    }]
-  }, {
-    "type": "FARM",
-    "count": 1,
-    "symptoms": []
-  }, {
-    "type": "EXOTIC",
-    "count": 2,
-    "symptoms": []
-  }]
-}, {
-  "id": "e70ea038-f5a3-41d6-ac56-1cad2565079d",
-  "lat": 19.37649620761706,
-  "lng": 101.81611181996223,
-  "members": [{
-    "type": "HUMAN",
-    "count": 1,
-    "symptoms": []
-  }, {
-    "type": "PET",
-    "count": 1,
-    "symptoms": []
-  }, {
-    "type": "FARM",
-    "count": 5,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 1
-    }, {
-      "type": "NERVOUS_SIGNALS",
-      "count": 3
-    }]
-  }, {
-    "type": "EXOTIC",
-    "count": 3,
-    "symptoms": [{
-      "type": "RESPIRATORY_TRACT",
-      "count": 2
-    }]
-  }]
-}, {
-  "id": "6424ef17-7d41-4c0e-80bb-3233717c406e",
-  "lat": 16.859810386814683,
-  "lng": 100.25785398239574,
-  "members": [{
-    "type": "HUMAN",
-    "count": 4,
-    "symptoms": []
-  }, {
-    "type": "PET",
-    "count": 2,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 1
-    }]
-  }, {
-    "type": "BIRD",
-    "count": 7,
-    "symptoms": [{
-      "type": "NERVOUS_SIGNALS",
-      "count": 5
-    }]
-  }, {
-    "type": "FARM",
-    "count": 6,
     "symptoms": [{
       "type": "MUSCLE_PAIN",
-      "count": 2
+      "count": 3,
+      "dangerLevel": 4,
+      "resourceLinks": ["http://opendream.org/data?id=817000"]
     }]
-  }]
-}, {
-  "id": "9b680740-7881-4615-bb98-d82a959706ce",
-  "lat": 17.75087898097538,
-  "lng": 99.414711766181,
-  "members": [{
+  }, {
+    "type": "FARM",
+    "count": 4,
+    "symptoms": [{
+      "type": "MUSCLE_PAIN",
+      "count": 3,
+      "dangerLevel": 1,
+      "resourceLinks": ["http://opendream.org/data?id=918167"]
+    }]
+  }, {
     "type": "HUMAN",
     "count": 5,
     "symptoms": [{
-      "type": "SKIN_PROBLEM",
-      "count": 1
+      "type": "NERVOUS_SIGNALS",
+      "count": 4,
+      "dangerLevel": 4,
+      "resourceLinks": ["http://opendream.org/data?id=357290"]
     }]
-  }, {
-    "type": "BIRD",
-    "count": 6,
-    "symptoms": []
-  }, {
-    "type": "FARM",
-    "count": 2,
-    "symptoms": []
   }]
 }, {
-  "id": "2b7011f0-e464-4411-8e15-d28f6fd59c2e",
-  "lat": 14.949078576598462,
-  "lng": 100.48302369934466,
+  "id": "baf9f489-4359-44c6-8450-38a6c1709a02",
+  "lat": 18.057936752626112,
+  "lng": 103.28310661199052,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
   "members": [{
-    "type": "HUMAN",
-    "count": 4,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 1
-    }]
-  }, {
-    "type": "BIRD",
-    "count": 2,
-    "symptoms": []
-  }, {
-    "type": "FARM",
-    "count": 2,
+    "type": "PET",
+    "count": 3,
     "symptoms": [{
       "type": "NERVOUS_SIGNALS",
-      "count": 1
-    }]
-  }, {
-    "type": "EXOTIC",
-    "count": 1,
-    "symptoms": []
-  }]
-}, {
-  "id": "246ea3d7-f71d-4d47-a0c0-e11112e2c8bb",
-  "lat": 18.001224433796246,
-  "lng": 101.19702777766494,
-  "members": [{
-    "type": "HUMAN",
-    "count": 4,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 2
-    }, {
-      "type": "MUSCLE_PAIN",
-      "count": 1
-    }]
-  }, {
-    "type": "PET",
-    "count": 3,
-    "symptoms": []
-  }, {
-    "type": "BIRD",
-    "count": 14,
-    "symptoms": [{
-      "type": "SKIN_PROBLEM",
-      "count": 1
-    }, {
-      "type": "RESPIRATORY_TRACT",
-      "count": 5
-    }]
-  }, {
-    "type": "FARM",
-    "count": 1,
-    "symptoms": []
-  }, {
-    "type": "EXOTIC",
-    "count": 2,
-    "symptoms": [{
-      "type": "DIGESTIVE_TRACT",
-      "count": 1
-    }]
-  }]
-}, {
-  "id": "19eb01e0-160b-4a1f-8531-cac633d6af22",
-  "lat": 15.03274441236753,
-  "lng": 105.53994003275224,
-  "members": [{
-    "type": "HUMAN",
-    "count": 3,
-    "symptoms": []
-  }, {
-    "type": "PET",
-    "count": 3,
-    "symptoms": [{
-      "type": "DIGESTIVE_TRACT",
-      "count": 1
+      "count": 1,
+      "dangerLevel": 3,
+      "resourceLinks": ["http://opendream.org/data?id=295760"]
     }]
   }, {
     "type": "BIRD",
     "count": 6,
     "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 3
+      "type": "NERVOUS_SIGNALS",
+      "count": 3,
+      "dangerLevel": 4,
+      "resourceLinks": ["http://opendream.org/data?id=868106"]
+    }, {
+      "type": "SKIN_PROBLEM",
+      "count": 1,
+      "dangerLevel": 2,
+      "resourceLinks": ["http://opendream.org/data?id=97931"]
     }]
   }, {
     "type": "FARM",
-    "count": 2,
-    "symptoms": []
-  }, {
-    "type": "EXOTIC",
-    "count": 3,
-    "symptoms": []
-  }]
-}, {
-  "id": "50ae8eb7-7a3b-423f-b0c6-2c26291affac",
-  "lat": 17.495190975284356,
-  "lng": 101.5128566827205,
-  "members": [{
-    "type": "HUMAN",
-    "count": 2,
-    "symptoms": []
-  }, {
-    "type": "PET",
-    "count": 2,
-    "symptoms": []
-  }, {
-    "type": "BIRD",
     "count": 6,
-    "symptoms": []
-  }, {
-    "type": "FARM",
-    "count": 2,
-    "symptoms": []
+    "symptoms": [{
+      "type": "HIGH_TEMPERATURE",
+      "count": 3,
+      "dangerLevel": 4,
+      "resourceLinks": ["http://opendream.org/data?id=950149"]
+    }, {
+      "type": "SKIN_PROBLEM",
+      "count": 2,
+      "dangerLevel": 0,
+      "resourceLinks": ["http://opendream.org/data?id=71381"]
+    }]
   }, {
     "type": "EXOTIC",
-    "count": 2,
+    "count": 3,
+    "symptoms": [{
+      "type": "NERVOUS_SIGNALS",
+      "count": 1,
+      "dangerLevel": 4,
+      "resourceLinks": ["http://opendream.org/data?id=328778"]
+    }]
+  }, {
+    "type": "HUMAN",
+    "count": 1,
     "symptoms": []
   }]
 }, {
-  "id": "5909ad3a-ddf7-4d63-89c8-54a11ea7ac9c",
-  "lat": 14.877788919571303,
-  "lng": 101.54685642421921,
+  "id": "0cef9ff4-0bda-470b-b6b9-2192eb14b459",
+  "lat": 17.398697647841953,
+  "lng": 98.61846336575721,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
   "members": [{
-    "type": "HUMAN",
+    "type": "PET",
+    "count": 2,
+    "symptoms": [{
+      "type": "RESPIRATORY_TRACT",
+      "count": 1,
+      "dangerLevel": 1,
+      "resourceLinks": ["http://opendream.org/data?id=216120"]
+    }]
+  }, {
+    "type": "BIRD",
+    "count": 2,
+    "symptoms": []
+  }, {
+    "type": "FARM",
     "count": 5,
     "symptoms": [{
       "type": "NERVOUS_SIGNALS",
-      "count": 3
-    }, {
-      "type": "DIGESTIVE_TRACT",
-      "count": 1
-    }]
-  }, {
-    "type": "BIRD",
-    "count": 13,
-    "symptoms": []
-  }, {
-    "type": "FARM",
-    "count": 8,
-    "symptoms": [{
-      "type": "RESPIRATORY_TRACT",
-      "count": 6
-    }]
-  }]
-}, {
-  "id": "b8d9c414-d9f9-4be5-aea6-e6772e3b1378",
-  "lat": 14.967737143885609,
-  "lng": 99.36961261222488,
-  "members": [{
-    "type": "HUMAN",
-    "count": 1,
-    "symptoms": []
-  }, {
-    "type": "PET",
-    "count": 2,
-    "symptoms": []
-  }, {
-    "type": "BIRD",
-    "count": 17,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 3
-    }]
-  }, {
-    "type": "FARM",
-    "count": 9,
-    "symptoms": [{
-      "type": "MUSCLE_PAIN",
-      "count": 5
-    }]
-  }, {
-    "type": "EXOTIC",
-    "count": 3,
-    "symptoms": [{
-      "type": "NERVOUS_SIGNALS",
-      "count": 2
-    }]
-  }]
-}, {
-  "id": "a083e744-c22e-4271-be89-f5f61a769bd6",
-  "lat": 15.589157239239075,
-  "lng": 99.9419302842016,
-  "members": [{
-    "type": "HUMAN",
-    "count": 4,
-    "symptoms": [{
-      "type": "SKIN_PROBLEM",
-      "count": 1
-    }, {
-      "type": "DIGESTIVE_TRACT",
-      "count": 1
-    }]
-  }, {
-    "type": "PET",
-    "count": 3,
-    "symptoms": [{
-      "type": "SKIN_PROBLEM",
-      "count": 1
-    }]
-  }, {
-    "type": "BIRD",
-    "count": 3,
-    "symptoms": [{
-      "type": "NERVOUS_SIGNALS",
-      "count": 2
-    }]
-  }, {
-    "type": "FARM",
-    "count": 2,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 1
-    }]
-  }, {
-    "type": "EXOTIC",
-    "count": 3,
-    "symptoms": []
-  }]
-}, {
-  "id": "229e2e1b-6f9e-4c02-aa49-038ebd3a6a57",
-  "lat": 18.45591354252139,
-  "lng": 102.52089447797206,
-  "members": [{
-    "type": "HUMAN",
-    "count": 2,
-    "symptoms": [{
-      "type": "NERVOUS_SIGNALS",
-      "count": 1
-    }]
-  }, {
-    "type": "PET",
-    "count": 3,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 1
-    }, {
-      "type": "SKIN_PROBLEM",
-      "count": 1
-    }]
-  }, {
-    "type": "BIRD",
-    "count": 12,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 1
-    }, {
-      "type": "RESPIRATORY_TRACT",
-      "count": 7
-    }, {
-      "type": "MUSCLE_PAIN",
-      "count": 2
-    }]
-  }, {
-    "type": "FARM",
-    "count": 4,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 1
-    }, {
-      "type": "DIGESTIVE_TRACT",
-      "count": 2
+      "count": 3,
+      "dangerLevel": 0,
+      "resourceLinks": ["http://opendream.org/data?id=709352"]
     }]
   }, {
     "type": "EXOTIC",
     "count": 1,
     "symptoms": []
+  }, {
+    "type": "HUMAN",
+    "count": 3,
+    "symptoms": []
   }]
 }, {
-  "id": "b4acc689-284b-4d1f-9b4a-2c55da83d005",
-  "lat": 18.60009027765155,
-  "lng": 103.4634486024022,
+  "id": "1e165fd7-29c8-4ba2-8ecf-0b4b8a651569",
+  "lat": 17.921080232521952,
+  "lng": 100.80017350558686,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
   "members": [{
+    "type": "PET",
+    "count": 1,
+    "symptoms": []
+  }, {
+    "type": "BIRD",
+    "count": 19,
+    "symptoms": [{
+      "type": "MUSCLE_PAIN",
+      "count": 14,
+      "dangerLevel": 0,
+      "resourceLinks": ["http://opendream.org/data?id=731496"]
+    }]
+  }, {
+    "type": "FARM",
+    "count": 1,
+    "symptoms": []
+  }, {
+    "type": "EXOTIC",
+    "count": 1,
+    "symptoms": []
+  }, {
     "type": "HUMAN",
     "count": 5,
     "symptoms": [{
       "type": "HIGH_TEMPERATURE",
-      "count": 3
-    }]
-  }, {
-    "type": "FARM",
-    "count": 7,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 5
-    }]
-  }, {
-    "type": "EXOTIC",
-    "count": 2,
-    "symptoms": [{
-      "type": "MUSCLE_PAIN",
-      "count": 1
+      "count": 3,
+      "dangerLevel": 1,
+      "resourceLinks": ["http://opendream.org/data?id=185528"]
     }]
   }]
 }, {
-  "id": "e92864fb-9467-48d2-9c08-eee12d6ef658",
-  "lat": 19.218166839497776,
-  "lng": 101.67866791066709,
+  "id": "b393f884-8d84-4f70-acef-ec3f967466fc",
+  "lat": 14.950682704796208,
+  "lng": 100.76079615999086,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
   "members": [{
-    "type": "HUMAN",
-    "count": 3,
-    "symptoms": [{
-      "type": "NERVOUS_SIGNALS",
-      "count": 2
-    }]
-  }, {
     "type": "PET",
-    "count": 2,
-    "symptoms": [{
-      "type": "NERVOUS_SIGNALS",
-      "count": 1
-    }]
-  }, {
-    "type": "BIRD",
-    "count": 14,
-    "symptoms": [{
-      "type": "MUSCLE_PAIN",
-      "count": 8
-    }]
-  }, {
-    "type": "FARM",
-    "count": 2,
-    "symptoms": []
-  }, {
-    "type": "EXOTIC",
     "count": 1,
     "symptoms": []
-  }]
-}, {
-  "id": "fe32c7c7-69a1-43aa-a2f0-c5f3481f73d8",
-  "lat": 17.628974108212503,
-  "lng": 100.69079888686204,
-  "members": [{
-    "type": "HUMAN",
-    "count": 4,
-    "symptoms": []
-  }, {
-    "type": "PET",
-    "count": 2,
-    "symptoms": []
   }, {
     "type": "BIRD",
-    "count": 12,
+    "count": 15,
     "symptoms": [{
+      "type": "NERVOUS_SIGNALS",
+      "count": 4,
+      "dangerLevel": 3,
+      "resourceLinks": ["http://opendream.org/data?id=861698"]
+    }, {
       "type": "DIGESTIVE_TRACT",
-      "count": 4
+      "count": 5,
+      "dangerLevel": 0,
+      "resourceLinks": ["http://opendream.org/data?id=159918"]
     }, {
       "type": "MUSCLE_PAIN",
-      "count": 3
+      "count": 3,
+      "dangerLevel": 3,
+      "resourceLinks": ["http://opendream.org/data?id=7218"]
     }]
   }, {
     "type": "FARM",
     "count": 9,
     "symptoms": [{
       "type": "SKIN_PROBLEM",
-      "count": 6
+      "count": 7,
+      "dangerLevel": 4,
+      "resourceLinks": ["http://opendream.org/data?id=36185"]
     }, {
       "type": "RESPIRATORY_TRACT",
-      "count": 2
-    }]
-  }, {
-    "type": "EXOTIC",
-    "count": 1,
-    "symptoms": []
-  }]
-}, {
-  "id": "08f847dc-ac15-4970-9099-fb014676218e",
-  "lat": 15.02699511549197,
-  "lng": 101.45146292957392,
-  "members": [{
-    "type": "HUMAN",
-    "count": 4,
-    "symptoms": [{
-      "type": "SKIN_PROBLEM",
-      "count": 3
-    }]
-  }, {
-    "type": "PET",
-    "count": 2,
-    "symptoms": []
-  }, {
-    "type": "BIRD",
-    "count": 18,
-    "symptoms": [{
-      "type": "DIGESTIVE_TRACT",
-      "count": 10
-    }, {
-      "type": "MUSCLE_PAIN",
-      "count": 5
-    }]
-  }, {
-    "type": "FARM",
-    "count": 9,
-    "symptoms": [{
-      "type": "DIGESTIVE_TRACT",
-      "count": 4
+      "count": 1,
+      "dangerLevel": 0,
+      "resourceLinks": ["http://opendream.org/data?id=883544"]
     }]
   }, {
     "type": "EXOTIC",
     "count": 2,
     "symptoms": []
+  }, {
+    "type": "HUMAN",
+    "count": 2,
+    "symptoms": [{
+      "type": "HIGH_TEMPERATURE",
+      "count": 1,
+      "dangerLevel": 1,
+      "resourceLinks": ["http://opendream.org/data?id=882863"]
+    }]
   }]
 }, {
-  "id": "8cc8abcf-11ec-464e-acc1-36a2ea05bc72",
-  "lat": 15.359025168165092,
-  "lng": 99.7866908343187,
+  "id": "eebb2680-421b-4496-9c3e-eaa2ae15c39a",
+  "lat": 18.948439562866245,
+  "lng": 105.187866982112,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
   "members": [{
-    "type": "HUMAN",
-    "count": 5,
-    "symptoms": [{
-      "type": "SKIN_PROBLEM",
-      "count": 4
-    }]
-  }, {
     "type": "PET",
     "count": 1,
     "symptoms": []
@@ -2888,81 +3408,1292 @@
     "count": 11,
     "symptoms": [{
       "type": "NERVOUS_SIGNALS",
-      "count": 5
+      "count": 8,
+      "dangerLevel": 1,
+      "resourceLinks": ["http://opendream.org/data?id=723164"]
     }]
   }, {
     "type": "FARM",
+    "count": 5,
+    "symptoms": []
+  }, {
+    "type": "HUMAN",
+    "count": 5,
+    "symptoms": [{
+      "type": "MUSCLE_PAIN",
+      "count": 2,
+      "dangerLevel": 2,
+      "resourceLinks": ["http://opendream.org/data?id=631707"]
+    }]
+  }]
+}, {
+  "id": "95ddaed6-92ad-4c09-9f86-883f1ce9da2e",
+  "lat": 16.536345066778466,
+  "lng": 103.26643184874308,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
+    "type": "PET",
+    "count": 3,
+    "symptoms": [{
+      "type": "HIGH_TEMPERATURE",
+      "count": 1,
+      "dangerLevel": 4,
+      "resourceLinks": ["http://opendream.org/data?id=446566"]
+    }]
+  }, {
+    "type": "BIRD",
+    "count": 16,
+    "symptoms": [{
+      "type": "NERVOUS_SIGNALS",
+      "count": 1,
+      "dangerLevel": 2,
+      "resourceLinks": ["http://opendream.org/data?id=198715"]
+    }, {
+      "type": "SKIN_PROBLEM",
+      "count": 14,
+      "dangerLevel": 2,
+      "resourceLinks": ["http://opendream.org/data?id=708169"]
+    }]
+  }, {
+    "type": "FARM",
+    "count": 1,
+    "symptoms": []
+  }, {
+    "type": "HUMAN",
+    "count": 2,
+    "symptoms": [{
+      "type": "MUSCLE_PAIN",
+      "count": 1,
+      "dangerLevel": 0,
+      "resourceLinks": ["http://opendream.org/data?id=29744"]
+    }]
+  }]
+}, {
+  "id": "9cd4ce55-fefb-4727-a125-e098d1e925d7",
+  "lat": 16.47961685635183,
+  "lng": 103.45440259767439,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
+    "type": "PET",
+    "count": 3,
+    "symptoms": []
+  }, {
+    "type": "BIRD",
+    "count": 14,
+    "symptoms": [{
+      "type": "SKIN_PROBLEM",
+      "count": 12,
+      "dangerLevel": 2,
+      "resourceLinks": ["http://opendream.org/data?id=264633"]
+    }, {
+      "type": "RESPIRATORY_TRACT",
+      "count": 1,
+      "dangerLevel": 1,
+      "resourceLinks": ["http://opendream.org/data?id=593193"]
+    }]
+  }, {
+    "type": "FARM",
+    "count": 6,
+    "symptoms": [{
+      "type": "SKIN_PROBLEM",
+      "count": 1,
+      "dangerLevel": 3,
+      "resourceLinks": ["http://opendream.org/data?id=942495"]
+    }, {
+      "type": "RESPIRATORY_TRACT",
+      "count": 1,
+      "dangerLevel": 1,
+      "resourceLinks": ["http://opendream.org/data?id=900706"]
+    }, {
+      "type": "DIGESTIVE_TRACT",
+      "count": 2,
+      "dangerLevel": 1,
+      "resourceLinks": ["http://opendream.org/data?id=4125"]
+    }]
+  }, {
+    "type": "EXOTIC",
+    "count": 3,
+    "symptoms": [{
+      "type": "HIGH_TEMPERATURE",
+      "count": 2,
+      "dangerLevel": 2,
+      "resourceLinks": ["http://opendream.org/data?id=805544"]
+    }]
+  }, {
+    "type": "HUMAN",
+    "count": 4,
+    "symptoms": []
+  }]
+}, {
+  "id": "957992a2-ef78-4622-9915-52b227e36dd5",
+  "lat": 16.104153253744204,
+  "lng": 99.81011689440204,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
+    "type": "PET",
+    "count": 2,
+    "symptoms": [{
+      "type": "RESPIRATORY_TRACT",
+      "count": 1,
+      "dangerLevel": 3,
+      "resourceLinks": ["http://opendream.org/data?id=89247"]
+    }]
+  }, {
+    "type": "BIRD",
+    "count": 5,
+    "symptoms": [{
+      "type": "SKIN_PROBLEM",
+      "count": 3,
+      "dangerLevel": 2,
+      "resourceLinks": ["http://opendream.org/data?id=900410"]
+    }]
+  }, {
+    "type": "FARM",
+    "count": 1,
+    "symptoms": []
+  }, {
+    "type": "EXOTIC",
+    "count": 1,
+    "symptoms": []
+  }, {
+    "type": "HUMAN",
+    "count": 1,
+    "symptoms": []
+  }]
+}, {
+  "id": "b2497b25-a1b5-45e0-9a69-bbfa3ee122ba",
+  "lat": 15.53045637024561,
+  "lng": 104.45370860329609,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
+    "type": "PET",
     "count": 2,
     "symptoms": [{
       "type": "HIGH_TEMPERATURE",
-      "count": 1
+      "count": 1,
+      "dangerLevel": 1,
+      "resourceLinks": ["http://opendream.org/data?id=308244"]
+    }]
+  }, {
+    "type": "BIRD",
+    "count": 13,
+    "symptoms": [{
+      "type": "HIGH_TEMPERATURE",
+      "count": 3,
+      "dangerLevel": 3,
+      "resourceLinks": ["http://opendream.org/data?id=485936"]
+    }]
+  }, {
+    "type": "FARM",
+    "count": 3,
+    "symptoms": [{
+      "type": "SKIN_PROBLEM",
+      "count": 2,
+      "dangerLevel": 1,
+      "resourceLinks": ["http://opendream.org/data?id=971930"]
+    }]
+  }, {
+    "type": "EXOTIC",
+    "count": 3,
+    "symptoms": [{
+      "type": "RESPIRATORY_TRACT",
+      "count": 1,
+      "dangerLevel": 3,
+      "resourceLinks": ["http://opendream.org/data?id=614616"]
+    }, {
+      "type": "MUSCLE_PAIN",
+      "count": 1,
+      "dangerLevel": 0,
+      "resourceLinks": ["http://opendream.org/data?id=204435"]
+    }]
+  }, {
+    "type": "HUMAN",
+    "count": 3,
+    "symptoms": [{
+      "type": "HIGH_TEMPERATURE",
+      "count": 2,
+      "dangerLevel": 1,
+      "resourceLinks": ["http://opendream.org/data?id=419427"]
+    }]
+  }]
+}, {
+  "id": "50128780-7c96-4bd3-8967-44d32cd8b145",
+  "lat": 19.490119783356814,
+  "lng": 100.46177194866485,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
+    "type": "PET",
+    "count": 3,
+    "symptoms": [{
+      "type": "HIGH_TEMPERATURE",
+      "count": 2,
+      "dangerLevel": 2,
+      "resourceLinks": ["http://opendream.org/data?id=184337"]
+    }]
+  }, {
+    "type": "BIRD",
+    "count": 13,
+    "symptoms": [{
+      "type": "HIGH_TEMPERATURE",
+      "count": 9,
+      "dangerLevel": 2,
+      "resourceLinks": ["http://opendream.org/data?id=265004"]
+    }, {
+      "type": "NERVOUS_SIGNALS",
+      "count": 3,
+      "dangerLevel": 1,
+      "resourceLinks": ["http://opendream.org/data?id=907305"]
+    }]
+  }, {
+    "type": "FARM",
+    "count": 6,
+    "symptoms": [{
+      "type": "HIGH_TEMPERATURE",
+      "count": 4,
+      "dangerLevel": 1,
+      "resourceLinks": ["http://opendream.org/data?id=504957"]
+    }]
+  }, {
+    "type": "HUMAN",
+    "count": 5,
+    "symptoms": [{
+      "type": "RESPIRATORY_TRACT",
+      "count": 2,
+      "dangerLevel": 1,
+      "resourceLinks": ["http://opendream.org/data?id=812112"]
+    }]
+  }]
+}, {
+  "id": "b67672f8-0ba2-4fe2-aba5-b67de87ae2f1",
+  "lat": 15.714482034697177,
+  "lng": 105.38275267728989,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
+    "type": "BIRD",
+    "count": 18,
+    "symptoms": [{
+      "type": "HIGH_TEMPERATURE",
+      "count": 11,
+      "dangerLevel": 2,
+      "resourceLinks": ["http://opendream.org/data?id=161726"]
+    }, {
+      "type": "SKIN_PROBLEM",
+      "count": 6,
+      "dangerLevel": 4,
+      "resourceLinks": ["http://opendream.org/data?id=646557"]
+    }]
+  }, {
+    "type": "FARM",
+    "count": 1,
+    "symptoms": []
+  }, {
+    "type": "EXOTIC",
+    "count": 1,
+    "symptoms": []
+  }, {
+    "type": "HUMAN",
+    "count": 1,
+    "symptoms": []
+  }]
+}, {
+  "id": "7ac2ff10-5fe4-4fed-9285-c3f6c51e5a0e",
+  "lat": 16.335473586851744,
+  "lng": 100.92326627689008,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
+    "type": "BIRD",
+    "count": 19,
+    "symptoms": [{
+      "type": "HIGH_TEMPERATURE",
+      "count": 5,
+      "dangerLevel": 0,
+      "resourceLinks": ["http://opendream.org/data?id=841807"]
+    }, {
+      "type": "SKIN_PROBLEM",
+      "count": 5,
+      "dangerLevel": 1,
+      "resourceLinks": ["http://opendream.org/data?id=41462"]
+    }, {
+      "type": "RESPIRATORY_TRACT",
+      "count": 4,
+      "dangerLevel": 3,
+      "resourceLinks": ["http://opendream.org/data?id=276027"]
+    }]
+  }, {
+    "type": "FARM",
+    "count": 4,
+    "symptoms": [{
+      "type": "HIGH_TEMPERATURE",
+      "count": 1,
+      "dangerLevel": 1,
+      "resourceLinks": ["http://opendream.org/data?id=672799"]
+    }, {
+      "type": "NERVOUS_SIGNALS",
+      "count": 1,
+      "dangerLevel": 1,
+      "resourceLinks": ["http://opendream.org/data?id=976258"]
+    }, {
+      "type": "RESPIRATORY_TRACT",
+      "count": 1,
+      "dangerLevel": 4,
+      "resourceLinks": ["http://opendream.org/data?id=284880"]
+    }]
+  }, {
+    "type": "EXOTIC",
+    "count": 3,
+    "symptoms": [{
+      "type": "NERVOUS_SIGNALS",
+      "count": 1,
+      "dangerLevel": 0,
+      "resourceLinks": ["http://opendream.org/data?id=110899"]
+    }, {
+      "type": "SKIN_PROBLEM",
+      "count": 1,
+      "dangerLevel": 4,
+      "resourceLinks": ["http://opendream.org/data?id=52748"]
+    }]
+  }, {
+    "type": "HUMAN",
+    "count": 1,
+    "symptoms": []
+  }]
+}, {
+  "id": "f32fe11c-2b49-4d09-a7b7-cfb35eb967b9",
+  "lat": 16.307936551816212,
+  "lng": 101.43168659106728,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
+    "type": "PET",
+    "count": 1,
+    "symptoms": []
+  }, {
+    "type": "BIRD",
+    "count": 4,
+    "symptoms": [{
+      "type": "RESPIRATORY_TRACT",
+      "count": 2,
+      "dangerLevel": 1,
+      "resourceLinks": ["http://opendream.org/data?id=894582"]
+    }, {
+      "type": "MUSCLE_PAIN",
+      "count": 1,
+      "dangerLevel": 4,
+      "resourceLinks": ["http://opendream.org/data?id=458508"]
+    }]
+  }, {
+    "type": "FARM",
+    "count": 1,
+    "symptoms": []
+  }, {
+    "type": "EXOTIC",
+    "count": 2,
+    "symptoms": [{
+      "type": "HIGH_TEMPERATURE",
+      "count": 1,
+      "dangerLevel": 3,
+      "resourceLinks": ["http://opendream.org/data?id=568404"]
+    }]
+  }, {
+    "type": "HUMAN",
+    "count": 2,
+    "symptoms": [{
+      "type": "SKIN_PROBLEM",
+      "count": 1,
+      "dangerLevel": 2,
+      "resourceLinks": ["http://opendream.org/data?id=474403"]
+    }]
+  }]
+}, {
+  "id": "98dcc8b6-3bb2-4646-a20f-bade7e1982fa",
+  "lat": 17.629009239625887,
+  "lng": 101.79782049765336,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
+    "type": "PET",
+    "count": 3,
+    "symptoms": []
+  }, {
+    "type": "FARM",
+    "count": 5,
+    "symptoms": [{
+      "type": "NERVOUS_SIGNALS",
+      "count": 1,
+      "dangerLevel": 0,
+      "resourceLinks": ["http://opendream.org/data?id=90551"]
+    }, {
+      "type": "SKIN_PROBLEM",
+      "count": 2,
+      "dangerLevel": 2,
+      "resourceLinks": ["http://opendream.org/data?id=569141"]
     }]
   }, {
     "type": "EXOTIC",
     "count": 2,
     "symptoms": []
+  }, {
+    "type": "HUMAN",
+    "count": 1,
+    "symptoms": []
   }]
 }, {
-  "id": "5dc4930d-459a-4c92-b003-ba48ea300a26",
-  "lat": 17.380169571591953,
-  "lng": 99.76426176035706,
+  "id": "87a2bd12-8cfc-4198-98bb-089dfd405978",
+  "lat": 15.385071416085761,
+  "lng": 100.88002103488708,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
   "members": [{
-    "type": "HUMAN",
-    "count": 4,
-    "symptoms": []
-  }, {
     "type": "PET",
-    "count": 2,
+    "count": 1,
     "symptoms": []
   }, {
     "type": "BIRD",
-    "count": 8,
+    "count": 2,
     "symptoms": []
+  }, {
+    "type": "FARM",
+    "count": 2,
+    "symptoms": []
+  }, {
+    "type": "HUMAN",
+    "count": 1,
+    "symptoms": []
+  }]
+}, {
+  "id": "8d7f0031-069b-49b5-a5a5-5d0db51532f0",
+  "lat": 15.406865628335275,
+  "lng": 105.49430798422155,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
+    "type": "PET",
+    "count": 1,
+    "symptoms": []
+  }, {
+    "type": "BIRD",
+    "count": 4,
+    "symptoms": [{
+      "type": "NERVOUS_SIGNALS",
+      "count": 1,
+      "dangerLevel": 4,
+      "resourceLinks": ["http://opendream.org/data?id=569554"]
+    }]
   }, {
     "type": "FARM",
     "count": 7,
     "symptoms": [{
       "type": "NERVOUS_SIGNALS",
-      "count": 6
+      "count": 4,
+      "dangerLevel": 1,
+      "resourceLinks": ["http://opendream.org/data?id=463848"]
+    }, {
+      "type": "RESPIRATORY_TRACT",
+      "count": 2,
+      "dangerLevel": 3,
+      "resourceLinks": ["http://opendream.org/data?id=609442"]
+    }]
+  }, {
+    "type": "EXOTIC",
+    "count": 1,
+    "symptoms": []
+  }, {
+    "type": "HUMAN",
+    "count": 3,
+    "symptoms": [{
+      "type": "SKIN_PROBLEM",
+      "count": 2,
+      "dangerLevel": 4,
+      "resourceLinks": ["http://opendream.org/data?id=460876"]
+    }]
+  }]
+}, {
+  "id": "c67e99d3-9a0b-4974-90e4-c0531d4f0711",
+  "lat": 17.574329848019858,
+  "lng": 102.69050430843714,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
+    "type": "PET",
+    "count": 3,
+    "symptoms": [{
+      "type": "SKIN_PROBLEM",
+      "count": 1,
+      "dangerLevel": 3,
+      "resourceLinks": ["http://opendream.org/data?id=381801"]
+    }]
+  }, {
+    "type": "BIRD",
+    "count": 11,
+    "symptoms": [{
+      "type": "HIGH_TEMPERATURE",
+      "count": 3,
+      "dangerLevel": 2,
+      "resourceLinks": ["http://opendream.org/data?id=273576"]
+    }, {
+      "type": "NERVOUS_SIGNALS",
+      "count": 1,
+      "dangerLevel": 4,
+      "resourceLinks": ["http://opendream.org/data?id=367568"]
     }]
   }, {
     "type": "EXOTIC",
     "count": 2,
     "symptoms": []
+  }, {
+    "type": "HUMAN",
+    "count": 1,
+    "symptoms": []
   }]
 }, {
-  "id": "c008ce0f-8a92-4b37-bdcd-09eaa4c9c603",
-  "lat": 16.888036908802057,
-  "lng": 104.12393989721706,
+  "id": "3deeb74f-cc81-4c9d-b5b7-17249d119279",
+  "lat": 15.425346259029874,
+  "lng": 102.76661083500609,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
   "members": [{
+    "type": "PET",
+    "count": 2,
+    "symptoms": []
+  }, {
+    "type": "BIRD",
+    "count": 3,
+    "symptoms": [{
+      "type": "SKIN_PROBLEM",
+      "count": 2,
+      "dangerLevel": 1,
+      "resourceLinks": ["http://opendream.org/data?id=14059"]
+    }]
+  }, {
+    "type": "FARM",
+    "count": 1,
+    "symptoms": []
+  }, {
+    "type": "EXOTIC",
+    "count": 1,
+    "symptoms": []
+  }, {
     "type": "HUMAN",
+    "count": 1,
+    "symptoms": []
+  }]
+}, {
+  "id": "23ddd376-b212-41ec-9df7-c33b29e17c06",
+  "lat": 16.135363845733867,
+  "lng": 101.7892323727892,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
+    "type": "PET",
+    "count": 3,
+    "symptoms": []
+  }, {
+    "type": "BIRD",
+    "count": 1,
+    "symptoms": []
+  }, {
+    "type": "EXOTIC",
+    "count": 1,
+    "symptoms": []
+  }, {
+    "type": "HUMAN",
+    "count": 5,
+    "symptoms": [{
+      "type": "RESPIRATORY_TRACT",
+      "count": 1,
+      "dangerLevel": 1,
+      "resourceLinks": ["http://opendream.org/data?id=597925"]
+    }]
+  }]
+}, {
+  "id": "54f83ffd-191b-49fa-8755-1d81b8de6308",
+  "lat": 17.897069891073556,
+  "lng": 102.74717129933393,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
+    "type": "PET",
+    "count": 2,
+    "symptoms": [{
+      "type": "HIGH_TEMPERATURE",
+      "count": 1,
+      "dangerLevel": 2,
+      "resourceLinks": ["http://opendream.org/data?id=32248"]
+    }]
+  }, {
+    "type": "BIRD",
+    "count": 4,
+    "symptoms": []
+  }, {
+    "type": "FARM",
+    "count": 3,
+    "symptoms": [{
+      "type": "RESPIRATORY_TRACT",
+      "count": 1,
+      "dangerLevel": 3,
+      "resourceLinks": ["http://opendream.org/data?id=555533"]
+    }]
+  }, {
+    "type": "EXOTIC",
+    "count": 3,
+    "symptoms": []
+  }, {
+    "type": "HUMAN",
+    "count": 5,
+    "symptoms": [{
+      "type": "SKIN_PROBLEM",
+      "count": 4,
+      "dangerLevel": 2,
+      "resourceLinks": ["http://opendream.org/data?id=162996"]
+    }]
+  }]
+}, {
+  "id": "9fd4468e-20b7-41d0-9c5b-de2836460b27",
+  "lat": 16.27595579406392,
+  "lng": 105.11463686111988,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
+    "type": "PET",
+    "count": 1,
+    "symptoms": []
+  }, {
+    "type": "BIRD",
+    "count": 1,
+    "symptoms": []
+  }, {
+    "type": "FARM",
     "count": 4,
     "symptoms": [{
       "type": "HIGH_TEMPERATURE",
-      "count": 3
+      "count": 1,
+      "dangerLevel": 0,
+      "resourceLinks": ["http://opendream.org/data?id=765872"]
+    }, {
+      "type": "MUSCLE_PAIN",
+      "count": 2,
+      "dangerLevel": 2,
+      "resourceLinks": ["http://opendream.org/data?id=714292"]
+    }]
+  }, {
+    "type": "EXOTIC",
+    "count": 3,
+    "symptoms": []
+  }, {
+    "type": "HUMAN",
+    "count": 4,
+    "symptoms": [{
+      "type": "NERVOUS_SIGNALS",
+      "count": 2,
+      "dangerLevel": 1,
+      "resourceLinks": ["http://opendream.org/data?id=515598"]
+    }]
+  }]
+}, {
+  "id": "58c911f4-972a-4183-b3c6-9d96362579cd",
+  "lat": 16.849796070243176,
+  "lng": 104.78519109809486,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
+    "type": "BIRD",
+    "count": 15,
+    "symptoms": [{
+      "type": "HIGH_TEMPERATURE",
+      "count": 4,
+      "dangerLevel": 1,
+      "resourceLinks": ["http://opendream.org/data?id=920668"]
+    }, {
+      "type": "NERVOUS_SIGNALS",
+      "count": 3,
+      "dangerLevel": 2,
+      "resourceLinks": ["http://opendream.org/data?id=283067"]
+    }, {
+      "type": "SKIN_PROBLEM",
+      "count": 1,
+      "dangerLevel": 1,
+      "resourceLinks": ["http://opendream.org/data?id=78030"]
+    }]
+  }, {
+    "type": "FARM",
+    "count": 7,
+    "symptoms": [{
+      "type": "SKIN_PROBLEM",
+      "count": 6,
+      "dangerLevel": 1,
+      "resourceLinks": ["http://opendream.org/data?id=597312"]
+    }]
+  }, {
+    "type": "EXOTIC",
+    "count": 1,
+    "symptoms": []
+  }, {
+    "type": "HUMAN",
+    "count": 1,
+    "symptoms": []
+  }]
+}, {
+  "id": "e9a45db7-58ba-4b78-8e84-ad5786a66295",
+  "lat": 19.462625568462585,
+  "lng": 101.36724299295722,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
+    "type": "BIRD",
+    "count": 7,
+    "symptoms": [{
+      "type": "SKIN_PROBLEM",
+      "count": 4,
+      "dangerLevel": 1,
+      "resourceLinks": ["http://opendream.org/data?id=55052"]
+    }, {
+      "type": "DIGESTIVE_TRACT",
+      "count": 2,
+      "dangerLevel": 0,
+      "resourceLinks": ["http://opendream.org/data?id=33564"]
+    }]
+  }, {
+    "type": "FARM",
+    "count": 1,
+    "symptoms": []
+  }, {
+    "type": "EXOTIC",
+    "count": 1,
+    "symptoms": []
+  }, {
+    "type": "HUMAN",
+    "count": 5,
+    "symptoms": [{
+      "type": "SKIN_PROBLEM",
+      "count": 2,
+      "dangerLevel": 2,
+      "resourceLinks": ["http://opendream.org/data?id=612222"]
+    }, {
+      "type": "RESPIRATORY_TRACT",
+      "count": 2,
+      "dangerLevel": 0,
+      "resourceLinks": ["http://opendream.org/data?id=884138"]
+    }]
+  }]
+}, {
+  "id": "9712c843-cd47-4102-9d34-73d5713cbc6b",
+  "lat": 16.056012759750317,
+  "lng": 99.6554408673569,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
+    "type": "PET",
+    "count": 3,
+    "symptoms": [{
+      "type": "SKIN_PROBLEM",
+      "count": 2,
+      "dangerLevel": 1,
+      "resourceLinks": ["http://opendream.org/data?id=858954"]
+    }]
+  }, {
+    "type": "BIRD",
+    "count": 13,
+    "symptoms": []
+  }, {
+    "type": "FARM",
+    "count": 2,
+    "symptoms": [{
+      "type": "NERVOUS_SIGNALS",
+      "count": 1,
+      "dangerLevel": 3,
+      "resourceLinks": ["http://opendream.org/data?id=646628"]
+    }]
+  }, {
+    "type": "EXOTIC",
+    "count": 2,
+    "symptoms": []
+  }, {
+    "type": "HUMAN",
+    "count": 1,
+    "symptoms": []
+  }]
+}, {
+  "id": "60502454-8da3-4296-9c8f-9e77d2f42abb",
+  "lat": 16.00685255380833,
+  "lng": 99.56412971044689,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
+    "type": "PET",
+    "count": 3,
+    "symptoms": [{
+      "type": "DIGESTIVE_TRACT",
+      "count": 2,
+      "dangerLevel": 3,
+      "resourceLinks": ["http://opendream.org/data?id=234313"]
     }]
   }, {
     "type": "BIRD",
     "count": 19,
     "symptoms": [{
       "type": "SKIN_PROBLEM",
-      "count": 16
+      "count": 3,
+      "dangerLevel": 0,
+      "resourceLinks": ["http://opendream.org/data?id=368614"]
+    }, {
+      "type": "RESPIRATORY_TRACT",
+      "count": 8,
+      "dangerLevel": 2,
+      "resourceLinks": ["http://opendream.org/data?id=587172"]
+    }]
+  }, {
+    "type": "FARM",
+    "count": 9,
+    "symptoms": [{
+      "type": "HIGH_TEMPERATURE",
+      "count": 6,
+      "dangerLevel": 4,
+      "resourceLinks": ["http://opendream.org/data?id=183644"]
+    }, {
+      "type": "NERVOUS_SIGNALS",
+      "count": 1,
+      "dangerLevel": 2,
+      "resourceLinks": ["http://opendream.org/data?id=176304"]
+    }]
+  }, {
+    "type": "EXOTIC",
+    "count": 1,
+    "symptoms": []
+  }, {
+    "type": "HUMAN",
+    "count": 3,
+    "symptoms": [{
+      "type": "NERVOUS_SIGNALS",
+      "count": 1,
+      "dangerLevel": 3,
+      "resourceLinks": ["http://opendream.org/data?id=34912"]
+    }]
+  }]
+}, {
+  "id": "c9d5a3ed-5751-4ece-b6c5-e232b97e2d3c",
+  "lat": 18.913783393047872,
+  "lng": 103.04933549058875,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
+    "type": "PET",
+    "count": 2,
+    "symptoms": [{
+      "type": "SKIN_PROBLEM",
+      "count": 1,
+      "dangerLevel": 3,
+      "resourceLinks": ["http://opendream.org/data?id=478462"]
+    }]
+  }, {
+    "type": "BIRD",
+    "count": 19,
+    "symptoms": [{
+      "type": "HIGH_TEMPERATURE",
+      "count": 7,
+      "dangerLevel": 0,
+      "resourceLinks": ["http://opendream.org/data?id=180238"]
+    }, {
+      "type": "NERVOUS_SIGNALS",
+      "count": 1,
+      "dangerLevel": 1,
+      "resourceLinks": ["http://opendream.org/data?id=681321"]
+    }, {
+      "type": "SKIN_PROBLEM",
+      "count": 3,
+      "dangerLevel": 4,
+      "resourceLinks": ["http://opendream.org/data?id=653195"]
+    }, {
+      "type": "DIGESTIVE_TRACT",
+      "count": 6,
+      "dangerLevel": 1,
+      "resourceLinks": ["http://opendream.org/data?id=225810"]
+    }]
+  }, {
+    "type": "FARM",
+    "count": 8,
+    "symptoms": [{
+      "type": "SKIN_PROBLEM",
+      "count": 3,
+      "dangerLevel": 2,
+      "resourceLinks": ["http://opendream.org/data?id=143984"]
+    }]
+  }, {
+    "type": "HUMAN",
+    "count": 5,
+    "symptoms": [{
+      "type": "MUSCLE_PAIN",
+      "count": 3,
+      "dangerLevel": 0,
+      "resourceLinks": ["http://opendream.org/data?id=621325"]
+    }]
+  }]
+}, {
+  "id": "236f41ba-8b5a-4b4f-b9d3-072579e34076",
+  "lat": 18.75157679111334,
+  "lng": 99.60172476006969,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
+    "type": "BIRD",
+    "count": 11,
+    "symptoms": [{
+      "type": "NERVOUS_SIGNALS",
+      "count": 2,
+      "dangerLevel": 1,
+      "resourceLinks": ["http://opendream.org/data?id=561146"]
+    }, {
+      "type": "RESPIRATORY_TRACT",
+      "count": 3,
+      "dangerLevel": 4,
+      "resourceLinks": ["http://opendream.org/data?id=107785"]
+    }]
+  }, {
+    "type": "FARM",
+    "count": 5,
+    "symptoms": [{
+      "type": "RESPIRATORY_TRACT",
+      "count": 1,
+      "dangerLevel": 0,
+      "resourceLinks": ["http://opendream.org/data?id=18345"]
     }]
   }, {
     "type": "EXOTIC",
     "count": 2,
+    "symptoms": []
+  }, {
+    "type": "HUMAN",
+    "count": 2,
+    "symptoms": []
+  }]
+}, {
+  "id": "18249ca9-5064-4cfe-93e0-60b423057bd1",
+  "lat": 18.704584633026265,
+  "lng": 103.43948273315667,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
+    "type": "PET",
+    "count": 1,
+    "symptoms": []
+  }, {
+    "type": "BIRD",
+    "count": 4,
+    "symptoms": []
+  }, {
+    "type": "FARM",
+    "count": 7,
+    "symptoms": [{
+      "type": "MUSCLE_PAIN",
+      "count": 5,
+      "dangerLevel": 1,
+      "resourceLinks": ["http://opendream.org/data?id=324157"]
+    }]
+  }, {
+    "type": "HUMAN",
+    "count": 3,
     "symptoms": [{
       "type": "HIGH_TEMPERATURE",
-      "count": 1
+      "count": 2,
+      "dangerLevel": 2,
+      "resourceLinks": ["http://opendream.org/data?id=306462"]
     }]
   }]
 }, {
-  "id": "f5c21b9f-ea67-459c-9568-fe0cb2b7a179",
-  "lat": 15.013738647538764,
-  "lng": 100.1748938721611,
+  "id": "b2f1da62-9622-4a79-8d1c-17769889e462",
+  "lat": 17.59290268889246,
+  "lng": 100.84591298467642,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
   "members": [{
-    "type": "HUMAN",
+    "type": "BIRD",
+    "count": 3,
+    "symptoms": [{
+      "type": "SKIN_PROBLEM",
+      "count": 1,
+      "dangerLevel": 4,
+      "resourceLinks": ["http://opendream.org/data?id=687215"]
+    }]
+  }, {
+    "type": "FARM",
     "count": 2,
+    "symptoms": [{
+      "type": "HIGH_TEMPERATURE",
+      "count": 1,
+      "dangerLevel": 3,
+      "resourceLinks": ["http://opendream.org/data?id=353762"]
+    }]
+  }, {
+    "type": "EXOTIC",
+    "count": 1,
+    "symptoms": []
+  }, {
+    "type": "HUMAN",
+    "count": 5,
+    "symptoms": []
+  }]
+}, {
+  "id": "78d6ca33-4655-4d5c-a4ae-8802a6ad692f",
+  "lat": 15.280334938466831,
+  "lng": 103.70561973227916,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
+    "type": "PET",
+    "count": 3,
+    "symptoms": [{
+      "type": "NERVOUS_SIGNALS",
+      "count": 2,
+      "dangerLevel": 4,
+      "resourceLinks": ["http://opendream.org/data?id=102088"]
+    }]
+  }, {
+    "type": "FARM",
+    "count": 6,
+    "symptoms": [{
+      "type": "DIGESTIVE_TRACT",
+      "count": 2,
+      "dangerLevel": 0,
+      "resourceLinks": ["http://opendream.org/data?id=542621"]
+    }]
+  }, {
+    "type": "HUMAN",
+    "count": 4,
+    "symptoms": [{
+      "type": "HIGH_TEMPERATURE",
+      "count": 2,
+      "dangerLevel": 2,
+      "resourceLinks": ["http://opendream.org/data?id=288409"]
+    }, {
+      "type": "RESPIRATORY_TRACT",
+      "count": 1,
+      "dangerLevel": 0,
+      "resourceLinks": ["http://opendream.org/data?id=630649"]
+    }]
+  }]
+}, {
+  "id": "e20b1281-f392-4ccb-88af-80fc8356ff74",
+  "lat": 15.120800270288127,
+  "lng": 100.97133748543925,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
+    "type": "PET",
+    "count": 1,
     "symptoms": []
   }, {
     "type": "BIRD",
@@ -2970,293 +4701,241 @@
     "symptoms": []
   }, {
     "type": "FARM",
+    "count": 8,
+    "symptoms": [{
+      "type": "SKIN_PROBLEM",
+      "count": 5,
+      "dangerLevel": 2,
+      "resourceLinks": ["http://opendream.org/data?id=41782"]
+    }]
+  }, {
+    "type": "EXOTIC",
+    "count": 1,
+    "symptoms": []
+  }, {
+    "type": "HUMAN",
+    "count": 1,
+    "symptoms": []
+  }]
+}, {
+  "id": "4c57e0b0-4092-4532-9ca8-9957a6759dfe",
+  "lat": 15.714194772476585,
+  "lng": 103.03610697415215,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
+    "type": "PET",
+    "count": 1,
+    "symptoms": []
+  }, {
+    "type": "BIRD",
+    "count": 17,
+    "symptoms": [{
+      "type": "HIGH_TEMPERATURE",
+      "count": 8,
+      "dangerLevel": 2,
+      "resourceLinks": ["http://opendream.org/data?id=201624"]
+    }, {
+      "type": "SKIN_PROBLEM",
+      "count": 1,
+      "dangerLevel": 3,
+      "resourceLinks": ["http://opendream.org/data?id=168886"]
+    }, {
+      "type": "MUSCLE_PAIN",
+      "count": 5,
+      "dangerLevel": 3,
+      "resourceLinks": ["http://opendream.org/data?id=629828"]
+    }]
+  }, {
+    "type": "FARM",
+    "count": 3,
+    "symptoms": []
+  }, {
+    "type": "HUMAN",
+    "count": 2,
+    "symptoms": []
+  }]
+}, {
+  "id": "82b08bdf-aadc-4db3-828c-6b1f10501ed3",
+  "lat": 17.64593719054867,
+  "lng": 102.95345625844439,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
+  "members": [{
+    "type": "PET",
     "count": 2,
     "symptoms": []
   }, {
-    "type": "EXOTIC",
-    "count": 3,
-    "symptoms": []
-  }]
-}, {
-  "id": "6ab7b7b2-8403-431b-9310-e5b2bb037ca8",
-  "lat": 15.280471179638825,
-  "lng": 101.91680558498315,
-  "members": [{
-    "type": "HUMAN",
-    "count": 1,
-    "symptoms": []
-  }, {
     "type": "BIRD",
-    "count": 1,
-    "symptoms": []
-  }, {
-    "type": "FARM",
-    "count": 5,
-    "symptoms": [{
-      "type": "NERVOUS_SIGNALS",
-      "count": 1
-    }, {
-      "type": "SKIN_PROBLEM",
-      "count": 1
-    }, {
-      "type": "DIGESTIVE_TRACT",
-      "count": 2
-    }]
-  }, {
-    "type": "EXOTIC",
-    "count": 3,
-    "symptoms": [{
-      "type": "NERVOUS_SIGNALS",
-      "count": 1
-    }]
-  }]
-}, {
-  "id": "db0e7da5-5cbe-494f-97ac-840f07c2f57f",
-  "lat": 17.19949252490326,
-  "lng": 100.12514966292257,
-  "members": [{
-    "type": "HUMAN",
-    "count": 1,
-    "symptoms": []
-  }, {
-    "type": "PET",
-    "count": 3,
+    "count": 6,
     "symptoms": [{
       "type": "HIGH_TEMPERATURE",
-      "count": 2
-    }]
-  }, {
-    "type": "BIRD",
-    "count": 11,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 6
+      "count": 4,
+      "dangerLevel": 0,
+      "resourceLinks": ["http://opendream.org/data?id=388519"]
     }, {
       "type": "NERVOUS_SIGNALS",
-      "count": 2
-    }, {
-      "type": "SKIN_PROBLEM",
-      "count": 2
+      "count": 1,
+      "dangerLevel": 0,
+      "resourceLinks": ["http://opendream.org/data?id=480748"]
     }]
   }, {
     "type": "FARM",
     "count": 7,
     "symptoms": [{
-      "type": "SKIN_PROBLEM",
-      "count": 3
-    }, {
-      "type": "DIGESTIVE_TRACT",
-      "count": 2
+      "type": "HIGH_TEMPERATURE",
+      "count": 1,
+      "dangerLevel": 3,
+      "resourceLinks": ["http://opendream.org/data?id=156730"]
     }]
   }, {
     "type": "EXOTIC",
     "count": 1,
     "symptoms": []
+  }, {
+    "type": "HUMAN",
+    "count": 5,
+    "symptoms": []
   }]
 }, {
-  "id": "5e5ff07d-7f3a-4baf-8dee-0d81c058b606",
-  "lat": 17.46070445818684,
-  "lng": 100.06595553753706,
+  "id": "c8e81ba5-ad9e-4bd6-9098-4e063f9c81bb",
+  "lat": 18.876167770131723,
+  "lng": 102.97161867266912,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
   "members": [{
-    "type": "HUMAN",
-    "count": 1,
-    "symptoms": []
-  }, {
     "type": "PET",
     "count": 2,
-    "symptoms": [{
-      "type": "RESPIRATORY_TRACT",
-      "count": 1
-    }]
+    "symptoms": []
   }, {
     "type": "BIRD",
-    "count": 11,
-    "symptoms": [{
-      "type": "NERVOUS_SIGNALS",
-      "count": 3
-    }, {
-      "type": "SKIN_PROBLEM",
-      "count": 5
-    }]
-  }, {
-    "type": "EXOTIC",
-    "count": 1,
-    "symptoms": []
-  }]
-}, {
-  "id": "7b21e1fd-c013-4c03-9d26-e6f36ef64ef6",
-  "lat": 18.0049753421837,
-  "lng": 104.54341551282523,
-  "members": [{
-    "type": "HUMAN",
-    "count": 3,
+    "count": 19,
     "symptoms": [{
       "type": "HIGH_TEMPERATURE",
-      "count": 1
-    }]
-  }, {
-    "type": "BIRD",
-    "count": 5,
-    "symptoms": [{
-      "type": "NERVOUS_SIGNALS",
-      "count": 4
+      "count": 9,
+      "dangerLevel": 3,
+      "resourceLinks": ["http://opendream.org/data?id=303392"]
+    }, {
+      "type": "SKIN_PROBLEM",
+      "count": 8,
+      "dangerLevel": 2,
+      "resourceLinks": ["http://opendream.org/data?id=767519"]
     }]
   }, {
     "type": "FARM",
-    "count": 6,
-    "symptoms": [{
-      "type": "RESPIRATORY_TRACT",
-      "count": 3
-    }, {
-      "type": "DIGESTIVE_TRACT",
-      "count": 2
-    }]
-  }, {
-    "type": "EXOTIC",
-    "count": 3,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 1
-    }]
-  }]
-}, {
-  "id": "86b7d5c1-4fdc-453c-a480-2d74fb818912",
-  "lat": 18.907902077340978,
-  "lng": 100.74311639239463,
-  "members": [{
-    "type": "HUMAN",
     "count": 4,
     "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 3
-    }]
-  }, {
-    "type": "BIRD",
-    "count": 6,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 3
-    }]
-  }, {
-    "type": "FARM",
-    "count": 1,
-    "symptoms": []
-  }]
-}, {
-  "id": "9f37579c-5f7d-4e4c-b9da-740e524b3280",
-  "lat": 18.113075348806234,
-  "lng": 103.39841971066751,
-  "members": [{
-    "type": "HUMAN",
-    "count": 5,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 4
-    }]
-  }, {
-    "type": "PET",
-    "count": 3,
-    "symptoms": []
-  }, {
-    "type": "BIRD",
-    "count": 15,
-    "symptoms": []
-  }, {
-    "type": "FARM",
-    "count": 5,
-    "symptoms": [{
-      "type": "NERVOUS_SIGNALS",
-      "count": 2
-    }, {
-      "type": "SKIN_PROBLEM",
-      "count": 2
+      "type": "RESPIRATORY_TRACT",
+      "count": 2,
+      "dangerLevel": 3,
+      "resourceLinks": ["http://opendream.org/data?id=653303"]
     }]
   }, {
     "type": "EXOTIC",
-    "count": 3,
-    "symptoms": []
-  }]
-}, {
-  "id": "43e63a04-6210-44ae-8279-ed76d4faa88e",
-  "lat": 18.499863342299385,
-  "lng": 102.10867368893818,
-  "members": [{
-    "type": "HUMAN",
     "count": 2,
     "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 1
+      "type": "DIGESTIVE_TRACT",
+      "count": 1,
+      "dangerLevel": 0,
+      "resourceLinks": ["http://opendream.org/data?id=90765"]
     }]
   }, {
-    "type": "PET",
-    "count": 3,
+    "type": "HUMAN",
+    "count": 5,
     "symptoms": [{
-      "type": "NERVOUS_SIGNALS",
-      "count": 1
+      "type": "HIGH_TEMPERATURE",
+      "count": 1,
+      "dangerLevel": 0,
+      "resourceLinks": ["http://opendream.org/data?id=830220"]
     }, {
       "type": "DIGESTIVE_TRACT",
-      "count": 1
+      "count": 1,
+      "dangerLevel": 2,
+      "resourceLinks": ["http://opendream.org/data?id=402387"]
     }]
-  }, {
-    "type": "BIRD",
-    "count": 7,
-    "symptoms": []
-  }, {
-    "type": "FARM",
-    "count": 1,
-    "symptoms": []
-  }, {
-    "type": "EXOTIC",
-    "count": 1,
-    "symptoms": []
   }]
 }, {
-  "id": "60961374-8415-4b74-80f9-5c99d08babc3",
-  "lat": 18.79948173559326,
-  "lng": 98.38069765608834,
+  "id": "aa4f15bd-0d3a-4b20-a340-c617593494c9",
+  "lat": 15.160264586011953,
+  "lng": 102.21819583695716,
+  "address": {
+    "firstName": "Dang",
+    "lastName": "Haeng",
+    "street": "15, Huay Kaew",
+    "postCode": "34535",
+    "city": "Not Chiang Mai",
+    "countryCode": "TH",
+    "phone": "+66 3453 3742",
+    "email": "some@email.com"
+  },
   "members": [{
-    "type": "HUMAN",
+    "type": "PET",
     "count": 2,
     "symptoms": [{
       "type": "HIGH_TEMPERATURE",
-      "count": 1
-    }]
-  }, {
-    "type": "BIRD",
-    "count": 10,
-    "symptoms": [{
-      "type": "SKIN_PROBLEM",
-      "count": 7
-    }]
-  }, {
-    "type": "FARM",
-    "count": 1,
-    "symptoms": []
-  }]
-}, {
-  "id": "0e26a545-def7-4290-b47d-46904dc7c77a",
-  "lat": 19.286858498098347,
-  "lng": 103.1893478788443,
-  "members": [{
-    "type": "HUMAN",
-    "count": 3,
-    "symptoms": [{
-      "type": "HIGH_TEMPERATURE",
-      "count": 2
+      "count": 1,
+      "dangerLevel": 2,
+      "resourceLinks": ["http://opendream.org/data?id=335293"]
     }]
   }, {
     "type": "BIRD",
     "count": 10,
     "symptoms": [{
       "type": "RESPIRATORY_TRACT",
-      "count": 4
+      "count": 2,
+      "dangerLevel": 1,
+      "resourceLinks": ["http://opendream.org/data?id=787775"]
+    }, {
+      "type": "DIGESTIVE_TRACT",
+      "count": 7,
+      "dangerLevel": 3,
+      "resourceLinks": ["http://opendream.org/data?id=561772"]
     }]
   }, {
     "type": "FARM",
-    "count": 5,
+    "count": 6,
     "symptoms": [{
+      "type": "HIGH_TEMPERATURE",
+      "count": 1,
+      "dangerLevel": 1,
+      "resourceLinks": ["http://opendream.org/data?id=186275"]
+    }, {
       "type": "NERVOUS_SIGNALS",
-      "count": 3
+      "count": 2,
+      "dangerLevel": 0,
+      "resourceLinks": ["http://opendream.org/data?id=156791"]
     }]
+  }, {
+    "type": "EXOTIC",
+    "count": 1,
+    "symptoms": []
+  }, {
+    "type": "HUMAN",
+    "count": 2,
+    "symptoms": []
   }]
 }]
