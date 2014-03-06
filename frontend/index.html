@@ -150,48 +150,68 @@
                         
                 $.each(data, function (i, location) {
                 
-                    $.each(location['members'], function (i, member) {
+                    $.each(location['members'], function (j, member) {
                                            
                         // Loop on the count                     
-                        for (var j=0; j < member['count']; j++) {
                                         
-                            var latLng = calLatLng(location.lat, location.lng, member.count, j);
-                            var color = colorToHex('rgb(' + colorAll[member['type']] + ')');
-                                                    
-                            var marker = new google.maps.Marker({
-                                'position': latLng,
-                                'icon': 'image/'+member['type']+'.png'
-                                
-                                //'icon': 'http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=•|'+ color.substring(1) +'|000000'
-                            });
+                        var latLng = calLatLng(location.lat, location.lng, location['members'].length, j);
+                        var color = colorToHex('rgb(' + colorAll[member['type']] + ')');
+                                                
+                        var marker = new google.maps.Marker({
+                            'position': latLng,
+                            //'icon': 'image/'+member['type']+'.png'
+                            'icon': 'http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=•|'+ color.substring(1) +'|000000'
                             
+                        });
                         
-                            google.maps.event.addListener(marker, 'click', function() {
-                                info_window.close();
+                    
+                        google.maps.event.addListener(marker, 'click', function() {
+                            info_window.close();
+                        
+                            var item_contents = 
+                        
+                            '<div class="marker-content">'+ 
+                                '<h3>Type</h3>' + capitaliseFirstLetter(member['type']) +
+                                '<h3 class="label">Address</h3>' +
+                                '<p><span class="label">Contact name</span> : <span class="field-content">' + location['address']['firstName'] + ' ' + location['address']['lastName'] + '</span></p>' +
+                                '<p><span class="label">Email</span> : <span class="field-content">' + location['address']['email'] + '</span></p>' +
+                                '<p><span class="label">Street</span> : <span class="field-content">' + location['address']['street'] + '</span></p>' +
+                                '<p><span class="label">Post code</span> : <span class="field-content">' + location['address']['postCode'] + '</span></p>' +
+                                '<p><span class="label">City</span> : <span class="field-content">' + location['address']['city'] + '</span></p>' +
+                                '<p><span class="label">Phone</span> : <span class="field-content">' + location['address']['phone'] + '</span></p>';
                             
-                                var item_contents = 
-                            
-                                '<div class="marker-content">'+ 
-                                    '<h3>Type</h3>' + capitaliseFirstLetter(member['type']) +
-                                    '<h3 class="label">Address</h3>' +
-                                    '<p><span class="label">Contact name</span> : <span class="field-content">' + location['address']['firstName'] + ' ' + location['address']['lastName'] + '</span></p>' +
-                                    '<p><span class="label">Email</span> : <span class="field-content">' + location['address']['email'] + '</span></p>' +
-                                    '<p><span class="label">Street</span> : <span class="field-content">' + location['address']['street'] + '</span></p>' +
-                                    '<p><span class="label">Post code</span> : <span class="field-content">' + location['address']['postCode'] + '</span></p>' +
-                                    '<p><span class="label">City</span> : <span class="field-content">' + location['address']['city'] + '</span></p>' +
-                                    '<p><span class="label">Phone</span> : <span class="field-content">' + location['address']['phone'] + '</span></p>' +
+                            if (member['symptoms'].length) {
                                 
+                                item_contents += '<h3 class="label">Symptoms</h3>';
+                                item_contents += '<ul>';
+                                
+                                $.each(member['symptoms'], function (i, symptom) {
+                                    item_contents += '<li>';
+                                    item_contents +=     '<p><span class="field-content symptom-name">' + symptom['type'] + '</span></p>';
+                                    item_contents +=     '<p><span class="label">Number</span> : <span class="field-content symptom-count">'+ symptom['count'] + '</span></p>';
+                                    item_contents +=     '<p><span class="label">Danger level</span> : <span class="field-content symptom-danger-level">'+ symptom['dangerLevel'] + '</span></p>';
+                                    item_contents +=     '<p><span class="label">Link</span> : <span class="field-content symptom-link"><a href="' + symptom['link']+'">'+ symptom['link'] + '</a></span></p>';
+                                    item_contents += '</li>';
                                     
-                                '</div>';
-                            
-                                info_window.setContent(item_contents);
-                                info_window.open(map, marker);
-                            });
+                                });
+                                
+                                item_contents += '</ul>';
+                                
+                            }
+                                
+                                '<h3 class="label">Symptoms</h3>';
+                                
+                                
+                                
+                            item_contents += '</div>';
                         
-                            markers[member['type']].push(marker);
-                
-                            bounds.extend(latLng);
-                        }
+                            info_window.setContent(item_contents);
+                            info_window.open(map, marker);
+                        });
+                    
+                        markers[member['type']].push(marker);
+            
+                        bounds.extend(latLng);
                     
                     
                     });
