@@ -145,6 +145,8 @@
         
         $ = jQuery;
         
+        var currentData = false;
+        
         var colorToHex = function (c) {
           var m = /rgba?\(\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)/.exec(c);
           return m ? '#' + (1 << 24 | m[1] << 16 | m[2] << 8 | m[3]).toString(16).substr(1) : c;
@@ -223,6 +225,9 @@
 
         
         var mapLoadded = function () {
+            
+            var self = this;
+            
             var center = new google.maps.LatLng(13.768, 100.554);
             
             var options = {
@@ -248,6 +253,18 @@
             
             var first_marker = false;
             
+            google.maps.event.addListener(map,'zoom_changed',function () {
+                if (map.getZoom() >= 16) {
+                    // render members
+                    self.mapReloadData(currentData, 'members');
+                }
+                else {
+                    // render infectedMember
+                    self.mapReloadData(currentData, 'infectedMember');
+                    
+                }
+            });
+            
             this.clearMarker = function () {
                 $.each(markers, function (i, marker_types) {
                     $.each(marker_types, function (j, marker) {    
@@ -262,90 +279,103 @@
                 
             }
             
-            
+            this.addMarkerData = function (member, location, j) {
+                // Loop on the count                     
 
-            this.mapReloadData = function(data) {
+                var latLng = calLatLng(location.lat, location.lng, location['members'].length, j);
+                var color = colorToHex('rgb(' + colorAll[member['type']] + ')');
+
+                var level = 0;
+                $.each(member['symptoms'], function (i, symptom) {
+                    level += symptom['dangerLevel'];
+                }); 
+                if (member['symptoms'].length) {
+                    level = Math.ceil(level/member['symptoms'].length);
+                }
+
+                var marker = new google.maps.Marker({
+                    'position': latLng,
+                    'map': map,
+                    'icon': 'image/' + member['type'] + '-' + level +'.png'
+                    //'icon': 'http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=•|'+ color.substring(1) +'|000000'
+
+                });
+
+                if (!first_marker) {
+                    first_marker = marker;
+                }
+
+
+                google.maps.event.addListener(marker, 'click', function() {
+                    info_window.close();
+
+                    var image_type = member['type'] == 'HUMAN'? 'people': 'animals'
+
+                    var item_contents = 
+
+                    '<div class="marker-content">'+ 
+                        '<img class="icon-type" src="image/' + member['type'] + '.png" />' + 
+                        '<span class="type-name">' + member['count'] + ' ' + capitaliseFirstLetter(member['type']) + 's</span>' +
+                        '<h3 class="label first">Address</h3>' +
+                        '<p><span class="label">Contact name</span> : <span class="field-content">' + location['address']['firstName'] + ' ' + location['address']['lastName'] + '</span></p>' +
+                        '<p><span class="label">Email</span> : <span class="field-content">' + location['address']['email'] + '</span></p>' +
+                        '<p><span class="label">Street</span> : <span class="field-content">' + location['address']['street'] + '</span></p>' +
+                        '<p><span class="label">Post code</span> : <span class="field-content">' + location['address']['postCode'] + '</span></p>' +
+                        '<p><span class="label">City</span> : <span class="field-content">' + location['address']['city'] + '</span></p>' +
+                        '<p><span class="label">Phone</span> : <span class="field-content">' + location['address']['phone'] + '</span></p>';
+
+                    if (member['symptoms'].length) {
+
+                        item_contents += '<h3 class="label">Symptoms</h3>';
+                        item_contents += '<ul>';
+
+                        $.each(member['symptoms'], function (i, symptom) {
+                            item_contents += '<li>';
+                            item_contents +=     '<p><span class="field-content symptom-name">' + capitaliseFirstLetter(symptom['type'].replace('_', ' ')) + '</span></p>';
+                            item_contents +=     '<p><span class="label">Number</span> : <span class="field-content symptom-count">'+ symptom['count'] + '</span></p>';
+                            item_contents +=     '<p><span class="label">Danger level</span> : <span class="field-content symptom-danger-level">'+ symptom['dangerLevel'] + '</span></p>';
+                            item_contents +=     '<p><span class="label">Link</span> : <span class="field-content symptom-link"><a href="' + symptom['resourceLinks']+'">'+ truncate(symptom['resourceLinks'][0], 24) + '</a></span></p>';
+                            item_contents += '</li>';
+
+                        });
+
+                        item_contents += '</ul>';
+
+                    }                                
+
+
+                    item_contents += '</div>';
+
+                    info_window.setContent(item_contents);
+                    info_window.open(map, marker);
+
+                });
+                
+                markers[member['type']].push(marker);
+                bounds.extend(latLng);                    
+                
+                
+            }
+
+            this.mapReloadData = function(data, render) {
+                
+                render = render? render: 'infectedMember';
                 
                 $.each(data, function (i, location) {
-                    location['infectedMember'] = [location['infectedMember']];
-                    $.each(location['infectedMember'], function (j, member) {
-
-                        // Loop on the count                     
-
-                        var latLng = calLatLng(location.lat, location.lng, location['members'].length, j);
-                        var color = colorToHex('rgb(' + colorAll[member['type']] + ')');
-
-                        var level = 0;
-                        $.each(member['symptoms'], function (i, symptom) {
-                            level += symptom['dangerLevel'];
-                        }); 
-                        if (member['symptoms'].length) {
-                            level = Math.ceil(level/member['symptoms'].length);
-                        }
-
-                        var marker = new google.maps.Marker({
-                            'position': latLng,
-                            'map': map,
-                            'icon': 'image/' + member['type'] + '-' + level +'.png'
-                            //'icon': 'http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=•|'+ color.substring(1) +'|000000'
-
+                    
+                    if (render == 'members') {
+                        $.each(location['members'], function (j, member) {
+                            self.addMarkerData(member, location, j);
                         });
-
-                        if (!first_marker) {
-                            first_marker = marker;
-                        }
-
-
-                        google.maps.event.addListener(marker, 'click', function() {
-                            info_window.close();
-
-                            var image_type = member['type'] == 'HUMAN'? 'people': 'animals'
-
-                            var item_contents = 
-
-                            '<div class="marker-content">'+ 
-                                '<img class="icon-type" src="image/' + member['type'] + '.png" />' + 
-                                '<span class="type-name">' + member['count'] + ' ' + capitaliseFirstLetter(member['type']) + 's</span>' +
-                                '<h3 class="label first">Address</h3>' +
-                                '<p><span class="label">Contact name</span> : <span class="field-content">' + location['address']['firstName'] + ' ' + location['address']['lastName'] + '</span></p>' +
-                                '<p><span class="label">Email</span> : <span class="field-content">' + location['address']['email'] + '</span></p>' +
-                                '<p><span class="label">Street</span> : <span class="field-content">' + location['address']['street'] + '</span></p>' +
-                                '<p><span class="label">Post code</span> : <span class="field-content">' + location['address']['postCode'] + '</span></p>' +
-                                '<p><span class="label">City</span> : <span class="field-content">' + location['address']['city'] + '</span></p>' +
-                                '<p><span class="label">Phone</span> : <span class="field-content">' + location['address']['phone'] + '</span></p>';
-
-                            if (member['symptoms'].length) {
-
-                                item_contents += '<h3 class="label">Symptoms</h3>';
-                                item_contents += '<ul>';
-
-                                $.each(member['symptoms'], function (i, symptom) {
-                                    item_contents += '<li>';
-                                    item_contents +=     '<p><span class="field-content symptom-name">' + capitaliseFirstLetter(symptom['type'].replace('_', ' ')) + '</span></p>';
-                                    item_contents +=     '<p><span class="label">Number</span> : <span class="field-content symptom-count">'+ symptom['count'] + '</span></p>';
-                                    item_contents +=     '<p><span class="label">Danger level</span> : <span class="field-content symptom-danger-level">'+ symptom['dangerLevel'] + '</span></p>';
-                                    item_contents +=     '<p><span class="label">Link</span> : <span class="field-content symptom-link"><a href="' + symptom['resourceLinks']+'">'+ truncate(symptom['resourceLinks'][0], 24) + '</a></span></p>';
-                                    item_contents += '</li>';
-
-                                });
-
-                                item_contents += '</ul>';
-
-                            }                                
-
-
-                            item_contents += '</div>';
-
-                            info_window.setContent(item_contents);
-                            info_window.open(map, marker);
-
+                    }
+                    else {
+                    
+                    
+                        location['infectedMember'] = [location['infectedMember']];
+                        $.each(location['infectedMember'], function (j, member) {
+                            self.addMarkerData(member, location, j);
                         });
-                        
-                        markers[member['type']].push(marker);
-
-                        bounds.extend(latLng);                    
-
-                    });
+                    }
 
 
                 });
@@ -358,6 +388,9 @@
             var me = this;
             //data = json_data;
             $.getJSON(server_url + '?callback=?', function (data) {
+                
+                currentData = data;
+                
                 me.mapReloadData(data);
 
                 map.panTo(bounds.getCenter());
@@ -395,7 +428,9 @@
               
               var query = $(this).attr('href');
               $.getJSON(server_url + '?' + query + '&callback=?', function (data) {
-                  
+                 
+                 currentData = data;
+                 
                  mapObj.clearMarker();
                  mapObj.mapReloadData(data);
               });
