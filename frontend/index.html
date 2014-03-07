@@ -35,7 +35,7 @@
             background-color: #FFF;
             border: solid 2px #EEE;
             padding: 20px 20px 10px 20px;
-            width: 90px;
+            width: 110px;
         }
         .box h3 {
             margin-top: 0px;
@@ -65,19 +65,13 @@
         
         .danger-box {
             bottom: 50px;
-            right: 200px;
+            right: 220px;
             width: 100px !important;
         }
         .symptom-box {
             bottom: 50px;
-            right: 360px;
+            right: 380px;
             width: 140px !important;
-        }
-        
-        .logo-box {
-            top: 50px;
-            right: 50px;
-            width: 100px !important;
         }
         
         .detail-color, .detail-icon {
@@ -141,7 +135,7 @@
         
         
         
-        <script type="text/javascript" src="js/data.js"></script>
+        <!--<script type="text/javascript" src="js/data.js"></script>-->
         
         <script type="text/javascript">
         
@@ -204,7 +198,7 @@
         var colorAll = {
             'PET'   : '226,85,158',
             'BIRD'  : '200,180,50',
-            'FARM'  : '210,100,74',
+            'LIVESTOCK'  : '210,100,74',
             'EXOTIC': '79,167,104',
             'HUMAN' : '42,174,185',
         }
@@ -212,7 +206,7 @@
         var colorAll = {
             'PET'   : 'PET',
             'BIRD'  : 'BIRD',
-            'FARM'  : 'FARM',
+            'LIVESTOCK'  : 'LIVESTOCK',
             'EXOTIC': 'EXOTIC',
             'HUMAN' : 'HUMAN',
         }
@@ -271,8 +265,8 @@
             this.mapReloadData = function(data) {
                 
                 $.each(data, function (i, location) {
-
-                    $.each(location['members'], function (j, member) {
+                    location['infectedMember'] = [location['infectedMember']];
+                    $.each(location['infectedMember'], function (j, member) {
 
                         // Loop on the count                     
 
@@ -344,7 +338,7 @@
                             info_window.open(map, marker);
 
                         });
-
+                        
                         markers[member['type']].push(marker);
 
                         bounds.extend(latLng);                    
@@ -359,13 +353,16 @@
                 });
             }
             
-            data = json_data;
-            this.mapReloadData(data);
+            var me = this;
+            //data = json_data;
+            $.getJSON('http://192.168.1.169:8080/?callback=?', function (data) {
+                me.mapReloadData(data);
+
+                map.panTo(bounds.getCenter());
+                map.fitBounds(bounds);
+            });
             
 
-        
-            map.panTo(bounds.getCenter());
-            map.fitBounds(bounds);
         }
         
         
@@ -386,7 +383,7 @@
           var symptoms = ['RESPIRATORY_TRACT', 'DIGESTIVE_TRACT', 'HIGH_TEMPERATURE', 'NERVOUS_SIGNALS', 'SKIN_PROBLEM', 'MUSCLE_PAIN'];
           
           $.each(symptoms, function (i, symptom) {
-              $('.symptom-box-list').append($('<li><a class="filter-link" href="symtompType=' + symptom + '"><span class="detail-text">' + capitaliseFirstLetter(symptom.replace('_', ' ')) + '</span></a></li>'));
+              $('.symptom-box-list').append($('<li><a class="filter-link" href="symptomType=' + symptom + '"><span class="detail-text">' + capitaliseFirstLetter(symptom.replace('_', ' ')) + '</span></a></li>'));
               
           });
           
@@ -395,7 +392,9 @@
               e.preventDefault();
               
               var query = $(this).attr('href');
-              $.getJSON('' + '?' + query + '&callback=?', function (data) {
+              $.getJSON('http://192.168.1.169:8080/' + '?' + query + '&callback=?', function (data) {
+                  
+                 mapObj.clearMarker();
                  mapObj.mapReloadData(data);
               });
               //http://192.168.1.169:8080?SymptomType=HIGH_TEMPERATURE
