@@ -90,11 +90,23 @@
             border-top: solid 1px #EEE;
             padding-top: 8px;
         }
+        .marker-content h3.first {
+            border-top: none 0px;
+            margin-top: 5px;
+        }
         .marker-content p {
             clear: both;
             width: 100%;
             margin: 5px 0;
         }
+        .marker-content .thumbnail {
+            width: 100%;
+            height: auto;
+            /* display: block; */
+            margin-top: 10px;
+            float: left;
+        }
+        
         </style>
         <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
         <script type="text/javascript" src="js/jquery-2.0.2.min.js"></script>
@@ -245,13 +257,16 @@
                 
                     google.maps.event.addListener(marker, 'click', function() {
                         info_window.close();
+                        
+                        var image_type = member['type'] == 'HUMAN'? 'people': 'animals'
                     
                         var item_contents = 
                     
                         '<div class="marker-content">'+ 
                             '<img class="icon-type" src="image/' + member['type'] + '.png" />' + 
                             '<span class="type-name">' + member['count'] + ' ' + capitaliseFirstLetter(member['type']) + 's</span>' +
-                            '<h3 class="label">Address</h3>' +
+                            '<img class="thumbnail" src="http://lorempixel.com/285/180/' + image_type + '/" />' +
+                            '<h3 class="label first">Address</h3>' +
                             '<p><span class="label">Contact name</span> : <span class="field-content">' + location['address']['firstName'] + ' ' + location['address']['lastName'] + '</span></p>' +
                             '<p><span class="label">Email</span> : <span class="field-content">' + location['address']['email'] + '</span></p>' +
                             '<p><span class="label">Street</span> : <span class="field-content">' + location['address']['street'] + '</span></p>' +
