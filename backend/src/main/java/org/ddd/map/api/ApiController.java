@@ -29,7 +29,7 @@ public class ApiController {
         if (dangerLevel == null) {
             dangerLevel = 0;
         }
-        for (int i = 0; i < 200; i++) {
+        for (int i = 0; i < 100; i++) {
             final Household household = getHousehold(dangerLevel, symptomType);
             if (household != null) {
                 final List<HouseholdMember> members = household.getMembers();
