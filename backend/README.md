@@ -1,6 +1,14 @@
 Backend for Epihack Household Animal Project
 ============================================
 
+About
+-----
+
+The backend provides:
+* Definition of data objects that can be used to visualize the probability of cross-infection in certain households.
+* Mockup data
+
+
 Requirements
 ------------
 

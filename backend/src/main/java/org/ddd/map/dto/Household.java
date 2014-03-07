@@ -19,6 +19,8 @@ public class Household {
 
     private Address address;
 
+    private HouseholdMember infectedMember;
+
     private List<HouseholdMember> members = new ArrayList<>();
 
 
@@ -64,5 +66,13 @@ public class Household {
 
     public void setAddress(Address address) {
         this.address = address;
+    }
+
+    public HouseholdMember getInfectedMember() {
+        return infectedMember;
+    }
+
+    public void setInfectedMember(HouseholdMember infectedMember) {
+        this.infectedMember = infectedMember;
     }
 }
