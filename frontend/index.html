@@ -141,6 +141,8 @@
         
         // Map  =============================================
         
+        var server_url = 'http://192.168.1.169:8080/';
+        
         $ = jQuery;
         
         var colorToHex = function (c) {
@@ -355,7 +357,7 @@
             
             var me = this;
             //data = json_data;
-            $.getJSON('http://192.168.1.169:8080/?callback=?', function (data) {
+            $.getJSON(server_url + '?callback=?', function (data) {
                 me.mapReloadData(data);
 
                 map.panTo(bounds.getCenter());
@@ -392,7 +394,7 @@
               e.preventDefault();
               
               var query = $(this).attr('href');
-              $.getJSON('http://192.168.1.169:8080/' + '?' + query + '&callback=?', function (data) {
+              $.getJSON(server_url + '?' + query + '&callback=?', function (data) {
                   
                  mapObj.clearMarker();
                  mapObj.mapReloadData(data);
